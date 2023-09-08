@@ -1,7 +1,4 @@
-# BENG 183 Applied Genomic Technologies
-
-### Acknowledgments
-We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles Corkos, Elisha Beebe, Mengyi Liu, Kelsey Dang, Katy Zou, Diego Quintero, Derek Jow, Victoria Tom, Joey Sun.
+# BENG 183 Applied Genomic Technologies - 2023Fall
 
 ### Chapter1 Molecular Biology
 - [Review of Molecular Biology from 3D Genome ebook.](https://zhonglab.gitbook.io/3dgenome/chap0-preparation/0.1-molecular-biology) 
@@ -23,3 +20,7 @@ We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles
 - [6.1 The instructor’s cheat sheet to hypothesis testing](https://github.com/Zhong-Lab-UCSD/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/statistics_cheatsheet.pdf)
 ### Chapter7 Machine Learning
 - [7.1 Intro to Machine Learning](https://github.com/Zhong-Lab-UCSD/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Chapter/Introduction_to_Machine_Learning.md)
+
+### Acknowledgments
+
+We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles Corkos, Elisha Beebe, Mengyi Liu, Kelsey Dang, Katy Zou, Diego Quintero, Derek Jow, Victoria Tom, Joey Sun.
