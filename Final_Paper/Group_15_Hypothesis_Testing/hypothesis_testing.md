@@ -3,11 +3,11 @@
 ## Table of Contents
 ---
 1. What is Hypothesis Testing?
-    1.1 Creating a Null and Alternative Hypothesis
-    1.2 Gathering data
-    1.3 Test Statistic
-    1.4 P-value
-    1.5 Making a decision based off of the P-value
+    1.1 Creating a Null and Alternative Hypothesis  
+    1.2 Gathering data  
+    1.3 Test Statistic  
+    1.4 P-value  
+    1.5 Making a decision based off of the P-value  
 2. Considerations when chosing the significance threshold
 3. Applications of DESeq2
 4. Conclusion
