@@ -29,8 +29,6 @@ A precision medicine approach has benefits because it allows for more personaliz
 </p>
 
 
----
-
 ## 2. Background to Cancer + Genes
 
 Precision medicine has been especially impactful in treating cancer due its highly heterogeneous nature. Heterogeneity in cancer refers to the existence of different cell populations with distinct genotypes and phenotypes, within a tumor or across different tumor types [4]. 
@@ -48,9 +46,7 @@ As seen in the figure below, intra-tumor heterogeneity can develop in a patient 
 
 One way to characterize cells beyond their cancer type is through their genetic signatures. The central dogma principle details how DNA transcribed into mRNA leads to the production of proteins, which ultimately affect the phenotype of the cell. Then, part of the heterogeneity of tumor cells can be accounted for by differences in the genes expressed in the cells. Thus, a precision medicine that utilizes genomic data is a valuable approach to cancer treatment. 
 
----
-
-## 3.Gene Expression Data in Precision Medicine
+## 3. Gene Expression Data in Precision Medicine
 
 Identifying which genes are expressed in a cell provide a lot of data for analysis, including to understand the genes expressed in a healthy versus diseased state. The RNA-seq pipeline provides the framework to access this data and set it up for precision medicine analysis.
 
@@ -64,7 +60,6 @@ Experimentally, the genes expressed in a cell can be identified at the RNA level
 <b>Figure 3: RNA-Seq to Differential Expression Pipeline </b> (Adapted from [7])
 </p>
 
----
 
 ## 4. Precision Medicine, DEGs, and Cancer
 
@@ -112,8 +107,6 @@ A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, 
 <p align="center">
 <b>Figure 6: Identified Differentially Expressed Genes Across Cancer Subtypes </b> CITATION
 </p>
-
----
 
 ## 5. Conclusion and Future Directions
 Precision medicine has been established as a valuable tool in developing cancer treatments. Specifically, leveraging the advantages of machine learning and sequencing technologies allows precision oncology to be delivered in an economical and effective manner. The trade-off to this success is that it only benefits small subsets of the population as the nature of the treatment is meant to be highly personalized. Thus, the full potential of precision medicine has yet to be realized. In particular, the method has yet to be implemented across a majority of tumor types or in the general population. 
