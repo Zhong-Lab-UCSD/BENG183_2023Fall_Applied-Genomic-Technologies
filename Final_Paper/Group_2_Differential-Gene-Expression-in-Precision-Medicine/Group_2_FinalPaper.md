@@ -1,8 +1,8 @@
-## Differential Gene Expression (DEG) in Precision Medicine
+# Differential Gene Expression (DEG) in Precision Medicine
 
 ---
 
-### Overview
+## Overview
 1. What is Precision Medicine?
 2. Background to Cancer + Genes 
 3. Gene Expression Data in Precision Medicine
@@ -14,7 +14,7 @@
 6. References
 
 ---
-### 1. What is Precision Medicine?
+## 1. What is Precision Medicine?
 Precision medicine is the use of biotechnology methods such as genomics and proteomics to identify specific targets for subgroups within a disease population and develop effective therapies to address the novel targets [1]. 
 
 A precision medicine approach has benefits because it allows for more personalized care that allows almost every patient in the disease subgroup to benefit. Over time this can help create cost benefits, improve quality of life, and improve patient outcomes.
@@ -31,7 +31,7 @@ A precision medicine approach has benefits because it allows for more personaliz
 
 ---
 
-### 2. Background to Cancer + Genes
+## 2. Background to Cancer + Genes
 
 Precision medicine has been especially impactful in treating cancer due its highly heterogeneous nature. Heterogeneity in cancer refers to the existence of different cell populations with distinct genotypes and phenotypes, within a tumor or across different tumor types [4]. 
 
@@ -50,7 +50,7 @@ One way to characterize cells beyond their cancer type is through their genetic 
 
 ---
 
-### 3.Gene Expression Data in Precision Medicine
+## 3.Gene Expression Data in Precision Medicine
 
 Identifying which genes are expressed in a cell provide a lot of data for analysis, including to understand the genes expressed in a healthy versus diseased state. The RNA-seq pipeline provides the framework to access this data and set it up for precision medicine analysis.
 
@@ -66,9 +66,9 @@ Experimentally, the genes expressed in a cell can be identified at the RNA level
 
 ---
 
-### 4. Precision Medicine, DEGs, and Cancer
+## 4. Precision Medicine, DEGs, and Cancer
 
-#### a. Machine Learning
+### a. Machine Learning
 We can take differential expression analysis a step further using machine learning. Machine learning models are a useful tool to draw patterns from data in order to develop predictions. One example of machine learning is classification, which involves data being clustered into groups. During classification, the ML model learns which features or collection of features are important to each group in a process called feature selection. 
 
 In the context of classifying different subtypes of cancer, feature selection involves choosing the most significant genes that could be indicators of specific subtypes. This is where our previous differential expression analysis is very useful. By learning what genes are associated with which subtype, the machine learning model can be generalized to any other sample and correctly identify the subtype based on gene expression levels. Investigating which genes are important to each cancer type creates a better understanding of the heterogeneity of cancer.
@@ -81,7 +81,7 @@ In the context of classifying different subtypes of cancer, feature selection in
 <b>Figure 4: Classification Model Framework </b> CITATION
 </p>
 
-#### b. Examples
+### b. Examples
 **_Example 1: Cancer Molecular Classification + Differential Expression Analysis_**
 
 <p style="font-size:10px">Golub, Slonim, Lander et al. <b>Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring.</b> Science, Vol 286, 531-537.
@@ -115,13 +115,13 @@ A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, 
 
 ---
 
-### 5. Conclusion and Future Directions
+## 5. Conclusion and Future Directions
 Precision medicine has been established as a valuable tool in developing cancer treatments. Specifically, leveraging the advantages of machine learning and sequencing technologies allows precision oncology to be delivered in an economical and effective manner. The trade-off to this success is that it only benefits small subsets of the population as the nature of the treatment is meant to be highly personalized. Thus, the full potential of precision medicine has yet to be realized. In particular, the method has yet to be implemented across a majority of tumor types or in the general population. 
 
 Moving forward, multi-omics is an important approach to understanding tumor landscapes and identifying potential targets for gene therapies, rather than a singular focus on gene expression data. The improvement of sequencing technologies would help rapidly generate large amounts of data in order to establish the validity of clinical biomarkers. This data-driven approach in conjunction with better infrastructure and communication would dramatically advance the capabilities of precision medicine. 
 
 ---
-### 6. References
+## 6. References
 
 1. BENG 183, Lecture 10: https://docs.google.com/presentation/d/19p-7f2P90dpXeBYPWCszkPU3T12OrDij/edit#slide=id.p1
 2. Figure 1: https://www.frontiersin.org/articles/10.3389/fpubh.2019.00042/full
