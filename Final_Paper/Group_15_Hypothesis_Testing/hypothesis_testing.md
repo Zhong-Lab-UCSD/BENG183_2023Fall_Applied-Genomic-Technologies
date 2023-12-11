@@ -24,6 +24,35 @@ The 5 steps of Hypothesis Testing:
     Interpret P-value and Make a Decision 
 
 To illustrate the steps of hypothesis testing, we will be looking at a hypothetical case study. Our example case study will look at whether or not smoking causes lung cancer. 
+---
 
+#### Creating a Null and Alternative Hypothesis
+
+---
+
+#### Gathering data
+
+---
+
+#### Test Statistic
+---
+
+#### P-value
+
+---
+
+#### Making a decision based off the P-value
+
+---
+
+### Considerations when choosing the significance threshold
+
+---
+
+### Applications in DESeq2
+
+---
+
+### Conclusions
 
 
