@@ -1,6 +1,6 @@
-#Introduction to Hypothesis Testing
+# Introduction to Hypothesis Testing
 ---
-##Table of Contents
+## Table of Contents
 ---
 1. What is Hypothesis Testing?
     a. Creating a Null and Alternative Hypothesis
@@ -12,8 +12,18 @@
 3. Applications of DESeq2
 4. Conclusion 
 ---
-###What is Hypothesis Testing? Why is it important?
+### What is Hypothesis Testing? Why is it important?
 
 Hypothesis Testing is the use of statistical analysis on data to evaluate the validity of a hypothesis. It allows researchers to make evidence-based conclusions. 
+
+The 5 steps of Hypothesis Testing:
+    Form a Null and Alternative Hypothesis
+    Gathering Data
+    Generate a Test Statistic
+    Generate P-value
+    Interpret P-value and Make a Decision 
+
+To illustrate the steps of hypothesis testing, we will be looking at a hypothetical case study. Our example case study will look at whether or not smoking causes lung cancer. 
+
 
 
