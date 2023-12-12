@@ -82,7 +82,7 @@ In the context of classifying different subtypes of cancer, feature selection in
 <p style="font-size:10px">Golub, Slonim, Lander et al. <b>Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring.</b> Science, Vol 286, 531-537.
 </p>
 
-In a 1999 paper, leukemia samples were classified into two different subtypes, named ALL and AML. As shown in the heatmap below, differential expression analysis was performed to determine the genes associated with subtype. Subsequently, a classification model was developed in order to distinguish between the two subtypes. The goal of the model was to classify a patient sample into one of the two subtypes of leukemia based on relevant genes. This allows for greater specificity when determining treatment plans in the context of precision medicine. 
+In a 1999 paper, leukemia samples were classified into two different subtypes, named ALL and AML. As shown in the heatmap below, differential expression analysis was performed to determine the genes associated with subtype. Subsequently, a classification model was developed in order to distinguish between the two subtypes. The goal of the model was to classify a patient sample into one of the two subtypes of leukemia based on relevant genes. This allows for greater specificity when determining treatment plans in the context of precision medicine[10]. 
 
 <p align="center">
   <img src="figure5.png" width="350"/>
@@ -98,7 +98,7 @@ In a 1999 paper, leukemia samples were classified into two different subtypes, n
 Xue JM, Liu Y, Wan LH, Zhu YX. <b>Comprehensive Analysis of Differential Gene Expression to Identify Common Gene Signatures in Multiple Cancers.</b> Med Sci Monit. 2020 Feb 8;26:e919953. doi: 10.12659/MSM.919953. PMID: 32035007; PMCID: PMC7027371.
 </p>
 
-A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, namely: lung liver, kidney, cervical, and breast cancer which can be potential therapeutic targets for drug development. After using differential gene expression, GO analysis, and path enrichment 12 differentially expressed genes were found across the subtypes, involved in processes such as cell division, cell cycle checkpoint, and nuclear division. This is an application of DEGs in precision medicine, because the identified genes can be targeted genes for the downstream development of therapeutics [#].
+A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, namely: lung liver, kidney, cervical, and breast cancer which can be potential therapeutic targets for drug development. After using differential gene expression, GO analysis, and path enrichment 12 differentially expressed genes were found across the subtypes, involved in processes such as cell division, cell cycle checkpoint, and nuclear division. This is an application of DEGs in precision medicine, because the identified genes can be targeted genes for the downstream development of therapeutics [11].
 
 <p align="center">
   <img src="figure6.png" height="300"/>
@@ -126,8 +126,9 @@ Moving forward, multi-omics is an important approach to understanding tumor land
 8. 
 9. 
 10. https://pubmed.ncbi.nlm.nih.gov/10521349/
-11. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027371/
-12. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454858/
+11. Figure 5:
+12. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027371/
+13. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454858/
 
 
 
