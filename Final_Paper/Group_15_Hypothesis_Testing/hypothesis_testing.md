@@ -38,6 +38,31 @@ An alternative hypothesis hypothesizes that there is a significant difference be
 ---
 
 ## Gathering data <a name="3"></a>
+Generating data is the most important step for testing the hypothesis. It consists of running experiments to manually get the data, or using previous sources of data.
+
+Data should be relevant to the hypothesis and able to be used as an argument for any of the two hypotheses. The data generated should be free of confounding variables and must be quantifiable in some aspect. It is important to try and be as thorough in gathering the data as to not let any bias change the results of the testing.
+
+**Case Study**
+
+We want to gather data about smokers and lung cancer. 
+
+**Knowledge Check**
+
+Based on the hypotheses we created in the previous step and the questions we want to answer, how would we gather and put the data together?
+
+<details>
+    <summary>Answer: </summary>
+    We could interview lung cancer patients and ask them if they have smoked before or not. We can then count the number of patients in these categories. 
+</details>
+
+What is another way of gathering this data?
+
+<details>
+	<summary>Answer: </summary>
+	We could also follow a group of smokers and nonsmokers through the years, and record if they got diagnosed with lung cancer or not. There are also other ways to collect this data. 
+</details>
+
+
 
 ---
 
