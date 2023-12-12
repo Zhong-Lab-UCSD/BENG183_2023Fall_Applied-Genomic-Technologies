@@ -111,7 +111,7 @@ A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, 
 ## 5. Conclusion and Future Directions
 Precision medicine has been established as a valuable tool in developing cancer treatments. Specifically, leveraging the advantages of machine learning and sequencing technologies allows precision oncology to be delivered in an economical and effective manner. The trade-off to this success is that it only benefits small subsets of the population as the nature of the treatment is meant to be highly personalized. Thus, the full potential of precision medicine has yet to be realized. In particular, the method has yet to be implemented across a majority of tumor types or in the general population. 
 
-Moving forward, multi-omics is an important approach to understanding tumor landscapes and identifying potential targets for gene therapies, rather than a singular focus on gene expression data. The improvement of sequencing technologies would help rapidly generate large amounts of data in order to establish the validity of clinical biomarkers. This data-driven approach in conjunction with better infrastructure and communication would dramatically advance the capabilities of precision medicine. 
+Moving forward, multi-omics is an important approach to understanding tumor landscapes and identifying potential targets for gene therapies, rather than a singular focus on gene expression data. The improvement of sequencing technologies would help rapidly generate large amounts of data in order to establish the validity of clinical biomarkers. This data-driven approach in conjunction with better infrastructure and communication would dramatically advance the capabilities of precision medicine[12]. 
 
 ---
 ## 6. References
@@ -123,6 +123,11 @@ Moving forward, multi-omics is an important approach to understanding tumor land
 5. Figure 2: https://www.mdpi.com/2072-6694/13/4/806
 6. https://github.com/Zhong-Lab-UCSD/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Chapter/Overview_of_RNA_sequencing.md
 7. Figure 3: BENG 183, Lecture 7: https://docs.google.com/presentation/d/19W8Wrmjsxafmjl4OmN33SeSc0fj_z19E/edit#slide=id.p23
+8. 
+9. 
+10. https://pubmed.ncbi.nlm.nih.gov/10521349/
+11. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027371/
+12. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454858/
 
 
 
