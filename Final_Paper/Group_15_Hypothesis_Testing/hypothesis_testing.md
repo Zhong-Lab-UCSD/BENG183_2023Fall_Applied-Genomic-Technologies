@@ -2,7 +2,7 @@
 ---
 ## Table of Contents
 ---
-1. What is Hypothesis Testing?
+1. What is Hypothesis Testing?  
     1.1 Creating a Null and Alternative Hypothesis  
     1.2 Gathering data  
     1.3 Test Statistic  
