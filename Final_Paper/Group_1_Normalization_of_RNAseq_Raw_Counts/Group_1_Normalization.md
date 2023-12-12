@@ -150,7 +150,7 @@ The figure on the left represents our original data and the figure on the right 
 
     l<sub>j</sub> : length of gene region j in base pairs
     
-    When using the formula for TPM, a normalized read count is first calculated for a gene region i by evaluating X<sub>i</sub> / l<sub>i</sub> . Once we have this normalized read count, we divide it by the sum of the normalized read count summed over all gene regions in our sample. Since our summation term will sum together the X<sub>j</sub>  values for all gene regions, the value in the numerator, X<sub>j</sub> , after summation, will be proportional to our total library size. By dividing our normalized read count X<sub>i</sub> / l<sub>i</sub> by this summation which we now know is proportional to our total library size N, we can normalize for gene length. Normalization for gene length is clearly done by dividing each read count value by the length of the corresponding gene region. 
+    When using the formula for TPM, a normalized read count is first calculated for a gene region i by evaluating X<sub>i</sub> / l<sub>i</sub> . Once we have this normalized read count, we divide it by the sum of the normalized read count summed over all gene regions in our sample. Since our summation term will sum together the X<sub>j</sub>  values for all gene regions, the value in the numerator, X<sub>j</sub> , after summation, will be proportional to our total library size. By dividing our normalized read count X<sub>i</sub> / l<sub>i</sub> by this summation which we now know is proportional to our total library size N, we can normalize for library size. Normalization for gene length is clearly done by dividing each read count value by the length of the corresponding gene region. 
 
     ## RPKM vs. TPM
 
