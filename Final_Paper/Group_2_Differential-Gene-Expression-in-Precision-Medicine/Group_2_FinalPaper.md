@@ -90,7 +90,7 @@ Sensitivity is also known as the true positive rate. This is defined as the prop
 <b>Figure 5: Calculating Sensitivity (left) and Specificity (right) </b> (Adapted from [10])
 </p>
 
-### 5. Examples
+## 5. Examples
 **_Example 1: Cancer Molecular Classification + Differential Expression Analysis_**
 
 <p style="font-size:10px">Golub, Slonim, Lander et al. <b>Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring.</b> Science, Vol 286, 531-537.
