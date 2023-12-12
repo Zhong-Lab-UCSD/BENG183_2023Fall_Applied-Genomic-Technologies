@@ -108,6 +108,20 @@ A 2020 study aimed to identify common genes expressed across 5 cancer subtypes, 
 <b>Figure 6: Identified Differentially Expressed Genes Across Cancer Subtypes </b> CITATION
 </p>
 
+### c. Limitations
+
+One of the most important steps in developing a machine learning model is completing an assessment of its accuracy in order to understand how well it is actually able to perform predictions. Two measurements that can be used to evaluate a classifier are sensitivity and specificity. 
+
+Sensitivity is also known as the true positive rate. This is defined as the proportion of positives that are correctly identified out of all positives in the sample. Similarly, specificity is defined as the true negative rate, or the proportion of negatives that are correctly identified out of all negatives. Sensitivity and specificity are often used to assess the ability of a test to correctly detect whether a patient has a medical condition. Ultimately, calculating and interpreting these statistics make up one of the final steps before being able to deploy a machine learning model for real-world use. 
+
+<p align="center">
+  <img src="figure7.png" height="300"/>
+</p>
+
+<p align="center">
+<b>Figure 6: Calculating Sensitivity (left) and Specificity (right)
+</p>
+
 ## 5. Conclusion and Future Directions
 Precision medicine has been established as a valuable tool in developing cancer treatments. Specifically, leveraging the advantages of machine learning and sequencing technologies allows precision oncology to be delivered in an economical and effective manner. The trade-off to this success is that it only benefits small subsets of the population as the nature of the treatment is meant to be highly personalized. Thus, the full potential of precision medicine has yet to be realized. In particular, the method has yet to be implemented across a majority of tumor types or in the general population. 
 
