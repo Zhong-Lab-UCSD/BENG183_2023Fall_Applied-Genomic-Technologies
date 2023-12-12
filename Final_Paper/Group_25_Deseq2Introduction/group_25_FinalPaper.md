@@ -18,7 +18,7 @@ John Chen
 - **6:** [Differential Expression Visualization](#)
 - **7:** [Using Differential Expression Tools](#)
 
-### ......precious parts......
+### ......previous parts......
 
 ## DEseq2 Output
 
