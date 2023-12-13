@@ -33,9 +33,16 @@ Broadly, this is accomplished by
 2. estimating gene-specific dispersion factors $\alpha$,
 3. fitting the generalized linear model and obtaining fold changes,
 4. shrinking fold-changes,
-5. and finally testing for differential expression, i.e. statistically significant fold changes.
+5. and statistically testing for differential expression, i.e. significant fold changes.
 ## Sample-specific size factor estimation
+Because DESeq2 takes in raw expression data, the data must first be normalized to account for sample-dependent sequencing depth. DESeq2 does this by modelling the mean gene expression $\mu_{ij}$ for gene $i$ of sample $j$ as $$\mu_{ij} = s_j \times q_{ij}$$where $s_j$ is the size factor for sample $j$ and $q_{ij}$ is the raw gene expression value for gene $i$ of sample $j$. 
 
+![size-factor-estimation.png](./figures/size-factor-estimation.png)
+Visualizing the data in the form of a count matrix indexed by genes with each column representing a different sample DESeq2 performs the following steps to estimate $s$:
+1. Find the pseudo-reference for each gene, defined as the row-wise geometric mean
+2. Compute the raw-value to pseudo-reference ratio for each column
+3. Define $s_{j}$ as the median ratio of each column
+4. Normalize counts by dividing by the corresponding $s_j$
 ## Gene-specific dispersion estimation
 ## Obtaining fold changes
 ## Testing for differential expression
