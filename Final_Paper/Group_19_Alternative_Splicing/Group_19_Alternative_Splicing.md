@@ -4,12 +4,12 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
 # Table of Contents 
 - [Overview](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#overview)
-- [ALternative Splicing in RNA-Seq Alignment?](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-RNA-Seq-Alignment)
-- [Support Vector Machine](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#support-vector-machine)
-  - [Intuition/Analogy](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#intuitionanalogy-1)
-  - [Walk-through/Implementation](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#walk-through-and-implementation)
-  - [Supplements](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#supplement)
-- [Biomedical Applications](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#biomedical-applications)
+- [Alternative Splicing in RNA-Seq Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-RNA-Seq-Alignment)
+  - [Paired-End Alignment](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#Paired-End-Alignment)
+  - [Splice-Aware Alignment](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#Splice-Aware-Alignment)
+  - [Popular Tools](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#Popular-Tools)
+- [Alternative Splicing in Disease and Therapy](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-Disease-and-Therapy)
+- [Future Directions](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Future-Directions)
 
 # Overview
 
@@ -28,3 +28,9 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 
 
 # Alternative Splicing in RNA-Seq Alignment
+
+## Paired-End Alignment
+
+## Splice-Aware Alignment
+
+## Popular Tools
