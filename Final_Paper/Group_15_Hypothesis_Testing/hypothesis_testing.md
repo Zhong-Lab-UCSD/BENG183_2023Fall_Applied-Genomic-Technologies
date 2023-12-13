@@ -16,6 +16,8 @@
 
 Hypothesis Testing is the use of statistical analysis on data to evaluate the validity of a hypothesis. It allows researchers to make evidence-based conclusions. 
 
+The use of hypothesis testing expands beyond bioinformatics. It allows researchers in all fields to make informed predictions as well as decisions based on quantifiable evidence. Hypothesis testing allows people to systematically and objectively ensure quality, assess risk, validate research, as well as complete countless other tasks. 
+
 The 5 steps of Hypothesis Testing:  
       Form a Null and Alternative Hypothesis  
       Gathering Data  
