@@ -2,10 +2,10 @@
 #### Team 24: Minyoung Ahn, Joelle Faybishenko, Monica Park
 ## Contents
 - [Introduction](#Introduction)
-- [Addressing problems specific to RNA-seq data](<#Addressing problems specific to RNA-seq data>)
-- [DESeq2 pipeline overview](<#DESeq2 pipeline overview>)
-- [Sample-specific size factor estimation](<#Sample-specific size factor estimation>)
-- [Gene-specific dispersion estimation](<#Gene-specific dispersion estimation>)
+- [Addressing problems specific to RNA-seq data](#Addressing-problems-specific-to-RNA\-seq-data)
+- [DESeq2 pipeline overview](#DESeq2-pipeline-overview)
+- [Sample-specific size factor estimation](#Sample\-specific-size-factor-estimation)
+- [Gene-specific dispersion estimation](#Gene\-specific-dispersion-estimation)
 - Obtaining fold changes
 - Testing for differential expression
 - [References](#References)
