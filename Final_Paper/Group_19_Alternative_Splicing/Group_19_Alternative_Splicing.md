@@ -16,6 +16,7 @@ Alternative Splicing was first defined in 1977 when researchers discovered that 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/DNA_alternative_splicing.gif" width="850" height="500" />
 
+Image credit [omiics](https://omiics.com/Services/bioinformatic-analysis/alternative-splicing.html)
 <div align="left">
   
 ### Importance in Cellular Biology (maybe remove)
@@ -34,6 +35,8 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 
 <div align="center">
 <img src="https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png" width="500" height="350" />
+
+Image credit [2]
 <div align="left">
 
 
@@ -45,6 +48,8 @@ Trans-acting factors include: SR proteins, which are rich in serine and arginine
 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Altsplicingelements.png" width="600" height="300" />
+
+Image credit [3] 
 <div align="left">
 
 
