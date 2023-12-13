@@ -63,10 +63,14 @@ The spliceosome is a ribonucleoprotein complex that contains the basal splicing 
 
 Alternative splicing occurs in over 90 percent of human genes and in over 95 percent of human multi-exonic genes [4,6]. In a study on alternative splicing titled, _Alternative Splicing: Human Disease and Quantitative Analysis from High-Throughput sequencing_, authors Wei Jian and Liang Chen claim "There are around 20,000 human protein-coding genes, but almost 150,000 transcript isoforms" [6]. Alternative splicing increases protein diversity by a magnitude of around seven and a half. 
 
-> #### Contribution to Gene Regulation
+> In the Drosophila genus (also known as fruit flies) a single gene, Down syndrome cell adhesion molecule (DSCAM), can be alternatively spliced to produce 38,016 different mature mRNA products.
+
+#### Contribution to Gene Regulation
 > Alternative splicing also contrbutes to gene regulation by producing non-functional proteins that occupy translational machinery without contributing to genetic expression. 
 
 ### Examples of Alternative Splicing in Different Genes
+
+
 
 ### Evolutionary Perspective
 
@@ -90,3 +94,5 @@ References
 [5] Jeong, Sunjoo. _SR Proteins: Binders, Regulators, and Connectors of RNA_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5303883/
 
 [6] Jiang, Wei and Chen, Liang. _Alternative Splicing: Human Disease and Quantitative Analysis from High-Throughput sequencing_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7772363/
+
+[7] Celotto, A M and Gravely, B R. _Alternative splicing of the Drosophila Dscam pre-mRNA is both temporally and spatially regulated_. https://pubmed.ncbi.nlm.nih.gov/11606537/
