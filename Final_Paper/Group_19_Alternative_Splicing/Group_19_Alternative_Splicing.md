@@ -41,7 +41,7 @@ Trans-acting factors include: SR proteins, which are rich in serine and arginine
 
 ### Role of the Spliceosome in Alternative Splicing
 
-The spliceosome is a ribonucleoprotein complex that contains the basal splicing machinery responsible for splicing an exon [5]. SR proteins recruit the spliceosome to the splice site and hnRNPs minimize the SR proteins ability to rectruit the spliceosome [6]. Various other proteins facilitate the removal of the exon and rejoining of the mRNA. 
+The spliceosome is a ribonucleoprotein complex that contains the basal splicing machinery responsible for splicing an exon [5]. SR proteins recruit the spliceosome to the splice site while hnRNPs minimize the SR proteins ability to rectruit the spliceosome [6]. Various other proteins facilitate the removal of the exon and rejoining of the mRNA. 
 
 # Alternative Splicing and Genomic Diversity
 
