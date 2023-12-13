@@ -135,7 +135,7 @@ What study design is our case study? Is it paired or unpaired? Is it one-tailed 
 Given the criteria of our study, which test statistic would be ideal for our cases? Please refer to the table provided for help.
 <details>
 	<summary>Answer: </summary>
-	The chi-squared test would be ideal for our situation because our indepdent and dependent variables are both binary variables. Our study is non-parametric because we are not making any assumptions about the distribution of our data.
+	The chi-squared test would be ideal for our situation because our independent and dependent variables are both binary variables. Our study is non-parametric because we are not making any assumptions about the distribution of our data.
 </details>
 
 **Case Study**
