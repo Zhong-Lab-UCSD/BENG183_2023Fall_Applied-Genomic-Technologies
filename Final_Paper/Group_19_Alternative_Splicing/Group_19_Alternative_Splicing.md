@@ -4,7 +4,7 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
 # Introduction
 
-Alternative splicing is a powerful post-transcriptional mechanism that produces multiple mRNA isoforms from the same gene. These isoforms are then translated into functionally different proteins. Alternative splicing is a major contributor to genetic diversity and gene regulation. As a result there are numerous methods in the RNA-sequencing pipeline designed to analyze the expressions levels of the various mRNA isoforms. 
+Alternative splicing is a powerful post-transcriptional mechanism that produces multiple mRNA isoforms from the same gene; the isoforms are then translated into functionally different, sometimes inactive, proteins. Alternative splicing is a major contributor to genetic diversity and gene regulation. As a result, there are numerous methods in the RNA-sequencing pipeline designed to analyze the expressions levels of the various mRNA isoforms. 
 
 
 ---
