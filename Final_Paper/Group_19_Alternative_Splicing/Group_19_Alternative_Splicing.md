@@ -37,7 +37,9 @@ Therefore, performing RNA-seq and analyzing the resulting transcriptome and the 
 
 
 ## Paired-End Alignment
-Before we get into the specifics of post-sequencing alignment with regards to alternative splicing, and in order for you to better understand the upcoming figures, we need to first examine the design of our RNA-seq experiment. 
+Before we get into the specifics of post-sequencing alignment with regards to alternative splicing, and in order for us to better understand the upcoming figures, we need to first examine one aspect of the design of our RNA-seq experiment. As per [Illumina's recommendation](https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/paired-end-vs-single-read.html), **paired-end sequencing** (as shown below) is the preferred choice over single-end sequencing as it provides higher quality alignment through being better-suited to identify relative positions of reads with the paired ends of fragments. This is also why, for many sequencing experiments that revolve around studying structural rearrangements, paired-end sequencing is used.  
+
+![altsplicetypes](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/wp-content/uploads/sites/70/2020/05/Figure17.png)
 
 ## Splice-Aware Alignment
 
