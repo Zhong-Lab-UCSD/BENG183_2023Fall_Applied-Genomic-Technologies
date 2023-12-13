@@ -46,10 +46,13 @@ Visualizing the data in the form of a count matrix indexed by genes with each co
 4. Normalize counts by dividing by the corresponding $s_j$
 ## Gene-specific dispersion estimation
 After normalizing for sequencing depth, DESeq2 proceeds to model the variance of the expression distribution for each gene $i$. It does this by estimating the dispersion factor for each gene $\alpha_i$ which is related to its variance of expression level $K$ by $$Var(K_{ij})=\mu_{ij} + \alpha_i\mu_{ij}^2$$ where $\mu_{ij}$ represents the mean gene expression for gene $i$ of sample $j$. 
-![[MLE_dispersion_estimates.png]]
+
+![MLE_dispersion_estimates.png](./figures/MLE_dispersion_estimates.png)
+
 DESeq2 first estimates each gene's dispersion using maximum-likelihood estimation (MLE) based on the empirical replicates of each gene individually. After obtaining the initial dispersion estimate for every gene, it then plots these estimates (shown as black points in the figure above) on a dispersion-versus-mean plot. 
 
 ![dispersion-shrinkage.png](./figures/dispersion-shrinkage.png)
+
 Because there is a tendency for this method to overestimate dispersion, DESeq2 applies a round of empirical bayes shrinkage. To do this, DESeq2 obtains the curve of best fit (shown in red) across every gene's estimate. This function is then used as the prior for the empirical bayes shrinkage, where each gene's dispersion is regressed towards the curve with the magnitude of regression depending on the initial estimate's distance from the curve and the sample size of the original estimation. This is done on the assumption that genes with similar mean expressions should have similar dispersions. Since there may be cases where a gene's dispersion is much higher than the prior due to underlying biological reasons, DESeq2 only uses the shrunken estimation of a gene's dispersion if its original estimate is within two residual two standard deviations from the curve. In either case, the resulting dispersion, also referred to as the maximum a-posteriori (MAP) estimate, is used as the dispersion parameter of a given gene's negative binomial distribution. 
 ## Obtaining fold changes
 ## Testing for differential expression
