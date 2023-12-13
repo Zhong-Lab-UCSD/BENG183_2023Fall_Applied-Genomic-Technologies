@@ -47,16 +47,19 @@ Simple chain termination method requires a single stranded template DNA, a prime
 5. Finally, the mixture will now contain fragments of varying lengths concluding at every nucleotide position.
 6. Using the capillary gel electrophoresis method to sequence the fragments, the mixture is then put through a capillary tube. Smaller fragments move faster than larger fragments. Each fragment is illuminated by a laser, the dye is detected corresponding to one of the four types of nucleotides.
 7. Once the data is recorded, the DNA sequence can be read from the peaks in the chromatogram.
-
-    <div style="text-align:center">
+    <p align="center">
         <img src='beng_183_images/sanger.png' width='600'/>
-        <figcaption>Figure 2.2: Sanger sequencing chromatogram</figcaption>
-    </div>
+    </p>
+    <p align="center">
+        Figure 2.2: Sanger sequencing chromatogram
+    </p>
 8. We can also run gel electrophoresis on the DNA fragments to separate them by size. The larger fragments travel slower, meaning that we read the gel from the bottom up. The colors correspond to the different nucleotide bases: Adenine, Thymine, Guanine, and Cytosine.[2]
-    <div style="text-align:center">
+    <p align="center">
         <img src='beng_183_images/gelelctro.png' width='600'/>
-        <figcaption>Figure 2.3: Sanger sequencing results using the gel electrophoresis method.</figcaption>
-    </div>
+    </p>
+    <p align="center">
+        Figure 2.3: Sanger sequencing results using the gel electrophoresis method
+    </p>
 
 
 ### Advantages and Limitations
