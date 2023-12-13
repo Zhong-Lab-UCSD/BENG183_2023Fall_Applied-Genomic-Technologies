@@ -28,8 +28,10 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 
 
 # Alternative Splicing in RNA-Seq Alignment
+As discussed in the previous section, RNA-seq is arguably the most important technology when it comes to identifying (and quantifying the rates of) protein isoforms present in our samples. This is simply due to the fact that obtaining the mature mRNA transcripts via RNA-seq exposes all of the transcriptomic diversity of alternative-splicing as we know that all these resulting transcripts will eventually get translated into the various protein isoforms.
 
 ## Paired-End Alignment
+As discussed in the previous section, RNA-seq is
 
 ## Splice-Aware Alignment
 
