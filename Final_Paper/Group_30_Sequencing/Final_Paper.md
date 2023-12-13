@@ -32,10 +32,12 @@ Sanger Sequencing was developed by Fredrick Sanger in 1977 to sequence DNA based
 
 Simple chain termination method requires a single stranded template DNA, a primer, DNA polymerase, dNTPs and ddNTPs. The addition of ddNTPs terminates the elongation process due to its lack of a 3’- OH group [2]. The principle behind Sanger sequencing is to recreate enough fragments of the DNA template strand ending at different nucleotide bases to sequence the original strand [2]. 
 
-<div style="text-align:center">
-    <img src='beng_183_images/sanger2.png' width='600'/>
-    <figcaption>Figure 2.1: Sanger sequencing steps diagram.</figcaption>
-</div>
+<p align="center">
+  <img src='beng_183_images/sanger2.png' width='600'/>
+</p>
+<p align="center">
+    Figure 2.1: Sanger sequencing steps diagram.
+</p>
 
 ### Steps 
 1. First, a mixture is created with the template strand, primer, dNTPs and a small quantity of ddNTPs tagged with different colors of dye.
