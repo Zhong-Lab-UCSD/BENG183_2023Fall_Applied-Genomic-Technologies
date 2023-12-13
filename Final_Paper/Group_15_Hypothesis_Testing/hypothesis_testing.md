@@ -84,7 +84,11 @@ What is another way of gathering this data?
 	We could also follow a group of smokers and nonsmokers through the years, and record if they got diagnosed with lung cancer or not. There are also other ways to collect this data. 
 </details>
 
+**Case Study**
 
+We've gathered this data from interviewing lung cancer patients and asking them if they are a smoker or a non-smoker. 
+
+<img src="data_table.png"  width="50%" height="50%" />
 
 ---
 
@@ -105,6 +109,8 @@ There are countless amounts of statistical tests, each providing a use in differ
  	- A study is non-parametric when there are no assumptions made about the shape or parameters of the data
 	- A one-tailed test is suitable when the parameter of interest only changes in one direction (i.e. it either increases or decreases)
 	- A two-tailed test is suitable when the parameter of interest can change in any direction
+
+<img src="test_statistic_chart.png"  width="50%" height="50%" />
 
 **Knowledge Check**
 
@@ -134,13 +140,18 @@ Given the criteria of our study, which test statistic would be ideal for our cas
 
 **Case Study**
 
-For our case study, we have calculated our expected values, and it is highlighted in green. We found these expected values by using the formula: 
+For our case study, we have calculated our expected values, and it is highlighted in green. We found these expected values by using the formula:
+$$expectedCount = \frac{(rowTotal)(columnTotal)}{tableTotal}$$
 
 The reason why the expected values are the same is because the expected values assume that there is no correlation between smoking and lung cancer (assuming the null hypothesis is true).
 
 To find our test statistic for Chi-squared tests, we used the equation:
 
+<img src="chi-squared_equation.png"  width="50%" height="50%" />
+
 Where O represents the observed value, and E represents the corresponding expected value.
+
+<img src="data_table_with_expected.png"  width="50%" height="50%" />
 
 ---
 
@@ -239,7 +250,7 @@ Deseq2’s alternative hypothesis for each gene is that the gene is differential
 	Deseq2 takes in FeatureCount data from an RNA-seq experiment
  
 **Test statistic**  
-Deseq2 uses the wald test to generate the test statistic from feature count data
+Deseq2 uses the Wald test to generate the test statistic from feature count data
 
 **P-value**  
 	Deseq2 also uses the wald test to generate the p-value based on the test statistic values
