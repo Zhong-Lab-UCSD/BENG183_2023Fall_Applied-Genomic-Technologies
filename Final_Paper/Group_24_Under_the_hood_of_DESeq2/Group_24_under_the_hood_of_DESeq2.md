@@ -5,7 +5,7 @@
 - [Addressing problems specific to RNA-seq data](#Addressing+problems+specific+to+RNA-seq+data)
 - [DESeq2 pipeline overview](#DESeq2+pipeline+overview)
 - [Sample-specific size factor estimation](##Sample-specific+size+factor+estimation)
-- Gene-specific dispersion estimation
+- [Gene-specific dispersion estimation](#Gene-specific+dispersion+estimation)
 - Obtaining fold changes
 - Testing for differential expression
 - [References](#References)
@@ -24,7 +24,7 @@ In this paper, we will explore the statistical pipeline that DESeq2 uses to iden
 ![DESeq2_pipeline_overview](./figures/DESeq2_pipeline_overview.png)
 In order to identify differentially expressed genes, DESeq2 fits a negative binomial generalized linear model (a GLM with logarithmic link function) to each gene. A negative binomial distribution is applied as opposed to a poisson distribution in order to capture the tendency of RNA-seq data to be overdispersed, meaning that the variance of gene expression exhibits a disproportionate increase for a given increase in the expression level mean. 
 
-Mathematically, for a gene $i$ and sample $j$, DESeq2 models read counts $K$ using
+Mathematically, for a gene $i$ and sample $j$, DESeq2 models read counts $K_{ij}$ using
 $$K_{ij} \sim NB(\text{mean} = \mu_{ij}, \text{dispersion}=\alpha_i)$$
 where $NB$ represents the negative binomial distribution.
 
@@ -39,12 +39,18 @@ Because DESeq2 takes in raw expression data, the data must first be normalized t
 
 ![size-factor-estimation](./figures/size-factor-estimation.png)
 
-Visualizing the data in the form of a count matrix indexed by genes with each column representing a different sample DESeq2 performs the following steps to estimate $s$:
+Visualizing the data in the form of a count matrix indexed by genes with each column representing a different sample, DESeq2 performs the following steps to estimate $s$:
 1. Find the pseudo-reference for each gene, defined as the row-wise geometric mean
 2. Compute the raw-value to pseudo-reference ratio for each column
 3. Define $s_{j}$ as the median ratio of each column
 4. Normalize counts by dividing by the corresponding $s_j$
 ## Gene-specific dispersion estimation
+After normalizing for sequencing depth, DESeq2 proceeds to model the variance of the expression distribution for each gene $i$. It does this by estimating the dispersion factor for each gene $\alpha_i$ which is related to its variance of expression level $K$ by $$Var(K_{ij})=\mu_{ij} + \alpha_i\mu_{ij}^2$$ where $\mu_{ij}$ represents the mean gene expression for gene $i$ of sample $j$. 
+![[MLE_dispersion_estimates.png]]
+DESeq2 first estimates each gene's dispersion using maximum-likelihood estimation (MLE) based on the empirical replicates of each gene individually. After obtaining the initial dispersion estimate for every gene, it then plots these estimates (shown as black points in the figure above) on a dispersion-versus-mean plot. 
+
+![dispersion-shrinkage.png](./figures/dispersion-shrinkage.png)
+Because there is a tendency for this method to overestimate dispersion, DESeq2 applies a round of empirical bayes shrinkage. To do this, DESeq2 obtains the curve of best fit (shown in red) across every gene's estimate. This function is then used as the prior for the empirical bayes shrinkage, where each gene's dispersion is regressed towards the curve with the magnitude of regression depending on the initial estimate's distance from the curve and the sample size of the original estimation. This is done on the assumption that genes with similar mean expressions should have similar dispersions. Since there may be cases where a gene's dispersion is much higher than the prior due to underlying biological reasons, DESeq2 only uses the shrunken estimation of a gene's dispersion if its original estimate is within two residual two standard deviations from the curve. In either case, the resulting dispersion, also referred to as the maximum a-posteriori (MAP) estimate, is used as the dispersion parameter of a given gene's negative binomial distribution. 
 ## Obtaining fold changes
 ## Testing for differential expression
 ## References
