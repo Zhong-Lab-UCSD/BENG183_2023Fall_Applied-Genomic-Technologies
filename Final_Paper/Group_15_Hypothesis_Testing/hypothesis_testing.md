@@ -11,6 +11,7 @@
 2. [Considerations when chosing the significance threshold](#7)
 3. [Applications of Hypothesis Testing to DESeq2](#8)
 4. [Conclusion](#9)
+5. [Citations](#10)
 ---
 ## What is Hypothesis Testing? Why is it important? <a name="1"></a>
 
@@ -264,3 +265,14 @@ Based on a predetermined p-value threshold, genes will be classified as either d
 ## Conclusions <a name="9"></a>
 
 Different areas of science require hypothesis testing as a way to help scientists reach a conclusion on the outcome of the experiment, based on the data collected. It is important to know how to conduct hypothesis testing, including how to generate a test statistic, create a p-value, and evaluate the p-value. It is also important to correctly conduct the hypothesis testing as falsely accepting or rejecting a hypothesis could lead to incorrect conclusions and errors. 
+
+---
+
+## Citations <a name="10"></a>
+
+1. [https://www.ncl.ac.uk/webtemplate/ask-assets/external/maths-resources/psychology/introduction-to-hypothesis-testing.html#One_and_Two_Tailed_Tests](https://www.ncl.ac.uk/webtemplate/ask-assets/external/maths-resources/psychology/introduction-to-hypothesis-testing.html#One_and_Two_Tailed_Tests)
+2. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996580/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996580/)
+3. [https://www.bmj.com/about-bmj/resources-readers/publications/statistics-square-one/8-chi-squared-tests](https://www.bmj.com/about-bmj/resources-readers/publications/statistics-square-one/8-chi-squared-tests)
+4. [https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm)
+5. [https://www.geo.fu-berlin.de/en/v/soga-r/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html](https://www.geo.fu-berlin.de/en/v/soga-r/Basics-of-statistics/Hypothesis-Tests/Introduction-to-Hypothesis-Testing/Critical-Value-and-the-p-Value-Approach/index.html)
+6. [https://towardsdatascience.com/statistics-in-python-using-chi-square-for-feature-selection-d44f467ca745](https://towardsdatascience.com/statistics-in-python-using-chi-square-for-feature-selection-d44f467ca745)
