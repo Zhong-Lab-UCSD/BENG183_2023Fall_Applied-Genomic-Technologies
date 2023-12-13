@@ -263,4 +263,4 @@ Based on a predetermined p-value threshold, genes will be classified as either d
 
 ## Conclusions <a name="9"></a>
 
-
+Different areas of science require hypothesis testing as a way to help scientists reach a conclusion on the outcome of the experiment, based on the data collected. It is important to know how to conduct hypothesis testing, including how to generate a test statistic, create a p-value, and evaluate the p-value. It is also important to correctly conduct the hypothesis testing as falsely accepting or rejecting a hypothesis could lead to incorrect conclusions and errors. 
