@@ -79,14 +79,14 @@ Alternative splicing occurs in over 90 percent of human genes and in over 95 per
 References
 
 
-[1] https://www.nature.com/scitable/topicpage/rna-splicing-introns-exons-and-spliceosome-12375/#:~:text=The%20first%20example%20of%20alternative,containing%20different%20combinations%20of%20exons.
+[1] Clancy, Suzanne. _RNA Splicing: Introns, Exons, and Spliceosome_. https://www.nature.com/scitable/topicpage/rna-splicing-introns-exons-and-spliceosome-12375/#:~:text=The%20first%20example%20of%20alternative,containing%20different%20combinations%20of%20exons.
 
-[2] https://www.mdpi.com/1422-0067/22/9/4468
+[2] Fahmi, Naima et al. _AS-Quant: Detection and Visualization of Alternative Splicing Events with RNA-seq Data_. https://www.mdpi.com/1422-0067/22/9/4468
 
-[3] http://www.h-invitational.jp/h-dbas/as_mechanism.jsp
+[3] Human-transcriptome DataBase for Alternative Splicing. http://www.h-invitational.jp/h-dbas/as_mechanism.jsp
 
-[4] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300919/#:~:text=Alternative%20splicing%20(AS)%20is%20an,types%2C%20including%20embryonic%20stem%20cells.
+[4] Chen, Kenian et al. _Alternative Splicing: An Important Mechanism in Stem Cell Biology_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300919/
 
-[5] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5303883/
+[5] Jeong, Sunjoo. _SR Proteins: Binders, Regulators, and Connectors of RNA_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5303883/
 
-[6] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7772363/
+[6] Jiang, Wei and Chen, Liang. _Alternative Splicing: Human Disease and Quantitative Analysis from High-Throughput sequencing_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7772363/
