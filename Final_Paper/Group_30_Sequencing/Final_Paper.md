@@ -48,17 +48,15 @@ Simple chain termination method requires a single stranded template DNA, a prime
 6. Using the capillary gel electrophoresis method to sequence the fragments, the mixture is then put through a capillary tube. Smaller fragments move faster than larger fragments. Each fragment is illuminated by a laser, the dye is detected corresponding to one of the four types of nucleotides.
 7. Once the data is recorded, the DNA sequence can be read from the peaks in the chromatogram.
 
-<div style="text-align:center">
-    <img src='beng_183_images/sanger.png' width='600'/>
-    <figcaption>Figure 2.2: Sanger sequencing chromatogram</figcaption>
-</div>
-
+    <div style="text-align:center">
+        <img src='beng_183_images/sanger.png' width='600'/>
+        <figcaption>Figure 2.2: Sanger sequencing chromatogram</figcaption>
+    </div>
 8. We can also run gel electrophoresis on the DNA fragments to separate them by size. The larger fragments travel slower, meaning that we read the gel from the bottom up. The colors correspond to the different nucleotide bases: Adenine, Thymine, Guanine, and Cytosine.[2]
-
-<div style="text-align:center">
-    <img src='beng_183_images/gelelctro.png' width='600'/>
-    <figcaption>Figure 2.3: Sanger sequencing results using the gel electrophoresis method.</figcaption>
-</div>
+    <div style="text-align:center">
+        <img src='beng_183_images/gelelctro.png' width='600'/>
+        <figcaption>Figure 2.3: Sanger sequencing results using the gel electrophoresis method.</figcaption>
+    </div>
 
 
 ### Advantages and Limitations
@@ -81,18 +79,17 @@ Illumina NGS technology uses a sequencing by synthesis method to track labeled D
     1. The DNA is fragmented
     2. Two adapters are ligated to the ends of the DNA fragments
     3. PCR  is used to amplify these fragments
-<div style="text-align:center">
-    <img src='beng_183_images/fragment.png' width='600'/>
-    <figcaption>Figure 3.1: DNA fragmentation and sample preparation</figcaption>
-</div>
-
+    <div style="text-align:center">
+        <img src='beng_183_images/fragment.png' width='600'/>
+        <figcaption>Figure 3.1: DNA fragmentation and sample preparation</figcaption>
+    </div>
 
 2. Bridge Amplification and Cluster Generation
     1. The DNA fragments are amplified and sequenced on a flow cell (pictured below)
-<div style="text-align:center">
-    <img src='beng_183_images/flowcell.png' width='300'/>
-    <figcaption>Figure 3.2: Illumina Flow Cell</figcaption>
-</div>
+        <div style="text-align:center">
+            <img src='beng_183_images/flowcell.png' width='300'/>
+            <figcaption>Figure 3.2: Illumina Flow Cell</figcaption>
+        </div>
     3. The flow cell has 2 types of oligonucleotides attached to its surface. These oligonucleotides are complementary to the 2 adapters ligated to the DNA fragments earlier
     4. The DNA fragments are loaded onto the flow cell via hybridization to the oligonucleotides
     5. A polymerase creates a compliment of the fragment
