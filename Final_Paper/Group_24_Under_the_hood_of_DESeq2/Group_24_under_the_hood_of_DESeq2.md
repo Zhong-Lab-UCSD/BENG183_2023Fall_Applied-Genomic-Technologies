@@ -1,14 +1,14 @@
 # Under the hood of DESeq2
 #### Team 24: Minyoung Ahn, Joelle Faybishenko, Monica Park
 ## Contents
-- [Introduction](#Introduction)
-- [Addressing problems specific to RNA-seq data](<a name="Addressing problems specific to RNA-seq data">)
-- [DESeq2 pipeline overview](<a name="DESeq2 pipeline overview">)
-- [Sample-specific size factor estimation](<a name="Sample-specific size factor estimation">)
-- [Gene-specific dispersion estimation](<a name="#Gene-specific dispersion estimation">)
+- [Introduction](#introduction)
+- [Addressing problems specific to RNA-seq data](#addressing-problems-specific-to-rna-seq-data)
+- [DESeq2 pipeline overview](#deseq2-pipeline-overview)
+- [Sample-specific size factor estimation](#sample-specific-size-factor-estimation)
+- [Gene-specific dispersion estimation](#gene-specific-dispersion-estimation)
 - Obtaining fold changes
 - Testing for differential expression
-- [References](#References)
+- [References](#references)
 ## Introduction
 The ability to obtain the entire transcriptome of a biological sample through high-throughput RNA-sequencing has created a need for tools that enable analysis of this data. One of the most powerful and widely used tools for this purpose is DESeq2 which applies a variety of statistical tools to identify genes that are differentially expressed between two or more experimental conditions, such as treatment versus control groups. 
 
