@@ -7,11 +7,13 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
 Alternative splicing is a powerful post-transcriptional mechanism that produces multiple mRNA isoforms from the same gene. These isoforms are then translated into functionally different proteins. Alternative splicing is a major contributor to genetic diversity and gene regulation. As a result there are numerous methods in the RNA-sequencing pipeline designed to analyze the expressions levels of the various mRNA isoforms. 
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" width="800" height="400" />
+
 
 ### Historical Background and Discovery
 
 Alternative Splicing was first defined in 1977 when researchers discovered that not only were introns spliced out of the mRNA of an adenovirus, but also a single mRNA could be spliced "at different junctions [resulting] in a variety of mature mRNA molecules, each containing different combinations of exons." [2]
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" width="800" height="400" />
 
 ### Importance in Cellular Biology (maybe remove)
 
