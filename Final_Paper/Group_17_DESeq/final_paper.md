@@ -123,7 +123,7 @@ Here's an example of what that data may look like:
 | Gene2 | 500 | -1.2 | 0.05 | 0.2 |
 | Gene3 | 200 | 0.8 | 0.001 | 0.01 |
 
-This data can be used to create a heatmap, which uses colors to represent the magnitude of gene expression values, allowing you to easily identify patterns of upregulation or downregulation across different conditions or samples. Rows typically represent genes, while columns represent samples or conditions. Here's ane example of what this typically looks like:
+This data can be used to create a heatmap, which uses colors to represent the magnitude of gene expression values, allowing you to easily identify patterns of upregulation or downregulation across different conditions or samples. Rows typically represent genes, while columns represent samples or conditions. Here's ane example of what this typically looks like [[7]](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html):
 
 ![Heatmap](heatmap.png)
 
