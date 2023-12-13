@@ -11,7 +11,9 @@
 
 ## 1. Introduction<a name="231"></a>
 Have you wondered about how different kind of cells in our body are developed despite their similar DNA composition? Have you considered why some patients die from particular disease, while some do not? 
-![Differential cell development](different-cell.png) ![different phenotype caused by differential expression](different-phenotype.png)
+    Differential Development of cell  |  Different phenotypes 
+:-------------------------:|:-------------------------:
+<img src="different-cell.png" width="500" /> | <img src="different-phenotype.png" width="500" /> 
 
 A foundamental concept underlying those phenomonon is the **Differential Expression of genes**. Genes are expressed differentially under different conditions to allow for different combinations of proteins and activation of certain biological pathway. Analyzing **differential expression of a set of genes** under different conditions can uncover mystery behind development of stem cells and cause of diseases [4]. 
 
@@ -22,20 +24,26 @@ Tools like **GSEA** can help us achieve this goal. However, before we dive deepe
 > **Differential Expression of genes** is *a evident change in read counts or expression level of genes under different conditions* [1]. 
 
 Let's make a analogy here to help to understand this concept better. Let's consider different kinds of genes as different kinds of the lego building block.
-![Lego blocks](lego-block.png) 
+
+<p align="center"><img src="lego-block.png" width="500" /></p>
+
+
 It's intuitive that you need many white lego blocks to build a cloud lego while some white lego blocks to build the black cat for its eyes. 
-![Lego cloud](lego-cloud.png) ![Lego cat](lego-cat.png) 
+Lego cloud           |  Lego Cat
+:-------------------------:|:-------------------------:
+<img src="lego-cloud.png" width="500" /> |  <img src="lego-cat.png" width="500" />
+
 In different biological conditions, same gene will be expressed in different amount based on needs. This phenomena is the differential expression of the gene. 
 
-> **Differential analysis** is to *analyze significant change in gene expression level of **a gene** under different biological conditions*.
-![Differential Analysis](DGE.png)[5] 
+> **Differential analysis** is to *analyze significant change in gene expression level of **a gene** under different biological conditions*.[5]
+<p align="center"><img src="DGE.png" width="500" /></p> [5]
 
 As its name, differential analysis is computational method used to detect **evident change of gene expression of *a gene* under different conditions**, **or between two phenotype**[2]. It will require inputs like raw counts of gene expression in different condition and conduct statistical analysis (like t-test) to check if difference is statistically significant. 
  
 #### 2) Gene Set Enrichment Analysis<a name="2312"></a>
 
 - **Gene Set Enrichment Analysis** is to *analyze evident change in expression level of **a priori sets of gene** in different conditions* [3]. 
-![Gene Set Enrichment Analysis](GSEA.gif)[3]
+<p align="center"><img src="GSEA.gif" width="500" /></p> [3]
 
 Going back to our lego analogy, we know that different kind of lego products is consist of different combination of lego building blocks. Knowing how many blocks we have for certain product can help us forsee the look of it to some degree. 
 
@@ -58,27 +66,28 @@ Let's dive into details one by one.
 1. **Normalization**</a>
    
    In RNA-seq downstream analysis, we will know how many reads are mapped to particular genes (that can be roughly taken as measure of expression level sometimes). 
-   ![Normalization](mapping.png) 
+   <p align="center"><img src="mapping.png" width="500" /></p> 
+   
    *However, count of reads does not necessarily reflect the actual expression level of a gene.*
 
    To be specific, it's much easier for a gene that is *longer* and located in *DNA has higher counts of reads mapping* to have more reads mapped to it. Therefore, we need to take **gene length** and **library size** into consideration. That's why we need to first conduct normalization to make sure we get valid expression level from input counts data. Common strategy and equations used for normalziation are presented below. [BENG183 Lecture]
 
-   ![Normalization](normalization-equations.png) 
+   <p align="center"><img src="normalization-equations.png" width="500" /></p> 
 
 
-2. **Statistical Test**</a>
+3. **Statistical Test**</a>
 
    We only care about **evident** change in expression level under different conditions. Thus, to make sure the difference in value in not caused by chance, we need to conduct statistical test, usually a t-test, to compare and make sure the change in expression level under different condition is significant.
 
-   ![Differential Analysis](DGE.png) [5]
+   <p align="center"><img src="DGE.png" width="500" /></p> [5]
 
-3. **P Value Check**</a>
+4. **P Value Check**</a>
 
    To check significance, we will use p value generated from t-test and 0.05 as threhold to determine its significance
    
    **If P < 0.05, change is statistically significant; otherwise, it is not significant.**
 
-   ![Differential Analysis](pval.png)
+   <p align="center"><img src="pval.png" width="500" /></p> 
 
 
 > Based on these general ideas, we'll walk through one of the most popular techniques for Differential Analysis and then briefly introduce other methods, as well as how to choose tools that work best for GSEA.
@@ -86,7 +95,7 @@ Let's dive into details one by one.
 
 ## 2.3.2 Overivew of 3C methods<a name="232"></a>
 
-![](1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
+![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
 [Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
 
 To better understand the difference between these methods, I'd like to distingush them between the following couple of aspects:
@@ -103,7 +112,7 @@ Hi-C techniques has the highest through-put (billion reads per sample) but suffe
 Hi-C is the highest through-put version of 3C-derived technologies. Due to the decreasing cost of 2nd generation sequencing, hi-c is widely used.
 
 The principle of Hi-C can be illustrated as:
-![](hic.gif)
+![](/assets/hic.gif)
 
 
 ##### Hi-C critical steps [8] 
