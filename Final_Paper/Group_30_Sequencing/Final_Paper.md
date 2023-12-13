@@ -19,8 +19,8 @@ DNA is composed of repeating subunits called nucleotides. These nucleotides are 
 
 <div style="text-align:center">
     <img src='beng_183_images/ddntp.png' width='600'/>
-    <figcaption>Figure 1.1: ddNTP</figcaption>
 </div>
+<div style="text-align:center">Figure 1.1: ddNTP</div>
 
 ## Sanger Sequencing
 
