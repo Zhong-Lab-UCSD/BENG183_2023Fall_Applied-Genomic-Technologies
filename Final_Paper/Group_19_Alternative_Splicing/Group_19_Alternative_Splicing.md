@@ -34,11 +34,7 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 
 There are two main elemental factors that facilitate alternative splicing: trans-acting elements facilitate the splicing of introns and exons, and cis-regulatory elements facilitate the binding of trans-acting factors to different introns and exons. 
 
-Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. 
-
-Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS).
-
-Exonic splice enhancers promote the binding of SR proteins contribute to the splicing of exons or introns, and exonic splice silencers promote the binding of hnRNPs which block the splicing of an exon. 
+Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR proteins contribute to the splicing of exons or introns, and exonic splice silencers promote the binding of hnRNPs which block the splicing of an exon. [4]
 
 ![spliceelements](http://www.h-invitational.jp/h-dbas/document/am_fig1b.png)
 
@@ -66,3 +62,5 @@ References
 [2] https://www.nature.com/scitable/topicpage/rna-splicing-introns-exons-and-spliceosome-12375/#:~:text=The%20first%20example%20of%20alternative,containing%20different%20combinations%20of%20exons.
 
 [3] https://www.mdpi.com/1422-0067/22/9/4468
+
+[4] http://www.h-invitational.jp/h-dbas/as_mechanism.jsp
