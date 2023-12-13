@@ -21,7 +21,7 @@ Briefly, the steps of differential expression analysis of RNA-seq data are as fo
 In this paper, we will explore the statistical pipeline that DESeq2 uses to identify differentially expressed genes. 
 ## Addressing problems specific to RNA-seq data
 ## DESeq2 pipeline overview
-![[DESeq2_pipeline_overview.png]]
+![DESeq2_pipeline_overview](./figures/DESeq2_pipeline_overview.png)
 In order to identify differentially expressed genes, DESeq2 fits a negative binomial generalized linear model (a GLM with logarithmic link function) to each gene. A negative binomial distribution is applied as opposed to a poisson distribution in order to capture the tendency of RNA-seq data to be overdispersed, meaning that the variance of gene expression exhibits a disproportionate increase for a given increase in the expression level mean. 
 
 Mathematically, for a gene $i$ and sample $j$, DESeq2 models read counts $K$ using
