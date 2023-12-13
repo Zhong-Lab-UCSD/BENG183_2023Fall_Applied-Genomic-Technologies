@@ -37,6 +37,10 @@ A null hypothesis is typically the simpler of the two statements, and would hypo
 
 An alternative hypothesis hypothesizes that there is a significant difference between the different measurements, and that there is a low possibility that the difference is due to chance. The alternative hypothesis needs to be proven true at the end of the hypothesis testing. 
 
+Hypothesis tests can be split into one-tailed and two-tailed tests. One-tailed tests mean that the variable is known to be either bigger or smaller than the value specified in the null hypothesis. These can be represented as $H_0: \mu= 0, H_2: \mu > 0$, or  $H_0: \mu=0, H_1: \mu < 0$, where $H_0$ represents the null hypothesis, $H_1$ represents the alternative hypothesis, and $\mu$ represents the value. 
+
+Two-tailed tests mean that the variable is not equal to the value specified in the null hypothesis, however it is unknown whether it is bigger or smaller than the value. These can be represented as $H_0: \mu=0, H_1: \mu \neq  0$. 
+
 ---
 
 ## Gathering data <a name="3"></a>
