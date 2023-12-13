@@ -35,7 +35,7 @@ There are two main elemental factors that facilitate alternative splicing: trans
 
 Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR proteins contribute to the splicing of exons or introns, and exonic splice silencers promote the binding of hnRNPs which block the splicing of an exon. [4]
 
-<img src="http://www.h-invitational.jp/h-dbas/document/am_fig1b.png" width="800" height="400" />
+<img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Altsplicingelements.png" width="800" height="400" />
 
 ### Role of the Spliceosome
 
