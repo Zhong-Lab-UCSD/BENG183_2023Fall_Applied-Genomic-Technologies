@@ -1,6 +1,6 @@
 # Alternative Splicing
 
-Anthony Vasquez, Omar Halawa, Yasmin Jaber
+## Done by: Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
 # Table of Contents 
 - [Overview](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#overview)
