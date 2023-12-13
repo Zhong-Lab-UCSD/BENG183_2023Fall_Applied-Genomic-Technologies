@@ -4,19 +4,12 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
 # Table of Contents 
 - [Overview](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#overview)
-- [Why Classification?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#why-classification)
-- [What is Classification?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#what-is-classification)
-- [What are the types of Classification algorithms?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#what-are-the-types-of-classification-algorithms)
-- [K-Nearest Neighbors Classification](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#k-nearest-neighbors-classification)
-  - [Intuition/Analogy](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#intuitionanalogy)
-  - [Walk-through/Implementation](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#walk-throughimplementation)
-  - [Limitations](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#limitations)
+- [ALternative Splicing in RNA-Seq Alignment?](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/omar-part/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-RNA-Seq-Alignment)
 - [Support Vector Machine](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#support-vector-machine)
   - [Intuition/Analogy](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#intuitionanalogy-1)
   - [Walk-through/Implementation](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#walk-through-and-implementation)
   - [Supplements](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#supplement)
 - [Biomedical Applications](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#biomedical-applications)
-- [Conclusion](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#conclusion)
 
 # Overview
 
@@ -34,3 +27,4 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 ![altsplicetypes](https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png)
 
 
+# Alternative Splicing in RNA-Seq Alignment
