@@ -152,3 +152,4 @@ Additionally, unlike DESeq2, cuffdiff is written in C++ which can help afford it
 4. Trapnell, C., Roberts, A., Goff, L., Pertea, G., Kim, D., Kelley, D. R., Pimentel, H., Salzberg, S. L., Rinn, J. L., & Pachter, L. (2012). **Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks**. Nature protocols, 7(3), 562–578. https://doi.org/10.1038/nprot.2012.016
 5. Seyednasrollah, F., Laiho, A., & Elo, L. L. (2015). **Comparison of software packages for detecting differential expression in RNA-seq studies**. Briefings in bioinformatics, 16(1), 59–70. https://doi.org/10.1093/bib/bbt086
 6. Wen, X., Zhong S. **3D Genome**. https://zhonglab.gitbook.io/3dgenome/chap0-preparation/03-rna-seq-differential-analysis
+7. Slides from class
