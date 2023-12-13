@@ -27,11 +27,11 @@ Image credit [omiics](https://omiics.com/Services/bioinformatic-analysis/alterna
 ### Basic Mechanisms
 
 Outside of constitutive splicing (normal splicing) there are five types of alternative splicing:
-1. Exon skipping: an exon is not included in the final mRNA product.
-2. Intron retention: an intron from the coding sequence is included in the mRNA product.
-3. Alternative 3' splice site: an exon is spliced at a location other than the normal 3' splice site.
-4. Alternative 5' splice site an exon is spliced at a location other than the normal 5' splice site.
-5. Mutually exclusive exons: only one exon from a neighboring group of exons is included in the mRNA product. [2]
+1. **Exon skipping**: an exon is not included in the final mRNA product.
+2. **Intron retention**: an intron from the coding sequence is included in the mRNA product.
+3. **Alternative 3' splice site**: an exon is spliced at a location other than the normal 3' splice site.
+4. **Alternative 5' splice site**: an exon is spliced at a location other than the normal 5' splice site.
+5. **Mutually exclusive exons**: only one exon from a neighboring group of exons is included in the mRNA product. [2]
 
 <div align="center">
 <img src="https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png" width="500" height="350" />
