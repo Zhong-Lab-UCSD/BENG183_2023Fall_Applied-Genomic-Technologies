@@ -1,7 +1,6 @@
 # Introduction to Hypothesis Testing
----
+
 ## Table of Contents
----
 1. [What is Hypothesis Testing?](#1)  
     1.1 [Creating a Null and Alternative Hypothesis](#2)  
     1.2 [Gathering data](#3)  
@@ -163,7 +162,7 @@ The CDF of the null distribution can be found through 2 ways.
 2. Computer simulations can be used to produce random data points using the null hypothesis. The data points can be aggregated to approximate the CDF of the null distribution. 
 
 **Case Study:**
-We can use our chi-squared value along with the degrees of freedom to find our p-value. Degrees of freedom can be found by multiplying the (number of sample columns - 1) by the (number of sample rows - 1) [3]. For chi-squared tests, the p-value can be found by using a calculator or by looking up a table. From a calculator, the p-value is equal to 2.184e-52. Note that it is unlikely you would find a p-value this extreme even when the null hypothesis is false.  
+We can use our chi-squared value along with the degrees of freedom to find our p-value. Degrees of freedom can be found by multiplying the (number of sample columns - 1) by the (number of sample rows - 1) [3]. For chi-squared tests, the p-value can be found by using a calculator, which tells us the p-value is equal to 2.184e-52. Note that it is unlikely you would find a p-value this extreme even when the null hypothesis is false.  
 
 **Knowledge Check**
 
@@ -187,9 +186,9 @@ What does our low p-value mean $(2.184 e-52)$?
 
 After we generate the p-value, we must make a decision to reject the null hypothesis or not reject the null hypothesis. 
 We use a cut-off value 𝛂 to make this decision. This value must be decided ahead of time.
-Most of the times, 0.05 is chosen as the arbitrary value  
-For any p-value lower than or equal to 𝛂, the null hypothesis will be rejected
-For any p-value higher than 𝛂, the null hypothesis will not be rejected
+Most of the times, 0.05 is chosen as the arbitrary value.  
+For any p-value lower than or equal to 𝛂, the null hypothesis will be rejected.
+For any p-value higher than 𝛂, the null hypothesis will not be rejected.
 
 <img src="critical_value_graph.png"  width="50%" height="50%" />
 
@@ -223,11 +222,13 @@ What chi-squared value from the table would correspond to our case study?
 
 ### Considerations when choosing the significance threshold <a name="7"></a>
 
+The chose of a significance threshold will affect the probability of type I and type II errors.
+
 The decision to reject the null hypothesis given that the null hypothesis is true (Reject H0 | H0) is known as a type I error.
 
 The decision to not the null hypothesis given that the null hypothesis is not true (Not Reject H0 | H1) is known as a type II error. 
 
-P(Reject H0|H0) = P(pδ|H0), P(Do not reject H0|H1) = P(p>δ|H1)
+$P($ Reject $H0|H0) = P(p\leqδ|H0)$, $P($ Do not reject $H0|H1) = P(p>δ|H1)$
 
 When the significance threshold increases, the chance of a type I error increases while the chance of a type II error decreases. 
 
@@ -241,20 +242,20 @@ Therefore, it is important to consider both types of errors when choosing a sign
 ### Applications of Hypothesis Testing in DESeq2 <a name="8"></a>
 Hypothesis testing is an important step in all experiments. 
 
-For example, this is how DEseq2 applies the steps of hypothesis testing to find differentially expressed genes.
+For example, this is how DESeq2 applies the steps of hypothesis testing to find differentially expressed genes.
 
 **Creating a Null and Alternative Hypothesis**  
-   Deseq2’s null hypothesis for each gene is that the gene is not differentially expressed  
-Deseq2’s alternative hypothesis for each gene is that the gene is differentially expressed
+Deseq2’s null hypothesis for each gene is that the gene is not differentially expressed.  
+Deseq2’s alternative hypothesis for each gene is that the gene is differentially expressed.
 
 **Gather Data**  
-	Deseq2 takes in FeatureCount data from an RNA-seq experiment
+Deseq2 takes in feature count data from an RNA-seq experiment.
  
 **Test statistic**  
-Deseq2 uses the Wald test to generate the test statistic from feature count data
+Deseq2 uses the Wald test to generate the test statistic from feature count data.
 
 **P-value**  
-	Deseq2 also uses the wald test to generate the p-value based on the test statistic values
+Deseq2 also uses the Wald test to generate the p-value based on the test statistic values.
  
 **Make a decision based on the hypothesis**  
 Based on a predetermined p-value threshold, genes will be classified as either differentially expressed or not differentially expressed. 
