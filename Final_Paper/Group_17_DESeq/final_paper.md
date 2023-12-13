@@ -105,6 +105,30 @@ In many situations, it can be useful to compare quantified gene expression using
 
 There are many different tools that can be used to perform differential expression analysis, but the one we'll be explaining is [**DESeq2**](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) [1]. DESeq2 is an R package that can be used to compare RNA-Seq expression data between samples, and is used for its ability to process high-throughput data.
 
+### Example output
+
+DESeq2 gives its output in the form of a table with information about each gene that includes:
+- Gene identifiers
+- Base mean expression
+- Log2 fold change
+- p-values
+- adjusted p-values
+among other output.
+
+Here's an example of what that data may look like:
+
+| Gene ID | Base Mean | Log2FoldChange | P-Value | Adjusted P-Value |
+| ------- | --------- | --------------- | ------- | -----|
+| Gene1 | 1000 | 2.5 | 0.0001 | 0.001 |
+| Gene2 | 500 | -1.2 | 0.05 | 0.2 |
+| Gene3 | 200 | 0.8 | 0.001 | 0.01 |
+
+This data can be used to create a heatmap, which uses colors to represent the magnitude of gene expression values, allowing you to easily identify patterns of upregulation or downregulation across different conditions or samples. Rows typically represent genes, while columns represent samples or conditions. Here's ane example of what this typically looks like:
+
+![Heatmap](heatmap.png)
+
+As you can see, by using a heatmap, it becomes easy to visually tell what genes may be regulated differently between samples. However, that's not enough to make a judgement on hypothesis, of course - there are also statistics involved!
+
 ### The magic statistics behind DESeq2
 
 The [DESeq2 Paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8) [2] goes into detail about the various statistical techniques it uses to perform differential expression analysis, the most notable of which are:
@@ -152,4 +176,5 @@ Additionally, unlike DESeq2, cuffdiff is written in C++ which can help afford it
 4. Trapnell, C., Roberts, A., Goff, L., Pertea, G., Kim, D., Kelley, D. R., Pimentel, H., Salzberg, S. L., Rinn, J. L., & Pachter, L. (2012). **Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks**. Nature protocols, 7(3), 562–578. https://doi.org/10.1038/nprot.2012.016
 5. Seyednasrollah, F., Laiho, A., & Elo, L. L. (2015). **Comparison of software packages for detecting differential expression in RNA-seq studies**. Briefings in bioinformatics, 16(1), 59–70. https://doi.org/10.1093/bib/bbt086
 6. Wen, X., Zhong S. **3D Genome**. https://zhonglab.gitbook.io/3dgenome/chap0-preparation/03-rna-seq-differential-analysis
-7. Slides from class
+7. Love M., Anders S., Huber W. (2023). **Analyzing RNA-seq data with DESeq2**. Bioconductor. https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html
+8. Slides from class
