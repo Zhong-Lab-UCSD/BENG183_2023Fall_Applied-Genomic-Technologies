@@ -3,7 +3,7 @@
 Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
 # Table of Contents 
-- [Overview](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Group_19_Alternative_Splicing.md.md#overview)
+- [Overview](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Group_19_Alternative_Splicing.md#overview)
 - [Why Classification?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#why-classification)
 - [What is Classification?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#what-is-classification)
 - [What are the types of Classification algorithms?](https://github.com/kaiakamatsu/BENG183-Classification/blob/main/Classification.md#what-are-the-types-of-classification-algorithms)
