@@ -13,7 +13,7 @@ Alternative splicing is a powerful post-transcriptional mechanism that produces 
 
 Alternative Splicing was first defined in 1977 when researchers discovered that not only were introns spliced out of the mRNA of an adenovirus, but also a single mRNA could be spliced "at different junctions [resulting] in a variety of mature mRNA molecules, each containing different combinations of exons." [1]
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" width="600" height="300" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" width="600" height="400" />
 
 ### Importance in Cellular Biology (maybe remove)
 
@@ -29,7 +29,7 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 4. Alternative 5' splice site
 5. Mutually exclusive exons
 
-<img src="https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png" width="600" height="300" />
+<img src="https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png" width="600" height="400" />
 
 ### Regulatory Proteins and Factors
 
@@ -37,7 +37,7 @@ There are two main elemental factors that facilitate alternative splicing: trans
 
 Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR proteins which contribute to the splicing of exons or introns. Exonic splice silencers promote the binding of hnRNPs which can prevent the splicing of an exon. [3]
 
-<img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Altsplicingelements.png" width="600" height="300" />
+<img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Altsplicingelements.png" width="600" height="400" />
 
 ### Role of the Spliceosome in Alternative Splicing
 
