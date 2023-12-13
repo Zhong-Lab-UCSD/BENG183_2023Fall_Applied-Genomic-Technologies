@@ -2,13 +2,12 @@
 
 Anthony Vasquez, Omar Halawa, Yasmin Jaber
 
-# Introduction to Alternative Splicing
+# Introduction
 
-### Definition of Alternative Splicing
+Alternative splicing is a powerful post-transcriptional mechanism that produces multiple mRNA isoforms from the same gene. These isoforms are then translated into functionally different proteins. Alternative splicing is a major contributor to genetic diversity and gene regulation. As a result there are numerous methods in the RNA-sequencing pipeline designed to analyze the expressions levels of the various mRNA isoforms. 
 
-Alternative splicing is a post-transcriptional mechanism that produces multiple mRNA isoforms from the same gene. These isoforms are then translated into functionally different proteins. 
 
-![altsplice](https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif)
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" width="800" height="400" />
 
 ### Historical Background and Discovery
 
@@ -28,7 +27,7 @@ Outside of constitutive splicing (normal splicing) there are five types of alter
 4. Alternative 5' splice site
 5. Mutually exclusive exons
 
-![altsplicetypes](https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png)
+<img src="https://www.mdpi.com/ijms/ijms-22-04468/article_deploy/html/images/ijms-22-04468-g001.png" width="800" height="400" />
 
 ### Regulatory Proteins and Factors
 
@@ -36,7 +35,7 @@ There are two main elemental factors that facilitate alternative splicing: trans
 
 Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR proteins contribute to the splicing of exons or introns, and exonic splice silencers promote the binding of hnRNPs which block the splicing of an exon. [4]
 
-![spliceelements](http://www.h-invitational.jp/h-dbas/document/am_fig1b.png)
+<img src="http://www.h-invitational.jp/h-dbas/document/am_fig1b.png" width="800" height="400" />
 
 ### Role of the Spliceosome
 
