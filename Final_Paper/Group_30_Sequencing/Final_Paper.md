@@ -17,11 +17,11 @@ Before dicussing about sequencing techniques and technologies, it is important t
 ## DNA structure
 DNA is composed of repeating subunits called nucleotides. These nucleotides are composed of three main components: the phosphate group, the sugar, and the nitrogenous base. The linking of nucleotides is faciliated by a DNA polymerase where the main reaction is the nucleophilic attack of the 3' hydroxyl group at the end of the growing strand to the 5' alpha phosphate of the incoming dNTP. The result of this reaction is the formation of a phosphodiester bond between the growing stand and the newly attached nucleotide. However, if the additional nucleotide to be added is a ddNTP, termination of DNA synthesis will occur due to the lack of a 3' hydroxyl group.
 
-<div style="text-align:center">
-    <img src='beng_183_images/ddntp.png' width='600'/>
-</div>
-<p style="text-align: center;">
-Figure 1.1: ddNTP
+<p align="center">
+  <img src='beng_183_images/ddntp.png' width='600'/>
+</p>
+<p align="center">
+    Figure 1.1: ddNTP
 </p>
 
 ## Sanger Sequencing
