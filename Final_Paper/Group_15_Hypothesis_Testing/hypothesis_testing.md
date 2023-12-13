@@ -17,13 +17,13 @@
 Hypothesis Testing is the use of statistical analysis on data to evaluate the validity of a hypothesis. It allows researchers to make evidence-based conclusions. 
 
 The use of hypothesis testing expands beyond bioinformatics. It allows researchers in all fields to make informed predictions as well as decisions based on quantifiable evidence. Hypothesis testing allows people to systematically and objectively ensure quality, assess risk, validate research, as well as complete countless other tasks. 
-
-The 5 steps of Hypothesis Testing:  
-      Form a Null and Alternative Hypothesis  
-      Gathering Data  
-      Generate a Test Statistic  
-      Generate P-value  
-      Interpret P-value and Make a Decision  
+   
+The 5 steps of Hypothesis Testing:   
+&nbsp; &nbsp; Form a Null and Alternative Hypothesis   
+&nbsp; &nbsp; Gathering Data   
+&nbsp; &nbsp; Generate a Test Statistic   
+&nbsp; &nbsp; Generate P-value   
+&nbsp; &nbsp; Interpret P-value and Make a Decision   
 
 To illustrate the steps of hypothesis testing, we will be looking at a hypothetical case study. Our example case study will look at whether or not smoking causes lung cancer. 
 
