@@ -13,7 +13,7 @@
 <br>
 
 ## Introduction to Differentially Expressed Genes
-While biological organisms of the same species may share a substantial portion of their genetic material, the manifestation of this shared genome can exhibit notable differences in terms of gene expression levels among individuals. For instance, one human being’s DNA blueprints can be 99.9% identical to another, but their expression of shared genes are not necessarily identical. 
+While biological organisms of the same species may share a substantial portion of their genetic material, the manifestation of this shared genome can exhibit notable differences in terms of gene expression levels among individuals. For instance, one human being’s DNA blueprints can be 99.9% identical to another, but the expression of their shared genes are not necessarily identical. 
 
 According to the central dogma of molecular biology, genes within DNA are transcribed into RNA, which can then form polypeptides or functional protein products through translation. Gene transcription and translation processes encompass intricate networks of molecular signals, transcription factors, and epigenetic modifications that collectively influence how genes are activated or suppressed [[1]](https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/translation/a/intro-to-gene-expression-central-dogma). 
 
@@ -21,11 +21,11 @@ Therefore, gene differential expression study is important to determine the unde
 <br>
 
 ## Differentially Expressed Genes at Biological Level
-* __Transctiption:__  regulatory elements interact with DNA and affect overall gene expression.  For instance, certain non-coding RNAs, such as large intergenic non-coding RNAs (lincRNAs), have been found to direct chromatin-modifying complexes to specific genomic loci, thus affecting epigenetic state. Incorporation of nucleotide sequences, like promoters and enhancers, works respectively to initiate transcription and increase transcription rate.  <br>
+* __Transcription:__  regulatory elements interact with DNA and affect overall gene expression.  For instance, certain non-coding RNAs, such as large intergenic non-coding RNAs (lincRNAs), have been found to direct chromatin-modifying complexes to specific genomic loci, thus affecting epigenetic state. Incorporation of nucleotide sequences, like promoters and enhancers, work respectively to initiate transcription and increase transcription rate.  <br>
   
 ![alt](transcription_model.png)   <br>
 > *[Figure 1](https://www.nature.com/articles/s41586-019-1517-4/figures/5)* Hypothetical model of an active Pol II gene (blue) with dynamic promoter condensate (turquoise) and transient gene-body condensate (orange). Figure by Cramer, P, 2019, Nature 573, 43, p. 45-54.
-* __Translation:__ alternative splicing transforms pre-mRNA into various isoforms of mRNA and protein products following translation.The figure below shows the coding exons as colored blocks and non-coding introns as black sections in the pre-mRNA. The different exon block combinations then highlights the results of alternative splicing through the skipping of certain exons and selection of different splice sites.  <br>
+* __Translation:__ alternative splicing transforms pre-mRNA into various isoforms of mRNA and protein products following translation. The figure below shows the coding exons as colored blocks and non-coding introns as black sections in the pre-mRNA. The different exon block combinations then highlights the results of alternative splicing through the skipping of certain exons and selection of different splice sites.  <br>
 ![alt](alt_splice.png) <br>
 > *[Figure 2](https://simple.wikipedia.org/wiki/Alternative_splicing#/media/File:Splicing_overview.jpg)* Hypothetical demonstration of alternative splicing produces two isoforms. Figure by Agathman [[2]](https://simple.wikipedia.org/wiki/Alternative_splicing).
 <br>
@@ -35,8 +35,8 @@ Therefore, gene differential expression study is important to determine the unde
    - Biological samples, such as tissues or cells, are collected from different conditions.  
    - RNA is extracted from these samples, capturing the genetic information in the form of messenger RNA (mRNA). <br>
 2. RNA Sequencing:
-   - Sequencing technologies such as NGS are applied to the collected samples and generate RNA sequencing data.
-   - RNA-seq provides a comprehensive snapshot of the transcriptome by revealing the abundance of different RNA molecules, raw ssequencing data obtained.
+   - Sequencing technologies such as NGS are applied to the collected samples to generate RNA sequencing data.
+   - RNA-seq provides a comprehensive snapshot of the transcriptome by revealing the abundance of different RNA isoforms and the raw sequencing data obtained.
 3. Data Preprocessing:
    - Raw sequencing data undergoes preprocessing steps, including quality control, read alignment to a reference genome, and quantification of gene expression levels.
 4. Genome Alignment:
@@ -89,7 +89,7 @@ In addition to bidirectional analysis, gene ontology (GO) enrichment analysis an
 #### Precision Medicine: Development:
    - DEG analysis plays a vital role in the field of precision medicine by identifying gene expression profiles that can be used for patient stratification and personalized treatment strategies.
 #### Agricultural and Environmental Research:  
-   - In agriculture, DEG analysis is used to study plant responses to environmental stress such as the coconut tree example we had earlier, identify genes associated with desirable traits, and improve crop yields.
+   - In agriculture, DEG analysis is used to study plant responses to environmental stress, such as the coconut tree example we had earlier, identify genes associated with desirable traits, and improve crop yields.
    - Environmental genomics utilizes DEG analysis to understand how organisms respond to changes in their environment.
 #### Pharmaceutical Development:  
    - DEG analysis is employed in drug discovery and development to identify potential biomarkers, evaluate drug efficacy, and understand the molecular mechanisms of drug action.
