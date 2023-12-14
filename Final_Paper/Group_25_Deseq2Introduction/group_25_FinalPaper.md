@@ -8,20 +8,25 @@ Neo Torres
 Audria Montalvo
 John Chen
 
-- **1:** [RNAseq Overview](#)
-- **2:** [Differential Expression Overview](#)
-- **3:** [DEseq2 Input](#)
-- **4:** [DEseq2 Description](#)
+- **1:** [RNAseq Overview](#rnaseq-overview)
+- **2:** [Differential Expression Overview](#differential-expression-overview)
+- **3:** [DEseq2 Input](#deseq2-input)
+- **4:** [DEseq2 Description](#deseq2-description)
 - **5:** [DEseq2 Output](#deseq2-output)
 	- **5.1**: [log2foldchange](#deseq2-output-log2foldchange)
 	- **5.2**: [Statistical Significance](#deseq2-and-statistical-significance)
-- **6:** [Differential Expression Visualization](#)
-- **7:** [Using Differential Expression Tools](#)
+- **6:** [Data Visualization](#data-visualization)
+	- **6.1**: [Volcano Plots](#volcano-plots)
+	- **6.2**: [IGV](#igv)
+	- **6.3**: [Heatmaps](#heatmaps)
+- **7:** [Using Differential Expression Tools](#other-differential-expression-tools-and-usage)
+	- **7.1**: [DESeq2 - Now it's Your Turn!](#now-its-your-turn)
+	- **7.2**: [Other Tools](#other-differential-expression-tools-and-usage)
 
 <br> <br> <br>
 
 ![1](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/af1ca07d-a027-4dfe-89a9-50556728ba84)
-### RNAseq Overview
+## RNAseq Overview
 RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which genes are transcribed and by how much! If we want to examine both the quantity and sequences of RNA in a sample we can use next-generation sequencing (NGS). 
 
 ***What's the point of Sequencing tho?***
@@ -50,6 +55,7 @@ Now about DESeq2 👀 You might be able to tell that the name itself includes **
 
 <br> <br>
 ![3](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/933529aa-d366-4892-8fdb-d95ace252c6f)
+
 ## DEseq2 Input
 Here is where TPM and Replicates come in. They are simply expression units which  helps us measure the amount of transcripts and the proportion of genes. 
 **TPM** in particular stand for ~Transcript per million. It "proposed as an alternative to RPKM due to inaccuracy in RPKM measurement" (Wagner et al., 2012)
