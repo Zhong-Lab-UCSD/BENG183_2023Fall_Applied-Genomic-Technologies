@@ -1,11 +1,11 @@
 # Differential and Enrinchment Analysis with GSEA (Gene Set Enrichment Analysis)
 1. [Introduction: Why?](#231)<br>
     1.1. [Differential Expression and Differential Analysis of Genes](#2311)<br>
-    2.2. [Gene Set Enrichment Analysis](#2312)
+    1.2. [Gene Set Enrichment Analysis](#2312)
 2. [Differential Gene Expression Analysis: How?](#232)<br>
     2.1. [General Workflow](#2321)<br>
     2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
-    2.3. [Methods and Methods comparison](#2322)
+    2.3. [Methods and Methods Comparison](#2322)
 3. [Gene Set Enrichment Analysis: How?](#233)
 
 
