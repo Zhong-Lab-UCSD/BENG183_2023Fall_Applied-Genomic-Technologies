@@ -26,7 +26,7 @@ Image credit [omiics](https://omiics.com/Services/bioinformatic-analysis/alterna
 
 ### Basic Mechanisms
 
-Outside of constitutive splicing (normal splicing) there are five types of alternative splicing:
+In addition to constitutive splicing (normal splicing), there are five main types of alternative splicing:
 1. **Exon skipping**: an exon is not included in the mature mRNA product.
 2. **Intron retention**: an intron from the coding sequence is included in the mature mRNA product.
 3. **Alternative 3' splice site**: an exon is spliced at a location other than the normal 3' splice site.
