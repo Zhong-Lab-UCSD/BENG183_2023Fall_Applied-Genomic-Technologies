@@ -57,8 +57,8 @@ Here is where TPM and Replicates come in. They are simply expression untis which
 **TPM** in particular stand for ~Transcript per million. It proposed as an alternative to RPKM due to inaccuracy in RPKM measurement" (Wagner et al., 2012)
 
 **Replicates**: multiple samples that are taken from different individual within experimental condition. The cool thing about replicates is that the more replicates menas the bigger the sampel size we work with. Thus improving precision of expression &  fold change estimates. 
-![sharpay](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/b3a4a7e9-0539-48d9-aee9-b3b671b958d6)
 
+<img align="center" width="300" height="275" src="sharpay.gif">
 ## DESeq2 Method: Negative Binomial Distribution
 DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the Negative Binomial Distribution. 
 
