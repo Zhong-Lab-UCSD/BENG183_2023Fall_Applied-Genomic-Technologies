@@ -270,3 +270,6 @@ res <- results(dds)
   visit [hbctraining.github.io](https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html).
 
 - https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
+- https://rdrr.io/bioc/DESeq2/man/lfcShrink.html
+- https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
+- 
