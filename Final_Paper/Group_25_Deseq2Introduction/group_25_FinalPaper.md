@@ -170,14 +170,14 @@ observed differences in gene expression are statistically significant or not.
   analysis.
 
 ## Transform pVal to pAdj
-Once the pValue is calculate, an optional step is to transform it into p adjust with a process known as normalization. This is because we would like to adjust how many significant genes we will have in out output. Too many significant genes would result in too much information, making the conclusion difficult to create. Too little significant genes and there would be not much information to analyze for the conclusion.
+Once the pValue is calculated, an optional step is to transform it into a value called p-adjust (pAdj) with a process known as normalization. This is because we would like to adjust how many significant genes we will have in the output. Too many significant genes would result in too much information, making the conclusion difficult to create. Too little significant genes and there would be not much information to analyze for the conclusion.
 
 There are two main ways this can work: Bonferroni Correction and False Discovery Rate.
 
 ### Bonferroni Correction
 The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
 
-$$pAdj = \frac{pValue}{n \text{(number of tests)}}$$
+$$ pAdj = \frac{pValue}{n \text{(number of tests)}} $$
 
 
 ### False Discovery Rate
@@ -203,16 +203,12 @@ We can map the reads to the IGV tool to visualize the read alignments. This is f
 ![igvplot.PNG](igvplot.PNG)
 
 ### Heatmaps
-We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means down-regulation, red is up-regulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples does have a difference in gene expression.
+We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means down-regulation, red is up-regulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples do have a difference in gene expression. In this case, it does!
 
 ![heatmapplot.PNG](heatmapplot.PNG)
 
 
 ## Other Differential Expression Tools and Usage
-
-Tool | DESeq2 | edgeR | EBseq | cuffdiff | Kallisto
---- | --- | --- | --- |--- |--- 
-Usage | R | R | R | Command Line | Command Line
 
 Below are the ROC curves of the programs. Essentially, the more the curve hugs the left and top side, the more accurate the model is. If a curve has such optimal shape, that maximizes the area under the curve which means the True Positive Rate is maximal for the largest area using False Positive Rate values. A line that goes diagonally describes a function that would give the answer half of the time.
 
@@ -220,9 +216,15 @@ Below are the ROC curves of the programs. Essentially, the more the curve hugs t
 
 We can see that DESeq2 (olive colored line) has one of the highest accuracies among the tools and compared to edgeR (purple colored line) which is at the bottom of the list. 
 
+Tool | DESeq2 | edgeR | EBseq | cuffdiff | Kallisto
+--- | --- | --- | --- |--- |--- 
+Usage | R | R | R | Command Line | Command Line
+
+We see that most tools use R or the command line. In the next section, we will demonstrate how to use one of these tools, DESeq2, in a Jupyter Notebook.
+
 ### Now it's Your Turn!
-We can use DESeq2 or differential expression tools in Jupyter Notebooks with R or CLI.
-R uses cell magic `%%R` and CLI uses `%%bash`
+Did you know we can use DESeq2 or differential expression tools in Jupyter Notebooks with R or CLI?
+With cell magics, we can use R code with `%%R` or CLI tools with `%%bash` inside a Jupyter Notebooks cells installed with Anaconda.
 
 Below is the following to use DESeq2 which uses R:
 0. Install Anaconda to use Jupyter Notebooks
@@ -236,7 +238,7 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install("DESeq2")
 ```
 
-3. In a notebook cell, use `%%R` to write R code like below...
+2. In a notebook cell, use `%%R` to write R code like below...
 
 ```R
 %%R
