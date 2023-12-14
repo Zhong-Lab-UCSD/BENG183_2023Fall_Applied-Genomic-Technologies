@@ -179,19 +179,19 @@ Once the pValue is calculated, an optional step is to transform it into a value 
 There are two main ways this can work: Bonferroni Correction and False Discovery Rate.
 
 ### Bonferroni Correction
-The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
+The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low [2].
 
 $$ pAdj = \frac{pValue}{n \text{(number of tests)}} $$
 
 
 ### False Discovery Rate
-False Discovery Rate lets the user choose which percent of significant would be false positives, so that we can narrow down which genes would be the most differentially expressed.
+False Discovery Rate lets the user choose which percent of significant would be false positives, so that we can narrow down which genes would be the most differentially expressed [2].
 
 $$FDR = \frac{mP}{\text{number of genes with p < P}}$$
 
 $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
 
-To convert this into a usable p-adjust (q-values), we can use the following code:
+To convert this into a usable p-adjust (q-values), we can use the following code [2]:
 
 ```R
 ## In R
@@ -206,28 +206,29 @@ Rej, qvalues = smm.multipletests(pvalues, method=“fdr_bh”
 After we get the p-adjust, we can visualize the data.
 
 ![6](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/cb6ebe91-0a03-485d-bfa4-79c184db8e95)
+
 ## Data Visualization
 There are many types of data visualizations for DESeq2 and differential expression tools.
 
 ### Volcano Plots
-We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was up-regulated or down-regulated. The most significant genes are the data points that are to the top left and top right. 
+We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was up-regulated or down-regulated. The most significant genes are the data points that are to the top left and top right [9][3]. 
 
 ![volcanoplot.PNG](volcanoplot.PNG)
 
 ### IGV
-We can map the reads to the IGV tool to visualize the read alignments. This is for quality control to make sure that all the reads used in differential expression tools are valid. If the reads for each of the samples do not line up, that means there is an issue in one of the previous steps.
+We can map the reads to the IGV tool to visualize the read alignments. This is for quality control to make sure that all the reads used in differential expression tools are valid. If the reads for each of the samples do not line up, that means there is an issue in one of the previous steps[2].
 
 ![igvplot.PNG](igvplot.PNG)
 
 ### Heatmaps
-We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means down-regulation, red is up-regulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples do have a difference in gene expression. In this case, it does!
+We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means down-regulation, red is up-regulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples do have a difference in gene expression. In this case, it does[1]!
 
 ![heatmapplot.PNG](heatmapplot.PNG)
 
 
 ## Other Differential Expression Tools and Usage
 
-Below are the ROC curves of the programs. Essentially, the more the curve hugs the left and top side, the more accurate the model is. If a curve has such optimal shape, that maximizes the area under the curve which means the True Positive Rate is maximal for the largest area using False Positive Rate values. A line that goes diagonally describes a function that would give the answer half of the time.
+[5] Below are the ROC curves of the programs. Essentially, the more the curve hugs the left and top side, the more accurate the model is. If a curve has such optimal shape, that maximizes the area under the curve which means the True Positive Rate is maximal for the largest area using False Positive Rate values. A line that goes diagonally describes a function that would give the answer half of the time.
 
 ![12859_2019_2599_Fig2_HTML.webp](12859_2019_2599_Fig2_HTML.webp)
 
@@ -243,7 +244,7 @@ We see that most tools use R or the command line. In the next section, we will d
 Did you know we can use DESeq2 or differential expression tools in Jupyter Notebooks with R or CLI?
 With cell magics, we can use R code with `%%R` or CLI tools with `%%bash` inside a Jupyter Notebooks cells installed with Anaconda.
 
-Below is the following to use DESeq2 which uses R:
+Below is the following to use DESeq2 which uses R [2]:
 0. Install Anaconda to use Jupyter Notebooks
 1. Download [DESeq2 from Bioconductor](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) in the R terminal or `%%R` cell in Jupyter Notebooks using the following command: 
 
@@ -296,3 +297,4 @@ Information from previous lectures
 - https://rdrr.io/bioc/DESeq2/man/lfcShrink.html
 - https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
 - 
+- https://bioramble.wordpress.com/2016/01/30/why-sequencing-data-is-modeled-as-negative-binomial/
