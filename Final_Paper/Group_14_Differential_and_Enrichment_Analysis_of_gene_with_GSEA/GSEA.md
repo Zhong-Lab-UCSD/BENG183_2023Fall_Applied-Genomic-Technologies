@@ -144,7 +144,7 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 
 2. Phenotype Labels
     
-    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls [3]
+    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls. [3]
 
 3. Gene Sets
 
@@ -152,7 +152,7 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 
 4. Chip Annotations(Optional)
 
-    Chip Annotations are the only optional dataset not required by GSEA to run. Chip Annotations list each identifier on a platform along with its matching HGNC chip symbol. This dataset is accepted in the following format: chip [3]
+    Chip Annotations are the only optional dataset not required by GSEA to run. Chip Annotations list each identifier on a platform along with its matching HGNC chip symbol. This dataset is accepted in the following format: chip. [3]
 
 #### 2) Set Analysis Parameters and Run Program<a name="2332"></a>
 Running GSEA is an easy and simple process. Once the datasets have been loaded into the program, a few required parameters need to be set:
