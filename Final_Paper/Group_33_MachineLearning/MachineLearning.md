@@ -19,8 +19,8 @@ Group 33 (Gary Lin, Owin Gong, Manaswini Kanaparthy)
 5. Sources
 6. Image Credits
 
-
 ## Introduction
+
 Machine learning is a field that develops models and algorithms that allows computers to make decisions or predictions by learning from inputs and data without needing to be explicitly programmed. This field has many real-world applications and in a variety of areas within the field of bioinformatics. Examples of machine learning applied in bioinformatics are personalized medicine, disease prediction and diagnosis, functional genomics, and much more.These algorithms utilized in bioinformatics and other various areas can and are able to be trained on unsupervised and supervised learning models. With supervised learning models, it gets trained on labeled data in which the relationships between input features and their corresponding output labels are learned, for example, the various types of classification, such as k-nearest neighbors, decision trees, linear classifiers, support vector machines, and neural networks. Another example is disease diagnosis where the model learns relationships between MRI scans and a healthy or diseased heart to determine future undiagnosed MRI scans, given and trained on already labeled, determined data of MRI scans confirmed as healthy or not. Then, with unsupervised learning models, it discovers patterns and relationships given an unlabeled dataset, such as hierarchical clustering and K-means clustering. 
 
 ![Data in Supervised vs. Unsupervised Learning](supervised_vs_unsupervised.png)
@@ -71,7 +71,7 @@ The runtime of $k$-means clustering is $N(nKT)$, where $n$ is the number of data
 
 ![k-means clustering](kmeans.gif)
 
-Figure. This shows how for every iteration the cluster changes until the algorithm finishes. For each iteration, the cluster and its cluster mean changes until the algorithm is finished. 
+This shows how for every iteration the cluster changes until the algorithm finishes. For each iteration, the cluster and its cluster mean changes until the algorithm is finished. 
 
 ## Classification
 
