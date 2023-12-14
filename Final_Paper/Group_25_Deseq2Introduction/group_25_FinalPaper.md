@@ -159,7 +159,7 @@ observed differences in gene expression are statistically significant or not.
 	- **Null Hypothesis**: The default assumption that there is no difference in gene expression between the
 	  conditions (log2 fold change is 0).
 	- **Test Statistic**: A value derived from the Wald test, representing the difference between the observed data and
-	  the null hypothesis.
+	  the null hypothesis. [4]
 
 - **Interpreting the Test Statistic**:
 	- The example graph shows the distribution of the test statistic values.
@@ -184,7 +184,7 @@ Once the pValue is calculated, an optional step is to transform it into a value 
 
 There are two main ways this can work: Bonferroni Correction and False Discovery Rate.
 
-### Bonferroni Correction
+### Bonferroni Correction 
 The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low [2].
 
 $$ pAdj = \frac{pValue}{n \text{(number of tests)}} $$
