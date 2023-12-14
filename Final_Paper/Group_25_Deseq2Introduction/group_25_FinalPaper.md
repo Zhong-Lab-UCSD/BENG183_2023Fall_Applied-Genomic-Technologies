@@ -49,8 +49,9 @@ We will be referring to Differential Expression as DE. As the name mentions DE i
 Note: Variance referece to variation in gene 
 
 Now about DESeq2 👀 You might be able to tell that the name itself include DE and the "Seq" next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the new improved DESeq tool. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014] All those fancy words like "dispersion" and "fold change" we will get to explaining later in this paper. 
+![pipeline](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/6644a8b2-14ce-4c59-968f-706de375488a)
 
-![pipeline](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/cd874b73-1455-4850-8449-fb3aff936e9b)
+
 
 ## DEseq2 Input
 Here is where TPM and Replicates come in. They are simply expression untis which give helps us mesure the amount of transcripts and the proportion of genes. 
@@ -58,7 +59,7 @@ Here is where TPM and Replicates come in. They are simply expression untis which
 
 **Replicates**: multiple samples that are taken from different individual within experimental condition. The cool thing about replicates is that the more replicates menas the bigger the sampel size we work with. Thus improving precision of expression &  fold change estimates. 
 
-<img align="center" width="300" height="275" src="sharpay.gif">
+<img align="center" width="300" height="200" src="sharpay.gif">
 ## DESeq2 Method: Negative Binomial Distribution
 DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the Negative Binomial Distribution. 
 
