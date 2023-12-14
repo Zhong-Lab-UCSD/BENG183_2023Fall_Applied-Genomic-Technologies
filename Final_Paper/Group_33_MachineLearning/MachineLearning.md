@@ -71,7 +71,7 @@ The runtime of $k$-means clustering is $N(nKT)$, where $n$ is the number of data
 
 ![k-means clustering](kmeans.gif)
 
-Figure. This shows how for every iteration the cluster changes until the algorithm finishes. For each iteration, the cluster and its cluster mean changes until the algorithm is finished. 
+This figure shows how for every iteration the cluster changes until the algorithm finishes. For each iteration, the cluster and its cluster mean changes until the algorithm is finished. 
 
 ## Classification
 
