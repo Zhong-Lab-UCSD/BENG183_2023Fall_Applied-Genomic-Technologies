@@ -222,7 +222,7 @@ scRNA-Seq involves isolating individual cells, extracting their RNA, and then se
 
 Cells are isolated using techniques like fluorescence-activated cell sorting (FACS) or microfluidics-based systems. Each cell is separated into its own reaction vessel or droplet.
 
-RNA from each cell is then reverse-transcribed into cDNA. Because the amount of RNA per cell is limited, methods like PCR amplification are often used to increase the quantity of cDNA for sequencing. [12]
+RNA from each cell is then reverse-transcribed into cDNA. Because the amount of RNA per cell is limited, methods like PCR amplification are often used to increase the quantity of cDNA for sequencing [12].
 
 Below is a graphic that depicts an overview of the main steps of scRNA-Seq:
 
@@ -247,7 +247,7 @@ While bulk RNA-Seq averages gene expression across thousands or millions of cell
 However, its important to note that scRNA-Seq also has some diadvantages because it is a techniques that is quite new and challengeingto performn. Additionally, it is significantly mopre expensive compared to RNA-Seq. According to Jovic et al., One of the main challenges in scRNA-Seq is the handling of technical noise and ensuring sufficient coverage to accurately detect splicing events. Another difficulty arises when we start to look at amplification bias during the cDNA synthesis and amplification steps. This bias has the potential to affect the accurate quantification of splice variants.  [12]
 
 
-### Below is an example of how sequenced, analysed and graphed scRNA-seq data can look. The graph below shows single cell RNA-seq of the bleomycin lung injury model for mice. over 28 cell types were sequences.[13]
+### Below is an example of how sequenced, analysed and graphed scRNA-seq data can look. The graph below shows single cell RNA-seq of the bleomycin lung injury model for mice. over 28 cell types were sequences [13].
 
 <br>
 
@@ -278,11 +278,11 @@ Long read sequencing enables the direct sequencing of full-length transcripts. T
 
 2. Isoform identification and quantification:
 
-The technology excels in identifying and quantifying different splice isoforms, especially ones that are rare or complex. This is very important in understanding the full diversity of transcriptomes in different cells and tissues. [14]
+The technology excels in identifying and quantifying different splice isoforms, especially ones that are rare or complex. This is very important in understanding the full diversity of transcriptomes in different cells and tissues [14].
 
 3. Complex splicing events are more easly identified:
 
-Long read sequencing can be employed to investigate complex splicing events in genes with multiple exons and extensive alternative splicing. long read sequencing can help provide for us a clearer picture of the splicing landscape, which might be difficult to resolve with short read sequencing. [14]
+Long read sequencing can be employed to investigate complex splicing events in genes with multiple exons and extensive alternative splicing. long read sequencing can help provide for us a clearer picture of the splicing landscape, which might be difficult to resolve with short read sequencing [14].
 
 ### What is Iso-Seq?
 
@@ -290,7 +290,7 @@ Long read sequencing can be employed to investigate complex splicing events in g
 
 Iso-Seq (by PacBio), short for Isoform Sequencing, is a method that used long read sequencing to specifically analyse and better understand complexity of gene expression, specifically different isoforms.
 
-Traditional RNA sequencing methods often generate short reads that need to be assembled to infer the full transcript, which can be challenging, especially in regions with complex alternative splicing. Iso-Seq overcomes this limitation by sequencing single molecules of RNA, allowing for the direct determination of full-length transcripts without the need for assembly. This results in a more accurate and comprehensive view of transcript diversity, including the identification of novel isoforms, alternative splicing events, and fusion transcripts. [10]
+Traditional RNA sequencing methods often generate short reads that need to be assembled to infer the full transcript, which can be challenging, especially in regions with complex alternative splicing. Iso-Seq overcomes this limitation by sequencing single molecules of RNA, allowing for the direct determination of full-length transcripts without the need for assembly. This results in a more accurate and comprehensive view of transcript diversity, including the identification of novel isoforms, alternative splicing events, and fusion transcripts [10].
 
 ### Below is a graphic showing how Iso-Seq is able to help tackle the issue of transcript assembly due to its ability to sequence much longer reads: 
 
