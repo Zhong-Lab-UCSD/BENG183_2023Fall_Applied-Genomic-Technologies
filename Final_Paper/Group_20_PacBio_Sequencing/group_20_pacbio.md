@@ -14,6 +14,7 @@ As with most nucleotide incorporation detection technologies, SMRT sequencing is
 
 Whole Genome Sequencing: The Hi-Fi read accuracy is 99.9%, meaning that it can be used for a variety of applications in the field. Since PacBio sequencing uses long-read technology that can sequence the entirety of a genome, it allows for the assembly of whole complex genomes. It can resolve complex genomic regions, reduce error in highly repetitive regions, and allow for more contiguous assembly of genomes. It can also allow de novo sequencing due to these abilities. 
 
+![image1](image1.png)
 
 On average, the PacBio HiFi reads have a much higher predicted accuracy than other CCS reads. 
 
@@ -23,11 +24,13 @@ Targeted Sequencing: Additionally, it can provide more complete and accurate rep
 
 Variant Detection: Since PacBio sequencing can cover entire genomic regions, it is very effective in detecting genetic variants like SNPs (single nucleotide polymorphisms), insertions, deletions, and structural variations. Additionally, the CCS technology increases the accuracy of base calling, which allows for more reliability in identifying SNPs. It can identify insertions and deletions even in complex or repetitive regions where short-read sequencing would struggle. It can identify even large structural variants due to its spanning of repetitive sequences, allowing for accurate identification. 
 
+![image2](image2.png)
+
 HiFi reads can accurately map the entirety of the region to identify variants with its high accuracy and long reads. It can call single nucleotide variants and improve the mappability of the genome. 
 
 Identification of Complex Populations: Since we are able to resolve complex genomic structures with long-read sequencing, we can identify the full diversity in a population, a valuable addition to metagenomic studies. In metagenomic studies, the genetic material may come from a variety of organisms with several different genomic structures and the long reads allow for better accuracy in representing genetic content. It can more accurately create genome assemblies and identify species and strains in a population. This way, we are able to contribute to metagenomic studies by showing us the full genetic diversity in a population, even low abundance species. 
 
-
+![image3](image3.png)
 
 Epigenetics: Pacbio can directly determine the modified bases in individual DNA molecules due to its single-base resolution technology, which is useful in the field of epigenetics by providing insight into gene regulation and development.
 
@@ -35,11 +38,16 @@ Epigenetics: Pacbio can directly determine the modified bases in individual DNA 
 
 Long Reads: PacBio reads can span fifteen thousand base pairs, The long reads could span entire genomic elements, such as introns and intergenic regions, enabling researchers to tackle challenges posed by repetitive sequences and structural variations. including insertions, deletions, and inversions, contributing to a more complete and accurate assembly. This has significant implications for understanding genetic diseases linked to structural variations.
 
+![image4](image4.png)
 
 Coverage Uniformity: PacBio sequencing utilizes SMRT technology, which involves sequencing individual DNA molecules in real-time. This approach differs from other sequencing methods, like Illumina sequencing, which often rely on PCR (Polymerase Chain Reaction) amplification. PCR amplification can introduce bias, particularly in GC-rich or GC-poor regions, because certain sequences may be more or less likely to amplify efficiently. SMRT sequencing bypasses the need for PCR, thus reducing this source of bias and producing a uniform coverage.
+
 Epigenetics: The real-time monitoring of Pacbio sequencing enables the direct detection of base modifications,  expanding our understanding of epigenetic regulation. It can uncover patterns of DNA methylation and hydroxymethylation without the need for bisulfite treatment, preserving the native DNA sequence and allowing for a more accurate correlation between epigenetic modifications and gene expression.
+
 Single Molecule Resolution: At single molecule resolution, PacBio sequencing can reveal the heterogeneity within a population of cells, capturing rare genomic events that might be missed by bulk sequencing. This level of detail provides insights into the dynamics of the genome and the variability of genomic elements, which is essential for personalized medicine and the study of genetic diversity within populations.
-Disadvantages of PacBio Sequencing 
+
+## Disadvantages of PacBio Sequencing 
+
 High Cost: One of the most significant drawbacks of PacBio sequencing is the high cost. The expense is due to the sophisticated equipment and reagents required for the Single Molecule, Real-Time (SMRT) technology that PacBio employs. The cost may make this technique suboptimal for many research groups, especially when large-scale sequencing projects are considered, making it less accessible compared to more cost-effective platforms.
 
 Low Throughput: PacBio systems have a lower throughput compared to some other sequencing technologies. They generate less data per unit of time, which can be a limiting factor for large-scale genomic studies that require the sequencing of many genomes or large amounts of DNA in a short period.
