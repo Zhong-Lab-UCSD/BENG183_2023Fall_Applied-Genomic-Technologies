@@ -65,7 +65,7 @@ The gist of this is that the negative binomial distribution fits the data more i
 
 ![nb_mean_var.png](nb_mean_var.png)
 
-The importance of this is that poisson distributions are usually for discrete events where the probability of having an event is low. This is similar to our case where the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with negative binomials allows to compensate the over-dispersion seen in poisson, which is the reason why negative binomial distributions are used in DESeq2 and other differential expression tools rather than poisson distributions. 
+The importance of this is that poisson distributions are usually for discrete events where the probability of having an event is low. This is similar to our case where the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with negative binomials allows to compensate the over-dispersion seen in poisson, which is the reason why negative binomial distributions are used in DESeq2 and other differential expression tools rather than poisson distributions [10]. 
 
 Negative binomial takes in two functions: mean and dispersion.
 The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i})$$
@@ -292,9 +292,9 @@ Information from previous lectures
 - [7] https://www.bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf
 - [8] https://chipster.csc.fi/manual/deseq2.html 
 - [9] https://pubmed.ncbi.nlm.nih.gov/35981026/
+- [10] https://bioramble.wordpress.com/2016/01/30/why-sequencing-data-is-modeled-as-negative-binomial/
 
 - https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
 - https://rdrr.io/bioc/DESeq2/man/lfcShrink.html
 - https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
 - 
-- https://bioramble.wordpress.com/2016/01/30/why-sequencing-data-is-modeled-as-negative-binomial/
