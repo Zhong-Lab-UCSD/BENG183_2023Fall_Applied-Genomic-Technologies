@@ -11,7 +11,7 @@ Alternative splicing is a powerful post-transcriptional mechanism that produces 
 
 ### Historical Background and Discovery
 
-Alternative Splicing was first defined in 1977 when researchers discovered that not only were introns spliced out of the mRNA of an adenovirus, but also a single mRNA could be spliced "at different junctions [resulting] in a variety of mature mRNA molecules, each containing different combinations of exons." [1]
+Alternative Splicing was first defined in 1977 when researchers discovered that not only were introns spliced out of the mRNA of an adenovirus, but also a single mRNA could be spliced "at different junctions [resulting] in a variety of mature mRNA molecules, each containing different combinations of exons" [1].
 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/DNA_alternative_splicing.gif" width="850" height="500" />
