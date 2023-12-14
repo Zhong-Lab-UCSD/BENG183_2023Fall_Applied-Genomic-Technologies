@@ -37,7 +37,7 @@ While the individual steps of MARIO can become rather complex, the overall proce
 7. Biotin pull-down
 8. Construction of the sequencing library
 
-
+![](Figure1.png)
 Figure 1. MARIO technology diagram depicting the key experimental steps in the overall procedure (Nguyen et al. 2016)
 
 ### Cross-Linking RNAs To Proteins
