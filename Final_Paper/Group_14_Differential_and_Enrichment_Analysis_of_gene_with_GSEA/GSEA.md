@@ -134,7 +134,7 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 - 1. Expression Dataset
 - 2. Phenotype Labels
 - 3. Gene Sets
-- 4. Chip Annotations
+- 4. CHiP Annotations
 
 <p align="center"><img src="GSEALoad.png" width="500" /></p>
 
@@ -150,9 +150,9 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 
     Gene Sets contain one or more gene sets. Each gene set contains the given gene sets name and a list of features(genes or probes) This dataset is accepted in the following format: gmx, gmt, or grp. [3]
 
-4. Chip Annotations(Optional)
+4. CHiP Annotations(Optional)
 
-    Chip Annotations are the only optional dataset not required by GSEA to run. Chip Annotations list each identifier on a platform along with its matching HGNC chip symbol. This dataset is accepted in the following format: chip. [3]
+    CHiP Annotations are the only optional dataset not required by GSEA to run. CHiP Annotations list each identifier on a platform along with its matching HGNC CHiP symbol. This dataset is accepted in the following format: CHiP. [3]
 
 #### 2) Set Analysis Parameters and Run Program<a name="2332"></a>
 Running GSEA is an easy and simple process. Once the datasets have been loaded into the program, a few required parameters need to be set:
@@ -162,7 +162,7 @@ Running GSEA is an easy and simple process. Once the datasets have been loaded i
 3. Number of Permutations
 4. Phenotype labels
 5. Permutation type
-6. Chip platform(optional)
+6. CHiP platform(optional)
 
 <p align="center"><img src="GSEAParam.png" width="500" /></p>
 
