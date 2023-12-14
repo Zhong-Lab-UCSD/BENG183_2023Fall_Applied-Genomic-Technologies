@@ -2,7 +2,7 @@
 
 ### Final Paper Submission 2023Fall
 
-##### To submit the final project, please follow these steps:
+#### To submit the final project, please follow these steps:
 
 1. To start, fork this repository. [Fork a repo - GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. Clone the repository to your computer.
@@ -12,7 +12,7 @@
 
 Tips: You can install Github Desktop to use GUI instead of command line.
 
-##### Requirements:
+#### Requirements:
 
 1. Please put the final paper of your group in the "**Final_Paper**" Folder in this repository. Create a folder and put your paper **.md** files together **with figures within the folder**. 
 2. The name of the Folder should be **"Group_Number_Topic"**. e.g. "Group_1_RNA-seq".
@@ -21,9 +21,17 @@ Tips: You can install Github Desktop to use GUI instead of command line.
    of a final paper. An outstanding final paper should read like a book chapter or a 
    section of a book chapter for a future textbook.
 
-##### Grading:
+#### Grading:
 
 The final paper will be graded by the 4 TAs. Each TA will give a score in 1-10 to each paper. The average score will be the score of this final paper of this team. **All team members will receive the same score**.
+
+#### Tutorials:
+
+Homework 3: [Gaoyuan-Li/RNA-Seq Analysis 2023Fall](https://github.com/Gaoyuan-Li/BENG183_HW3_2023Fall)
+
+Homework 4: [jtburrows/BENG183Tutorials2023](https://github.com/jtburrows/BENG183Tutorials2023)
+
+Homework 5: [jtburrows/BENG183Tutorials2023](https://github.com/jtburrows/BENG183Tutorials2023)
 
 ### Chapter1 Molecular Biology
 
