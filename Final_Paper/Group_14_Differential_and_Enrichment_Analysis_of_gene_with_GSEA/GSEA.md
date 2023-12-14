@@ -202,10 +202,6 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
     NES is based on gene set enrichment scores for all dataset permutations. This indicates that changing either the permutation method, the number of permutations, or the size of the expression dataset will affect the resulting NES. [3]
 
 3. False Discovery Rate (FDR) <br>
-
-    (1)Gene set against permutations  |  (2)Gene set against actual dataset 
-:-------------------------:|:-------------------------:
-<img src="GSEAFDR2.jpg" width="500" /> | <img src="GSEAFDR1.jpg" width="500" />
     
     The **False Discovery Rate** is the estimated probability that a gene set with a given NES is a false positive finding. [3] For example, an FDR of 20% indicates that resulting NES has an 80% chance of being valid. Usually, the larger the absolute NES the smaller the FDR.
     
