@@ -31,6 +31,22 @@ John Chen
 
 ### ......previous parts......
 
+## DESeq2 Method: Negative Binomial Distribution
+DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression leve. As seein the the graph below, the black line is the Poisson Distribution while the blue is the Negative Binomial Distribution. 
+
+The gist of this is that the negative binomial distribution fits the data more in these particular graphs than poisson distibutions due to overdispersion. Think of this like we are looking for the method of line of best fit. The blue line fits much better as the variance distance between the data and the line is minimal on the blue line versus the black line.
+
+![nb_mean_var.png][nb_mean_var.png]
+
+The importance of this is that Poisson Distibutions are usually for discrete events where the probability of having an event is low is similar to the case that the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with Negative Binomials allows to compensate the overdispersion seen in Poisson, which is the reason why negeative binomial distibutions are used in DESeq2 and other differential expression tools rather than poisson distibutions. 
+
+Negetive Binomial takes in two functions: mean and dispersion.
+The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i}$$
+
+- Mean is calculated by simply multiplying the library size by the gene length. $\mu_{ij} = s_{j}q_{ij}$
+
+- Dispersion calculates the variance of the counts. With the process called Bayesian shrinkage, the tool combines the gene-wise dispersion estimate and the estimate of exprected dispersion rate using data from all the genes.
+
 ## DEseq2 Output
 
 ![img.png](img.png)
@@ -132,21 +148,26 @@ observed differences in gene expression are statistically significant or not.
 ## Transform pVal to pAdj
 Once the pValue is calculate, an optional step is to transform it into p adjust with a process known as normalization. This is because we would like to adjust how many significant genes we will have in out output. Too many significant genes would result in too much information, making the conclusion difficult to create. Too little significant genes and there would be not much information to analyze for the conclusion.
 
-There are two main ways this can work.
+There are two main ways this can work: Bonferroni Correction and False Discovery Rate.
+
 ### Bonferroni Correction
 The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
 
-$$pAdj = \frac{pValue}{n (number of tests)}
+$$pAdj = \frac{pValue}{n \text{(number of tests)}}
+
+
 ### False Discovery Rate
-False Discovery Rate lets the user choose which percent of significant would be false positives. 
+False Discovery Rate lets the user choose which percent of significant would be false positives, so that we can narrow down which genes would be the most differentially expressed.
 
 $$FDR = \frac{mP}{\text{number of genes with p < P}}$$
 
 $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
 
 After we get the p-ajust, we can visualize the data.
+
 ## Data Visualization
 There are many types of data visualizations for DESeq2 and differential expression tools.
+
 ### Volcano Plots
 We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was upregulated or downregulated. The most significant genes are the data points that are to the top left and top right. 
 
@@ -164,24 +185,44 @@ We can visualize the gene expression per gene per sample. For the columns, we ha
 
 
 ## Other Differential Expression Tools
-TODO: Insert graph of the tool usage
 
+
+
+![12859_2019_2599_Fig2_HTML.webp](12859_2019_2599_Fig2_HTML.webp)
 ### Now it's Your Turn!
-We can use DESeq2 or other differential expression tools in Jupyter Notebooks.
+We can use DESeq2 or differential expression tools in Jupyter Notebooks with R or CLI.
 
-Below is the following to use DESeq2
+Below is the following to use DESeq2 which uses R:
 0. Install Anaconda to use Jupyter Notebooks
-1. Download [DESeq2 from Bioconductor](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) in the Anaconda Terminal using the following command: 
-```
+1. Download [DESeq2 from Bioconductor](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) in the R terminal or `%%R` cell in Jupyter Notebooks using the following command: 
+
+```R
+%%R
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("DESeq2")
 ```
+
 3. In a notebook cell, use `%%R` to write R code like below...
-```
 
+```R
+%%R
 
+## Library Loading
+library("DESeq2")
+library("tximport")
+
+## Read the files from Expression Quantification output
+## Use txinport to convert EQ output to what DESeq2 can read
+## Filter out low counts and N/A's
+## Perform DESeq2
+dds <- DESeq(ddsTxi)
+res <- results(dds)
+
+## Write the results into a .csv
+
+## Now you're done!
 ```
 
 **Additional Resources**
@@ -189,3 +230,4 @@ BiocManager::install("DESeq2")
 - For detailed methodology and examples of DESeq2 p-value calculations,
   visit [hbctraining.github.io](https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html).
 
+- https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
