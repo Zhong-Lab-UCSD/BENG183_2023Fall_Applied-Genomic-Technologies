@@ -129,6 +129,54 @@ observed differences in gene expression are statistically significant or not.
 - It is important to combine the p-value with other statistical measures and biological relevance for a comprehensive
   analysis.
 
+## Transform pVal to pAdj
+Once the pValue is calculate, an optional step is to transform it into p adjust with a process known as normalization. This is because we would like to adjust how many significant genes we will have in out output. Too many significant genes would result in too much information, making the conclusion difficult to create. Too little significant genes and there would be not much information to analyze for the conclusion.
+
+There are two main ways this can work.
+### Bonferroni Correction
+The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
+
+
+### False Discovery Rate
+False Discovery Rate lets the user choose which percent of significant would be false positives. 
+
+$$FDR = \frac{mP}{\text{number of genes with p < P}}$$
+$$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
+
+
+
+After we get the p-ajust, we can visualize the data.
+## Data Visualization
+There are many types of data visualizations for DESeq2 and differential expression tools.
+### Volcano Plots
+We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was upregulated or downregulated. The most significant genes are the data points that are to the top left and top right. 
+
+### IGV
+We can map the reads to the IGV tool to visualize the read alignments. This is for quality control to make sure that all the reads used in differential expression tools are valid. If the reads for each of the samples do not line up, that means there is an issue in one of the previous steps.
+
+### Heatmaps
+We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means downregulation, red is upregulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples does have a difference in gene expression.
+## Other Differential Expression Tools
+TODO: Insert graph of the tool usage
+
+### Now it's Your Turn!
+We can use DESeq2 or other differential expression tools in Jupyter Notebooks.
+
+Below is the following to use DESeq2
+0. Install Anaconda to use Jupyter Notebooks
+1. Download [DESeq2 from Bioconductor](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) in the Anaconda Terminal using the following command: 
+```
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("DESeq2")
+```
+3. In a notebook cell, use `%%R` to write R code like below...
+```
+
+
+```
+
 **Additional Resources**
 
 - For detailed methodology and examples of DESeq2 p-value calculations,
