@@ -19,13 +19,14 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
   - [Microarrays](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#microarrays)
   - [Single-cell RNA sequencing (scRNA-seq)](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#single-cell-rna-sequencing-scrna-seq)
   - [Long Read Sequencing](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#long-read-sequencing)
-  - [What is ISO Sequencing?](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#what-is-iso-seq)
+  - [What is ISO-SEQ?](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#what-is-iso-seq)
 - [Alternative Splicing in RNA-Seq Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-RNA-Seq-Alignment)
   - [Paired-End Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Paired-End-Alignment)
   - [Splice-Aware Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Splice-Aware-Alignment)
   - [Popular Tools](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Popular-Tools)
 - [Alternative Splicing in Disease and Therapy](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-Disease-and-Therapy)
 - [Future Directions](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Future-Directions)
+- [Summary and Conclusions](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#summary-and-conclusions)
 - [References](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#References)
 
 
