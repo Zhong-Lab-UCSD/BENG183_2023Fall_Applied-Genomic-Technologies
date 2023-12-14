@@ -25,6 +25,7 @@ Group 27: Jessica Yu, Cici Bu, Lorenzo Olmo Marchal
 
 
 **Genome Folding**
+
 ![Screenshot 2023-12-13 210631](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/620a3ca5-ab5a-413b-ab3f-ce60fdf5d13e)
 
 If the human genome were to be measured it would be around 2 meters long due to its size of 3 billion nucleotides but somehow it fits into a nucleus that is 5-10 μm in diameter. DNA is immensely folded inside this small pocket, resulting in the formation of complex 3D structures as well as facilitating essential biological processes such as replication, transcription, and gene expression. This is known as the **3D genome** and the study of the chromatin organization in the nucleus sheds light on the spatial aspects of gene regulation and genome stability.[^1]
@@ -130,7 +131,7 @@ In this step of the Hi-C output analysis we annotate the actual topological feat
 ![Screenshot 2023-12-13 212248](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/3e6c4336-3ee5-4f3b-b4be-e6290dcab499)
 
 
-Overall, for the two different topological structures that we have been discussing, TADs and loops, they are incredibly recognizable in contact maps due the formations that they naturally form within these maps. <sup>6</sup>
+Overall, for the two different topological structures that we have been discussing, TADs and loops, they are incredibly recognizable in contact maps due the formations that they naturally form within these maps. [^6]
  
 
 ![image](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/83b0347a-0b20-4ab7-9a53-22a300fa5825)
@@ -149,6 +150,9 @@ Apart from this, what really sets HiC-pro apart from other bioinformatic librari
 
 The one con when it comes to HiC-pro is that unlike other tools like JuiceBox, it is less user friendly in terms of ease of use. The command line arguments are of  a bit higher level, which might result in difficulties for beginners. Nevertheless, HiC-pro is much more flexible in terms of analysis and it is a very useful tool for bioinformaticians interested in Hi-C analysis. [^7]
 
+Example of Hi-C Pro Command [^10]
+> HICPRO_PATH/bin/utils/make_viewpoints -i hicpro_res/hic_results/data/dixon_2M/dixon_2M_allValidPairs  -f HICPRO_PATH/data_info/HindIII_resfrag_hg19.bed -t mycapture.bed -e 1000 -d -v > capture.bedgraph
+
 **IV. Hi-C Application in Tracing Cancer Evolution**
 
 “Cancer progression is driven by ongoing selection for mutations” and the endless duplication of certain genes due to mutations. To better study cancer, it is extremely important for us to know the mechanisms behind it and to identify the mutation site, the progression of the mutation along cancer development, and the genes and chromosomes correlated with the mutation. Hi-C is proven to be one of the most useful tools to study cancer development and trace the development of mutation as cancer cells progress. 
@@ -157,7 +161,7 @@ To better understand and visualize it, let’s take a look at 2 examples from 2 
 
 
 
-1. **Patient 1**
+1. **Patient 1** [^8]
 
 ![Screenshot 2023-12-13 213108](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/dfae40fa-9a29-4765-ad20-7e9861c8f498)
 
@@ -175,7 +179,7 @@ The left Hi-C map in graph (a) is generated from the primary melanoma cells. Fro
 
 
 
-2. **Patient 2**
+2. **Patient 2** [^8]
    
 ![Screenshot 2023-12-13 213216](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/86f9ca71-9e03-4abd-ab5c-7678025e27ef)
 
@@ -184,20 +188,11 @@ From the 2 examples we studied above, we can tell that Hi-C plays an important r
 
 **Future Directions**
 
-From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not good with detailed loops and structure identification, but is extremely useful for generating a general overview as soon as we start with a project and can be used as guidance through the research. Given Hi-C’s advantage in giving scientists a bird view perspective of cross-chromosomal interactions, it can be used to guide future studies in tracing cancer development and be used “in parallel with 3D imaging on the genetic modification of genomes”.
+From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not good with detailed loops and structure identification, but is extremely useful for generating a general overview as soon as we start with a project and can be used as guidance through the research. Given Hi-C’s advantage in giving scientists a bird view perspective of cross-chromosomal interactions, it can be used to guide future studies in tracing cancer development and be used “in parallel with 3D imaging on the genetic modification of genomes”. [^9]
 
-**V. Sources Used**
-
-
-
-1. ..
-2. ..
-3. ..
-4. Erdmann-Pham, D.D., Batra, S.S., Turkalo, T.K. _et al._ Tracing cancer evolution and heterogeneity using Hi-C. _Nat Commun_ 14, 7111 (2023). [https://doi.org/10.1038/s41467-023-42651-2](https://doi.org/10.1038/s41467-023-42651-2)
-5. Liu, N., Low, W.Y., Alinejad-Rokny, H. _et al._ Seeing the forest through the trees: prioritising potentially functional interactions from Hi-C. _Epigenetics & Chromatin_ 14, 41 (2021). [https://doi.org/10.1186/s13072-021-00417-4](https://doi.org/10.1186/s13072-021-00417-4)
+## V. Sources Used
 
 <!-- Footnotes themselves at the bottom. -->
-## Notes
 
 [^1]:
      Hi-C: A comprehensive technique to capture the conformation of genomes [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874846/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874846/) 
@@ -220,3 +215,10 @@ From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not 
 
 [^7]:
      Servant, N., Varoquaux, N., Lajoie, B.R. et al. HiC-Pro: an optimized and flexible pipeline for Hi-C data processing. Genome Biol 16, 259 (2015). https://doi.org/10.1186/s13059-015-0831-x
+[^8]:
+     Erdmann-Pham, D.D., Batra, S.S., Turkalo, T.K. _et al._ Tracing cancer evolution and heterogeneity using Hi-C. _Nat Commun_ 14, 7111 (2023). [https://doi.org/10.1038/s41467-023-42651-2](https://doi.org/10.1038/s41467-023-42651-2)
+[^9]:
+     Liu, N., Low, W.Y., Alinejad-Rokny, H. _et al._ Seeing the forest through the trees: prioritising potentially functional interactions from Hi-C. _Epigenetics & Chromatin_ 14, 41 (2021). [https://doi.org/10.1186/s13072-021-00417-4](https://doi.org/10.1186/s13072-021-00417-4)
+[^10]: https://nservant.github.io/HiC-Pro/UTILS.html#hicpro2juicebox-sh
+
+
