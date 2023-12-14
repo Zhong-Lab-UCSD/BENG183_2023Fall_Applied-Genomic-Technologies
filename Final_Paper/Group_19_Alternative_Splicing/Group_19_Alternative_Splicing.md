@@ -205,7 +205,7 @@ Below is a diagram of the ways that different isoforms show up on microarrays. T
 
 <br>
 
-![altsplicetypes](https://ars.els-cdn.com/content/image/1-s2.0-S1046202305001751-gr4.jpg)
+![altsplicetypes1](https://ars.els-cdn.com/content/image/1-s2.0-S1046202305001751-gr4.jpg)
 
 ### Microarrays vs RNA-seq:
 
