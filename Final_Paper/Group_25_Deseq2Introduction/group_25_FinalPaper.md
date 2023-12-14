@@ -33,14 +33,23 @@ RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which gene
 ***What the point of Sequncing tho?***
 Great quesstion, Im glad you asked. :)
 RNA Sequencing can help us anazlyze :
-* Differential Gene Expression (which is the whole topic of this paper hehehe)
-* Alternative Splicing
-* RNA editing
-* and so much more
 
-### Differential Expression Overview
-The name kind of gives it away but... Differential Analysis is more than just "are the 
-### DEseq2 Input
+✅Differential Gene Expression (which is the whole topic of this paper hehehe)
+✅Alternative Splicing
+✅ RNA editing
+✅and so much more
+
+<img align="left" width="300" height="275" src="this.png"> Here we have a visual of th pipeline aka tha overall procedure that helps us get from the raw data to eventually Differential Expression<br>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  
+## Differential Expression Overview
+We will be referring to Differential Expression as DE. As the name mentions DE is when helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greate than within groups.By group we mean samples such as wildtype and mutant samples
+
+Note: Variance referece to variation in gene 
+
+Now about DESeq2 👀 You might be able to tell that the name itself include DE and the "Seq" next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just 
+## DEseq2 Input
 
 
 ### ......previous parts......
