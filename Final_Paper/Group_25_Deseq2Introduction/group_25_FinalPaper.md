@@ -27,6 +27,30 @@ John Chen
 ![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
 
 
+### RNAseq Overview
+RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which genes are transcribed and by how much! If we want to examine both the quantity and sequences of RNA in a sample we can use next-generation sequencing (NGS). 
+
+***What the point of Sequncing tho?***
+Great quesstion, Im glad you asked. :)
+RNA Sequencing can help us anazlyze :
+
+✅Differential Gene Expression (which is the whole topic of this paper hehehe) <br>
+✅Alternative <br>
+✅RNA editing<br>
+✅and so much more<br>
+
+<img align="left" width="300" height="275" src="this.png"> Here we have a visual of th pipeline aka tha overall procedure that helps us get from the raw data to eventually Differential Expression<br>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  
+## Differential Expression Overview
+We will be referring to Differential Expression as DE. As the name mentions DE is when helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greate than within groups.By group we mean samples such as wildtype and mutant samples
+
+Note: Variance referece to variation in gene 
+
+Now about DESeq2 👀 You might be able to tell that the name itself include DE and the "Seq" next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the new improved DESeq tool. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [ cite source research paper] All those fancy words like "dispersion" and "fold change" we will get to explaining later in this paper. 
+
+## DEseq2 Input
 
 
 ### ......previous parts......
