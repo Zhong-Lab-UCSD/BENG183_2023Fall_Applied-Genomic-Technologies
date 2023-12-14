@@ -56,15 +56,15 @@ Now about DESeq2 👀 You might be able to tell that the name itself include DE 
 ### ......previous parts......
 
 ## DESeq2 Method: Negative Binomial Distribution
-DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the Negative Binomial Distribution. 
+DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the negative binomial distribution. 
 
 The gist of this is that the negative binomial distribution fits the data more in these particular graphs than poisson distributions due to overdispersion. Think of this like we are looking for the method of line of best fit. The blue line fits much better as the variance distance between the data and the line is minimal on the blue line versus the black line.
 
 ![nb_mean_var.png](nb_mean_var.png)
 
-The importance of this is that poisson distributions are usually for discrete events where the probability of having an event is low is similar to the case that the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with Negative Binomials allows to compensate the over-dispersion seen in Poisson, which is the reason why negative binomial distributions are used in DESeq2 and other differential expression tools rather than poisson distributions. 
+The importance of this is that poisson distributions are usually for discrete events where the probability of having an event is low. This is similar to our case where the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with negative binomials allows to compensate the over-dispersion seen in poisson, which is the reason why negative binomial distributions are used in DESeq2 and other differential expression tools rather than poisson distributions. 
 
-Negative Binomial takes in two functions: mean and dispersion.
+Negative binomial takes in two functions: mean and dispersion.
 The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i})$$
 
 - Mean is calculated by simply multiplying the library size by the gene length. $\mu_{ij} = s_{j}q_{ij}$
@@ -187,6 +187,18 @@ $$FDR = \frac{mP}{\text{number of genes with p < P}}$$
 
 $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
 
+To convert this into a usable p-adjust (q-values), we can use the following code:
+
+```R
+## In R
+qvalues = p.adjust(pvalues, method=“fdr”)
+```
+
+```python
+Import statsmodels.stats.multitest as smm
+Rej, qvalues = smm.multipletests(pvalues, method=“fdr_bh”
+```
+
 After we get the p-adjust, we can visualize the data.
 
 ## Data Visualization
@@ -261,7 +273,16 @@ res <- results(dds)
 
 **Additional Resources**
 
-- For detailed methodology and examples of DESeq2 p-value calculations,
+Information from previous lectures
+- [1] Dr. Sheng Zhong - BENG 183
+- [2] Dr. Melissa Gymrek - CSE 185
+- [3] Prof. Steven Briggs - BIMM 172
+
+- [4] For detailed methodology and examples of DESeq2 p-value calculations,
   visit [hbctraining.github.io](https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html).
 
-- https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
+- [5] https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
+- [6] https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8
+- [7] https://www.bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf
+- [8] https://chipster.csc.fi/manual/deseq2.html 
+- [9] https://pubmed.ncbi.nlm.nih.gov/35981026/
