@@ -50,7 +50,7 @@ We will be referring to Differential Expression as DE. As the name mentions DE i
 
 ![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
 ## DESeq2 Description
-Now about DESeq2 👀 You might be able to tell that the name itself includes **DE** and the **"Seq"** next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the ⭐new improved DESeq tool⭐. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014] We will explain all those fancy words like "dispersion" and "fold change" later in this paper, no worries friend!
+Now about DESeq2 👀 You might be able to tell that the name itself includes **DE** and the **"Seq"** next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the ⭐new improved DESeq tool⭐. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014][11] We will explain all those fancy words like "dispersion" and "fold change" later in this paper, no worries friend!
 ![pipeline](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/6644a8b2-14ce-4c59-968f-706de375488a)
 
 <br> <br>
@@ -299,7 +299,5 @@ Information from previous lectures
 - [8] https://chipster.csc.fi/manual/deseq2.html 
 - [9] https://pubmed.ncbi.nlm.nih.gov/35981026/
 - [10] https://bioramble.wordpress.com/2016/01/30/why-sequencing-data-is-modeled-as-negative-binomial/
-
+- [11] https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
 - https://rdrr.io/bioc/DESeq2/man/lfcShrink.html
-- https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
-- 
