@@ -1,38 +1,48 @@
 
-<h2>Hi-C Technology and Application</h2>
+<h1>Hi-C Technology and Application</h1>
 
-
-Group 27: Jessica Yu, Cici Bu, Lorenzo Olmo Marchal
+Group 27: Jessica Yu, Cici Bu, Lorenzo Olmo Marchal <br><br>
 ##
 
-1. 3D Genome
-    1. Genome Folding
-    2. TAD
-2. Hi-C Process
-    1. Background
-    2. Step-by-Step Process
-3. Hi-C Output Analysis
-    1. Main Steps
-    2. Specific technology: Hi-C pro
-4. Hi-C Application in Tracing Cancer Evolution 
-    1. Case Study
-        1. Patient 1: Primary Melamoma v.s. Subsequent metastasis
-        2. Patient 2: Melanoma 1 v.s. Melanoma 2 v.s. Subsequent metastasis
-    2. Future Directions
-5. Sources Used
+## **Table of content:**
+<br>
 
-<h3>I. 3D Genome</h3>
+1. [3D Genome](#3DGenome)
+     - [Genome Folding](#GenomeFolding)
+     - [TAD](#TAD)
+2. [Hi-C Process](#Hi-CProcess)
+     - [Background](#Background)
+     - [Step-by-Step Process](#Step-by-StepProcess)
+3. [Hi-C Output Analysis](#Hi-COutputAnalysis)
+     - [Main Steps](#MainSteps)
+     - [Specific technology: Hi-C pro](#Hi-Cpro)
+4. [Hi-C Application in Tracing Cancer Evolution](#Hi-CApplication)
+     - [Case Study](#CaseStudy)
+          - [Patient 1](#Patient1)
+          - [Patient 2](#Patient2)
+     - [Future Directions](#FutureDirections)
+5. [Sources Used](#SourcesUsed)
 
+<br>
+<a id="3DGenome"></a>
 
-**Genome Folding**
+## **I. 3D Genome**
+***
+
+<a id="GenomeFolding"></a>
+
+### **Genome Folding**
 
 ![Screenshot 2023-12-13 210631](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/620a3ca5-ab5a-413b-ab3f-ce60fdf5d13e)
 
-If the human genome were to be measured it would be around 2 meters long due to its size of 3 billion nucleotides but somehow it fits into a nucleus that is 5-10 μm in diameter. DNA is immensely folded inside this small pocket, resulting in the formation of complex 3D structures as well as facilitating essential biological processes such as replication, transcription, and gene expression. This is known as the **3D genome** and the study of the chromatin organization in the nucleus sheds light on the spatial aspects of gene regulation and genome stability.[^1]
+<p>If the human genome were to be measured it would be around 2 meters long due to its size of 3 billion nucleotides but somehow it fits into a nucleus that is 5-10 μm in diameter. DNA is immensely folded inside this small pocket, resulting in the formation of complex 3D structures as well as facilitating essential biological processes such as replication, transcription, and gene expression. This is known as the **3D genome** and the study of the chromatin organization in the nucleus sheds light on the spatial aspects of gene regulation and genome stability.[^1] </p>
+<br>
+
+<a id="TAD"></a>
 
 **TAD (Topologically Associating Domains)**
 
-An example of a 3D genome structure are TADs which are regions of around 15 million base pairs that contribute to the regulation of gene expression by restricting interaction between cis-regulatory sequences and their target. TADs create somewhat insulated domains of genomic material. 
+<p>An example of a 3D genome structure are TADs which are regions of around 15 million base pairs that contribute to the regulation of gene expression by restricting interaction between cis-regulatory sequences and their target. TADs create somewhat insulated domains of genomic material. </p>
 
 ![Screenshot 2023-12-13 210932](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/e01f8d59-4897-4c2d-924b-6e3efebf9430)
 
@@ -45,21 +55,29 @@ Some of the components TAD boundaries are enriched for are:[^2]
 * H3K4me3 and H3K36me3
 * housekeeping genes
 * repeat elements
+<br><br>
 
-<h3>II. Hi-C Process </h3>
+<a id="Hi-CProcess"></a>
 
+## **II. Hi-C Process**
+***
+
+<a id="Background"></a>
 
 **Background**
 
 Hi-C is a form of chromosome conformation capture (3C) used to obtain and examine genome-wide data. Hi-C explores the complexities of how the genome is stored and what it means for the function of the genetic information. Hi-C and related methods are still being refined and applied to explore the complexities of the 3D human genome. 
 
 What information can Hi-C provide: 
+
 ![Screenshot 2023-12-13 211641](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/3c0f0d68-9901-46bc-a80c-b79567a4fb3f)
 
 * Chromatin conformation: loops and long range interactions
 * Topological domains
 * Nuclear architecture: reveals spatial arrangement
 * Comparative genomics: compare data across different cell types and tissues 
+
+<a id="Step-by-StepProcess"></a>
 
 **Hi-C Step-by-Step Process**
 
@@ -72,11 +90,16 @@ What information can Hi-C provide:
 4. The resulting fragments are ligated under dilute conditions and now the DNA sample contains ligation products marked with biotin at the junction.
 5. A Hi-C library is created by shearing the DNA and purifying the sample so only the biotin-containing fragments remain.
 6. The library is analyzed by using parallel DNA sequencing, producing a catalog of interacting fragments.[^3]
+<br><br>
 
-<h3>III. Hi-C Output Analysis</h3>
+<a id="Hi-COutputAnalysis"></a>
 
+## **III. Hi-C Output Analysis**
+***
 
-**A. Overview**
+<a id="MainSteps"></a>
+
+### **A. Overview**
 
 There are 4 general key steps when it comes to the analysis of Hi-C outputs:
 
@@ -87,15 +110,21 @@ There are 4 general key steps when it comes to the analysis of Hi-C outputs:
 
 ![Screenshot 2023-12-13 211838](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/dd188db8-efc9-4968-9f21-c612e5f6483f)
 
+<br>
+
 **Alignment**
 
-As mentioned previously, the last step when obtaining Hi-C analysis data is to sequence the sheared DNA using paired-ends. After obtaining these short-sequence reads, we need to align them in order to map our Hi-C sequence library to known sequences within the genome. Without aligning and mapping the sequences to known genome locations, we would not be able 
+<p>As mentioned previously, the last step when obtaining Hi-C analysis data is to sequence the sheared DNA using paired-ends. After obtaining these short-sequence reads, we need to align them in order to map our Hi-C sequence library to known sequences within the genome. Without aligning and mapping the sequences to known genome locations, we would not be able </p>
 
-to obtain the necessary context to understand the spatial organization of the genome and the interactions within it. [^4]
+<p>to obtain the necessary context to understand the spatial organization of the genome and the interactions within it. [^4] </p>
+
+<br>
 
 **Duplicate Removal**
 
 As part of our preprocessing steps , it is essential to remove any duplicate sequences that were found during alignment and other quality checks. An important part of Hi-C data analysis is its usage of different statistical methods (such as PCA and log transformations) in order to create a contact map and matrix of the different chromatin interactions and topological structures within the genome. However, having a high number of reads can lead to skewing of statistics and biased results. [^4]
+
+<br>
 
 **Creation of Contact Matrix and Map**
 
@@ -136,6 +165,7 @@ Overall, for the two different topological structures that we have been discussi
 
 ![image](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/83b0347a-0b20-4ab7-9a53-22a300fa5825)
 
+<a id="Hi-Cpro"></a>
 
 **B. Technologies for HI-C analysis: Hi-C pro**
 
@@ -153,45 +183,72 @@ The one con when it comes to HiC-pro is that unlike other tools like JuiceBox, i
 Example of Hi-C Pro Command [^10]
 > HICPRO_PATH/bin/utils/make_viewpoints -i hicpro_res/hic_results/data/dixon_2M/dixon_2M_allValidPairs  -f HICPRO_PATH/data_info/HindIII_resfrag_hg19.bed -t mycapture.bed -e 1000 -d -v > capture.bedgraph
 
-**IV. Hi-C Application in Tracing Cancer Evolution**
+<br>
+<br>
 
+<a id="Hi-CApplication"></a>
+
+## **IV. Hi-C Application in Tracing Cancer Evolution**
+***
 “Cancer progression is driven by ongoing selection for mutations” and the endless duplication of certain genes due to mutations. To better study cancer, it is extremely important for us to know the mechanisms behind it and to identify the mutation site, the progression of the mutation along cancer development, and the genes and chromosomes correlated with the mutation. Hi-C is proven to be one of the most useful tools to study cancer development and trace the development of mutation as cancer cells progress. 
 
 To better understand and visualize it, let’s take a look at 2 examples from 2 patients:
 
 
+<br>
+<a id="CaseStudy"></a>
+<a id="Patient1"></a>
 
 1. **Patient 1** [^8]
 
-![Screenshot 2023-12-13 213108](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/dfae40fa-9a29-4765-ad20-7e9861c8f498)
+     ![Screenshot 2023-12-13 213108](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/dfae40fa-9a29-4765-ad20-7e9861c8f498)
 
 
 
-Patient 1 has been diagnosed with Melanoma for several years. Scientists took samples from the patient’s primary melanoma cells and their metastasis cells progressed several years after the primary melanoma cells, and ran them under Hi-C.
+     <p>Patient 1 has been diagnosed with Melanoma for several years. Scientists took samples from the patient’s primary melanoma cells and their metastasis cells progressed several years after the primary melanoma cells, and ran them under Hi-C.</p>
 
-The left Hi-C map in graph (a) is generated from the primary melanoma cells. From the squares that are zoomed in, we can see dense and concentrated blue dots with a loop identified between chromosome 2 and chromosome 10, scattered dense blue dots with a loop identified between chromosomes 5 and 10, no loop identified between chromosomes 11 and 17, and a short loop identified between chromosome 1 and chromosome 13. 
+     The left Hi-C map in graph (a) is generated from the primary melanoma cells. From the squares that are zoomed in, we can see dense and concentrated blue dots with a loop identified between chromosome 2 and chromosome 10, scattered dense blue dots with a loop identified between chromosomes 5 and 10, no loop identified between chromosomes 11 and 17, and a short loop identified between chromosome 1 and chromosome 13. 
 
- The right Hi-C map in graph (a) is generated from the metastasis cells. From the squares that are zoomed in, compared with what we saw from the primary melanoma cell, we can see that the loop between chromosomes 2 and 10 becomes lighter with the blue dots becoming more sparse, the loop between chromosomes 5 and 10 increased its range, loops are generated between chromosomes 7 and 11, and the loop between 1 and 13 increased in range and decreased in intensity.  
+     The right Hi-C map in graph (a) is generated from the metastasis cells. From the squares that are zoomed in, compared with what we saw from the primary melanoma cell, we can see that the loop between chromosomes 2 and 10 becomes lighter with the blue dots becoming more sparse, the loop between chromosomes 5 and 10 increased its range, loops are generated between chromosomes 7 and 11, and the loop between 1 and 13 increased in range and decreased in intensity.  
 
- From the comparison between the Hi-C maps, we can identify several sites of obvious loop change between the melanoma cells and the metastasis cells, which clearly tells us how the primary cancer cells mutated and progressed to the new type of cells which may generate new abilities to move to the other part of the patient’s body. 
+     From the comparison between the Hi-C maps, we can identify several sites of obvious loop change between the melanoma cells and the metastasis cells, which clearly tells us how the primary cancer cells mutated and progressed to the new type of cells which may generate new abilities to move to the other part of the patient’s body. 
 
- Based on the overview generated by the Hi-C map, we can further zoom into chromosomes 7 and 11, chromosomes 1 and 13, and other obvious mutation in inter-chr interactions to study for the detailed mutation development. 
+     Based on the overview generated by the Hi-C map, we can further zoom into chromosomes 7 and 11, chromosomes 1 and 13, and other obvious mutation in inter-chr interactions to study for the detailed mutation development. 
 
 
+<br>
+<a id="Patient2"></a>
 
 2. **Patient 2** [^8]
    
-![Screenshot 2023-12-13 213216](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/86f9ca71-9e03-4abd-ab5c-7678025e27ef)
+     ![Screenshot 2023-12-13 213216](https://github.com/lolmomarchal/BENG183_2023Fall_Applied-Genomic-Technologies/assets/114376800/86f9ca71-9e03-4abd-ab5c-7678025e27ef)
 
-    
+     For patient two, similar to patient one, we are studying for the Hi-C map generated between their 2 types of primary melanoma cells and 1 type if metastasis cells. 
+
+     From the first two graphs in graph(a) between the two types of melanoma cells, we can not see much differences in the loops across chromosomes. Melanoma region 2 has more sparse dots than melanoma region 1 between chromosomes 11 and 20, which means a slight decrease in loop intensity. Melanoma region 2 also has slightly more dense dots than melanoma region 1 between chromosomes 5 and 7, which means a slight increase in loop intensity. Overall, the Hi-C map generated between the two primary melanoma regions is nearly identical.
+
+     In contrast, the Hi-C map generated from the metastasis cells differed a lot from the 2 regions of melanoma cells. In the metastasis cells, an intense loop is generated between chromosomes 11 and 20, and a loop disappears between chromosomes 6 and 11.
+
+     Other than telling us what mutations are developed along cancer progression as what we learned from patient one, we can also use the Hi-C map to identify the stage of cancer development. As the first 2 Hi-C maps are nearly identical, we can infer that the 2 cells used to generate the map might be from a similar stage of cancer development. In contrast, as the third Hi-C map differs a lot from the first 2 maps, we can infer that the mutation in cell type 3 is developed either several years before or after the first 2 cells.
+
+<br>
+
 From the 2 examples we studied above, we can tell that Hi-C plays an important role in providing an overview map of chromosome interactions within the entire cell, which helps us to identify the differentiation and overall mutation development from a bird-view perspective.  
+
+     
+
+<br>
+<a id="FutureDirections"></a>
 
 **Future Directions**
 
 From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not good with detailed loops and structure identification, but is extremely useful for generating a general overview as soon as we start with a project and can be used as guidance through the research. Given Hi-C’s advantage in giving scientists a bird view perspective of cross-chromosomal interactions, it can be used to guide future studies in tracing cancer development and be used “in parallel with 3D imaging on the genetic modification of genomes”. [^9]
 
-## V. Sources Used
+<br>
+<a id="SourcesUsed"></a>
 
+## **V. Sources Used**
+***
 <!-- Footnotes themselves at the bottom. -->
 
 [^1]:
@@ -201,11 +258,10 @@ From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not 
      3dgenome [https://zhonglab.gitbook.io/3dgenome/chapter1-why-we-care-about-3d-genome/3d-nuclear-structure](https://zhonglab.gitbook.io/3dgenome/chapter1-why-we-care-about-3d-genome/3d-nuclear-structure) 
 
 [^3]:
-
      Lecture 8 Genome interaction Hi-C - Zhong
 
 [^4]:
-    <sup> Pal, K., Forcato, M. & Ferrari, F. Hi-C analysis: from data generation to integration. <em>Biophys Rev</em> <strong>11</strong>, 67–78 (2019). https://doi.org/10.1007/s12551-018-0489-1</sup>
+    Pal, K., Forcato, M. & Ferrari, F. Hi-C analysis: from data generation to integration. <em>Biophys Rev</em> <strong>11</strong>, 67–78 (2019). https://doi.org/10.1007/s12551-018-0489-1
 
 [^5]:
      Oluwadare, O., Highsmith, M. & Cheng, J. An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data. Biol Proced Online 21, 7 (2019). https://doi.org/10.1186/s12575-019-0094-0
@@ -214,11 +270,15 @@ From Hi-C’s application in tracing cancer evolution, we know that Hi-C is not 
      Durand NC, Shamim MS, Machol I, Rao SS, Huntley MH, Lander ES, Aiden EL. Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments. Cell Syst. 2016 Jul;3(1):95-8. doi: 10.1016/j.cels.2016.07.002. PMID: 27467249; PMCID: PMC5846465.
 
 [^7]:
-     Servant, N., Varoquaux, N., Lajoie, B.R. et al. HiC-Pro: an optimized and flexible pipeline for Hi-C data processing. Genome Biol 16, 259 (2015). https://doi.org/10.1186/s13059-015-0831-x
+     Servant, N., Varoquaux, N., Lajoie, B.R. et al. HiC-Pro: an optimized and flexible pipeline for Hi-C data processing. Genome Biol 16, 259 (2015). [https://doi.org/10.1186/s13059-015-0831-x]
+
 [^8]:
      Erdmann-Pham, D.D., Batra, S.S., Turkalo, T.K. _et al._ Tracing cancer evolution and heterogeneity using Hi-C. _Nat Commun_ 14, 7111 (2023). [https://doi.org/10.1038/s41467-023-42651-2](https://doi.org/10.1038/s41467-023-42651-2)
+
 [^9]:
      Liu, N., Low, W.Y., Alinejad-Rokny, H. _et al._ Seeing the forest through the trees: prioritising potentially functional interactions from Hi-C. _Epigenetics & Chromatin_ 14, 41 (2021). [https://doi.org/10.1186/s13072-021-00417-4](https://doi.org/10.1186/s13072-021-00417-4)
-[^10]: https://nservant.github.io/HiC-Pro/UTILS.html#hicpro2juicebox-sh
+
+[^10]: 
+     [https://nservant.github.io/HiC-Pro/UTILS.html#hicpro2juicebox-sh]
 
 
