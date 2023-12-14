@@ -71,6 +71,34 @@ After the sequencing library has been generated, the data can be analyzed using 
 * Read pair detection
 * RNA folding and secondary structure prediction
 
+## 1.3. SIGNIFICANCE, ADVANTAGES, AND LIMITATIONS OF MARIO
+
+### Significant Innovation
+Before the development of MARIO and its cohort, researchers could only study one RNA interaction at a time. MARIO restructures the problem of studying the complex nature of RNA interactions by converting the interactions into chimeric DNA, and utilizes DNA sequencing to generate a high-throughput readout of the underlying interactions. (Nguyen et al. 2018)
+
+![](Figure2a.png) ![](Figure2b.png)
+
+Figure 2. Figure from Nguyen et al. review of RNA, Action through Interactions
+
+### Advantages of using MARIO (Nguyen et al. 2016)
+* Unbiased selection: The biotin-labeled RNA linker works as an unbiased selection marker for interacting RNAs. A globally mapped RNA-RNA interactome becomes possible.  
+* Easier than some methods: Comparatively, the biotin-labeled linker avoids the need of a protein-specific antibody or the required expression a tagged protein to investigate RNA interactions. It also gets rid of the previous limit of coping with one RNA-binding protein at one time.
+* Suitable for tissue samples: No synthetic nucleotides or exogenous genes are added before cross-linking, therefore avoiding the risk of spurious interactions that can be offered by a change of RNA. Thus MARIO is made applicable to assay human tissues. 
+* Removal of potential PCR amplification biases: MARIO removes potential PCR biases by  “attaching a random four-nucleotide or six-nucleotide barcode to each chimeric RNA before PCR amplification” and then counting fully overlapping sequencing data with identical barcodes only one time.
+![](Figure3.png)
+Figure 3. Supplementary figure from the Nguyen et al. study on MARIO
+* Minimization of false positive from Ligation: False positives that usually come from “RNAs ligating randomly to other nearby RNAs” are controlled to minimum by doing the fifth step, RNA ligation on streptavidin beads in extremely dilute conditions.
+* Avoided ambiguities in mapping the ligated chimeric RNA : the RNA linker offers a clear borderline “delineating the position of ligation site in the sequencing reads”.
+
+### Limitations
+If the RNA interactions being studied are not protein-mediated, then MARIO can miss them. In other words, given the design of MARIO, it can identify protein-assisted between-molecule and within-molecule RNA interactions, but will miss interactions that are not mediated by proteins (Kudla, Grzegorz et al. 2011).
+
+### Simulation Analysis
+![](Figure4.png)
+Figure 4. Supplementary data from the Nguyen et al. study on MARIO
+
+According to a simulation analysis of MARIO done by its author to estimate its specificity and sensitivity. (Nguyen et al. 2016) “The simulated dataset contained 200,200 chimeric RNA pairs, among which 131,571 pairs of RNAs were detected.” No matter what types of chosen RNAs are in the analysis, MARIO on average has a high specificity(92.57%), showing few false positives. [A highly sensitivity means that there are few false negative results and A highly specificity means that there are few false positive results] However, interactions that carry transposon RNA or snRNA showed more false negatives than those that did. And the worst scenarios happen with LINE RNAs, where sensitivities dropped to 52%. The authors of MARIO thus “conservatively estimate about half of the interactions involving transposon RNAs could have been missed by this procedure”. 
+
 ## 1.4 FURTHER STUDY
 
 ### Disease Research
