@@ -192,6 +192,7 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
     The **Enrichment Score** is the primary result that reflects the degree to which a gene set is over-represented. This is calculated by walking down the ranked list of genes and increasing a running-sum statistic when a gene is in the gene set and decreasing when it isn't. The ES is the maximum deviation from 0 encountered from walking the list. A positive ES indicates that a certain gene set enrichment is at the top of the list while a negative ES is at the bottom of the list. [3]
 
 2. Normalized Enrichment Score (NES)  <br>
+
     The **Normalized Enrichment Score** is the primary statistic for examining gene set results. Normalizing the enrichment score accounts for differences in gene set size and correlations between gene sets and expression data. GSEA calculates NES using the following formula:
 
     <p align="center"><img src="NES.jpg" width="500" /></p> 
@@ -201,6 +202,7 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
     NES is based on gene set enrichment scores for all dataset permutations. This indicates that changing either the permutation method, the number of permutations, or the size of the expression dataset will affect the resulting NES. [3]
 
 3. False Discovery Rate (FDR) <br>
+
     The **False Discovery Rate** is the estimated probability that a gene set with a given NES is a false positive finding. [3] For example, an FDR of 20% indicates that resulting NES has an 80% chance of being valid. Usually, the larger the absolute NES the smaller the FDR.
     
     FDR uses 2 ratio distributions:
@@ -209,6 +211,7 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
    For example, if 6 gene sets were analyzed with 1000 permutations, the 2 resulting distributions would contain one with 6000 data points with second distribution containing 6. 
 
 5. Nominal P Value  <br>
+
     The **Nominal P Value** estimates the statistical significance of the enrichment score for a single set. [3]
 
     Within the GSEA report, a p value of 0 indicates a p values of less that 1/number of permutations. [3] For example, an analysis with 100 permutations would return a p value of 0, but would indicate an actual p value of less than 0.01. This indicates that a larger number of permutations will result in a more accurate p-value.(1000 permuatations are usually recommended) 
