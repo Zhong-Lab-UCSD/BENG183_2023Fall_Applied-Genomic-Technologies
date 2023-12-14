@@ -24,12 +24,12 @@ John Chen
 ### RNAseq Overview
 RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which genes are transcribed and by how much! If we want to examine both the quantity and sequences of RNA in a sample we can use next-generation sequencing (NGS). 
 
-***What the point of Sequncing tho?***
+***What's the point of Sequencing tho?***
 Great quesstion, Im glad you asked. :)
 RNA Sequencing can help us anazlyze :
 
 ✅Differential Gene Expression (which is the whole topic of this paper hehehe) <br>
-✅Alternative <br>
+✅Alternative Splicing<br>
 ✅RNA editing<br>
 ✅and so much more<br>
 
@@ -39,22 +39,22 @@ RNA Sequencing can help us anazlyze :
 
  ![2](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/944ab986-989f-4c68-bbb2-0c990ea7f443)
 
-We will be referring to Differential Expression as DE. As the name mentions DE is when helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greate than within groups.By group we mean samples such as wildtype and mutant samples
+We will be referring to Differential Expression as DE. As the name mentions DE is what helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greater than within groups.By groups we mean samples such as wildtype and mutant samples
 
-Note: Variance referece to variation in gene 
+>Note: Variance refers to variation in gene 
 
 ![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
 ## DESeq2 Description
-Now about DESeq2 👀 You might be able to tell that the name itself include DE and the "Seq" next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the new improved DESeq tool. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014] All those fancy words like "dispersion" and "fold change" we will get to explaining later in this paper. 
+Now about DESeq2 👀 You might be able to tell that the name itself includes **DE** and the **"Seq"** next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the ⭐new improved DESeq tool⭐. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014] We will explain all those fancy words like "dispersion" and "fold change" later in this paper, no worries friend!
 ![pipeline](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/6644a8b2-14ce-4c59-968f-706de375488a)
 
 <br> <br>
 ![3](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/933529aa-d366-4892-8fdb-d95ace252c6f)
 ## DEseq2 Input
-Here is where TPM and Replicates come in. They are simply expression untis which give helps us mesure the amount of transcripts and the proportion of genes. 
-**TPM** in particular stand for ~Transcript per million. It proposed as an alternative to RPKM due to inaccuracy in RPKM measurement" (Wagner et al., 2012)
+Here is where TPM and Replicates come in. They are simply expression units which  helps us measure the amount of transcripts and the proportion of genes. 
+**TPM** in particular stand for ~Transcript per million. It "proposed as an alternative to RPKM due to inaccuracy in RPKM measurement" (Wagner et al., 2012)
 
-**Replicates**: multiple samples that are taken from different individual within experimental condition. The cool thing about replicates is that the more replicates menas the bigger the sampel size we work with. Thus improving precision of expression &  fold change estimates. 
+**Replicates**: multiple samples that are taken from different individual within experimental condition. The cool thing about replicates is that the more replicates means the bigger the sample size we work with. Thus improving precision of expression & fold change estimates. 
 
 <img align="center" width="300" height="200" src="sharpay.gif">
 
