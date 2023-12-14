@@ -151,11 +151,19 @@ There are many types of data visualizations for DESeq2 and differential expressi
 ### Volcano Plots
 We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was upregulated or downregulated. The most significant genes are the data points that are to the top left and top right. 
 
+![volcanoplot.PNG](volcanoplot.PNG)
+
 ### IGV
 We can map the reads to the IGV tool to visualize the read alignments. This is for quality control to make sure that all the reads used in differential expression tools are valid. If the reads for each of the samples do not line up, that means there is an issue in one of the previous steps.
 
+![igvplot.PNG](igvplot.PNG)
+
 ### Heatmaps
 We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means downregulation, red is upregulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples does have a difference in gene expression.
+
+![heatmapplot.PNG](heatmapplot.PNG)
+
+
 ## Other Differential Expression Tools
 TODO: Insert graph of the tool usage
 
