@@ -287,9 +287,9 @@ res <- results(dds)
 **Additional Resources**
 
 Information from previous lectures
-- [1] Dr. Sheng Zhong - BENG 183
-- [2] Dr. Melissa Gymrek - CSE 185
-- [3] Prof. Steven Briggs - BIMM 172
+- [1] Dr. Sheng Zhong - BENG 183 Lecture 2
+- [2] Dr. Melissa Gymrek - CSE 185 Lecture Week 4 Wednesday
+- [3] Prof. Steven Briggs - BIMM 172 Article 4
 
 - [4] For detailed methodology and examples of DESeq2 p-value calculations,
   visit [hbctraining.github.io](https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html).
