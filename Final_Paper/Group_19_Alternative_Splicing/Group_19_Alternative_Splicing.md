@@ -69,7 +69,7 @@ Alternative splicing occurs in over 90 percent of human genes and in over 95 per
 
 ### Examples of Alternative Splicing in Different Genes
 
-In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces the IR-A isoform (exon 11 excluded) to IR-B (exon 11 included)
+In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces mRNA isoforms IR-A (exon 11 excluded) and IR-B (exon 11 included). Quantitative reverse transcription polymerase chain raction (qRT-PCR) sequencing showed that low levels of or IR-B compared to IR-A were associated with the presence of non-small cell lung cancer (NSCLC) [8].  
 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/INSRAltSplice.png" width="850" height="500" />
@@ -103,3 +103,5 @@ References
 [6] Jiang, Wei and Chen, Liang. _Alternative Splicing: Human Disease and Quantitative Analysis from High-Throughput sequencing_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7772363/
 
 [7] Celotto, A M and Gravely, B R. _Alternative splicing of the Drosophila Dscam pre-mRNA is both temporally and spatially regulated_. https://pubmed.ncbi.nlm.nih.gov/11606537/
+
+[8] Jiang, Liyan et al. _Increased IR-A/IR-B ratio in non-small cell lung cancers associates with lower epithelial-mesenchymal transition signature and longer survival in squamous cell lung carcinoma_. https://bmccancer.biomedcentral.com/articles/10.1186/1471-2407-14-131
