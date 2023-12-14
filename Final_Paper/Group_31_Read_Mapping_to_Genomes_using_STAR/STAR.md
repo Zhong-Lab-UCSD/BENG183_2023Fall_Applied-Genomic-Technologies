@@ -66,7 +66,7 @@
 
 3) Once the alignment is completed, the resulting files, typically in SAM or BAM format, are ready for a comprehensive analysis. Beyond the alignment data, valuable information such as mapping statistics summaries, spliced junctions, and details on unmapped sections enrich the dataset, providing a more holistic perspective for subsequent in-depth exploration and interpretation of RNA-seq results. Downstream analyses such as gene expression quantification, differential gene expression, etc. can be performed on the output data.
 
-### 7a. Example STAR run<a name="320"<>/a>
+### 7a. Example STAR run<a name="320"></a>
 
 1. Make directory to store outputs
 <br>`cd1 ____`
