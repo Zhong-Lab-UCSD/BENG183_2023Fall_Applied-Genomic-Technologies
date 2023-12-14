@@ -124,7 +124,7 @@ Many modern sequence aligners take into account the various possibilities that a
 
 ## Popular Tools
 ### STAR:
-[STAR](https://github.com/alexdobin/STAR) stands for Spliced Transcripts Alignment to a Reference. It is one of the fastest and most accurate splice-aware alingers currently available. It utilizes seed indexing (step 1) and seed extension (step 2) which enhances its speed greatly compared to many older splice-aware alingers.
+[STAR](https://github.com/alexdobin/STAR) stands for Spliced Transcripts Alignment to a Reference. It is one of the fastest and most accurate splice-aware alingers currently available. It utilizes seed indexing (step 1) and seed extension (step 2) which enhances its speed greatly compared to many older splice-aware alingers. See the STAR attached GitHub link for how to download.
 
 Indexing Reference Genome:   
 ```STAR --runMode genomeGenerate --genomeDir /path/to/genome/index --genomeFastaFiles /path/to/reference/genome.fa```
@@ -133,7 +133,7 @@ Aligning Reads:
 ```STAR --runThreadN <num_threads> --genomeDir /path/to/genome/index --readFilesIn /path/to/reads/reads1.fq /path/to/reads/reads2.fq --outFileNamePrefix /path/to/output/prefix```
 
 ### HISAT2:
-[HISAT2](https://daehwankimlab.github.io/hisat2/) stands for Hierarchical Indexing for Spliced Alignment of Transcripts. Like STAR, there is an initial indexing step, but, as the name suggests, it utilizes a hierarchical indexing-based approach, unlike STAR. It is also one of the fastest and most accurate splice-aware aligners out there. In addition, HISAT2 is praised for being very memory-efficient.
+[HISAT2](https://daehwankimlab.github.io/hisat2/) stands for Hierarchical Indexing for Spliced Alignment of Transcripts. Like STAR, there is an initial indexing step, but, as the name suggests, it utilizes a hierarchical indexing-based approach, unlike STAR. It is also one of the fastest and most accurate splice-aware aligners out there. In addition, HISAT2 is praised for being very memory-efficient. See the HISAT2 attached manual link for how to download.
 
 Indexing Reference Genome:   
 ```hisat2-build /path/to/reference/genome.fa /path/to/genome/index```
