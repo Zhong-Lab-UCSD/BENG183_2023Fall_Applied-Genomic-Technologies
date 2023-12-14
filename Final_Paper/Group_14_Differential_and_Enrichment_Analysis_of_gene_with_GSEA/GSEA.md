@@ -3,15 +3,10 @@
     1.1. [Differential Expression and Differential Analysis of Genes](#2311)<br>
     1.2. [Gene Set Enrichment Analysis](#2312)
 2. [Differential Gene Expression Analysis: How?](#232)<br>
-<<<<<<< HEAD
     2.1. [General Workflow](#2122)<br>
     2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
     2.3. [Methods and Methods comparison](#2322)
-=======
-    2.1. [General Workflow](#2321)<br>
-    2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
-    2.3. [Methods and Methods Comparison](#2322)
->>>>>>> 66b835ee799e83cde86caaa061cf607e2da21c41
+
 3. [Gene Set Enrichment Analysis: How?](#233)
     3.1. [Preparing and Loading Data](#2331)
     3.2. [Set Analysis Parameters and Run Program](#2332)
