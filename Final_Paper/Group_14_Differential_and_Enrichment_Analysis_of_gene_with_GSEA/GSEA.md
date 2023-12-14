@@ -20,7 +20,7 @@ Have you wondered about how different kinds of cells in our body are developed d
 :-------------------------:|:-------------------------:
 <img src="different-cell.png" width="500" /> | <img src="different-phenotype.png" width="500" /> 
 
-A fundamental concept underlying those phenomenona is the **Differential Expression of genes**. Genes are expressed differentially under different conditions to allow for different combinations of proteins and activation of certain biological pathways [4]. Analyzing **differential expression of a set of genes** under different conditions can uncover the mystery behind development of stem cells and the cause of diseases [4]. 
+A fundamental concept underlying those phenomena is the Differential Expression of genes. Genes are expressed differentially under different conditions to allow for different combinations of proteins and activation of certain biological pathways [4]. Analyzing differential expression of a set of genes under different conditions can uncover the mystery behind development of stem cells and the cause of diseases [4].
 
 Tools like **GSEA** can help us achieve this goal. However, before we dive deeper, let's start with some *basic concept review*. 
 
@@ -43,7 +43,7 @@ In different biological conditions, the same gene will be expressed in different
 - **Differential analysis** is to *analyze significant change in gene expression level of **a gene** under different biological conditions*.[5]
 <p align="center"><img src="DGE.png" width="500" /></p> [5]
 
-As its name, differential analysis is computational method used to detect **evident change of gene expression of *a gene* under different conditions**, **or between two phenotype**[2]. It will require inputs like raw counts of gene expression in different conditions and conduct statistical analysis (like t-test) to check if the difference is statistically significant. 
+As its name implies, differential analysis is a computational method used to detect **evident change of gene expression of *a gene* under different conditions**, **or between two phenotypes**[2]. It will require inputs like raw counts of gene expression in different conditions and conduct statistical analysis (like t-test) to check if the difference is statistically significant. 
  
 #### 2) Gene Set Enrichment Analysis<a name="2312"></a>
 
@@ -220,6 +220,4 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
 [5] Comparing experimental conditions: differential expression analysis. https://biocorecrg.github.io/CRG_Bioinformatics_for_Biologists/differential_gene_expression.html.<br>
 
 [6] Differential gene expression (DGE) analysis. https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/lessons/sample_level_QC.html
-
-
 
