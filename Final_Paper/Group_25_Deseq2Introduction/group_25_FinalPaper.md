@@ -136,14 +136,13 @@ There are two main ways this can work.
 ### Bonferroni Correction
 The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
 
-
+$$pAdj = \frac{pValue}{n (number of tests)}
 ### False Discovery Rate
 False Discovery Rate lets the user choose which percent of significant would be false positives. 
 
 $$FDR = \frac{mP}{\text{number of genes with p < P}}$$
+
 $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
-
-
 
 After we get the p-ajust, we can visualize the data.
 ## Data Visualization
