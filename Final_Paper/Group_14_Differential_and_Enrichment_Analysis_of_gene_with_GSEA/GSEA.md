@@ -212,9 +212,9 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
 
 5. Nominal P Value  <br>
 
-    The **Nominal P Value** estimates the statistical significance of the enrichment score for a single set. [3]
-
-    Within the GSEA report, a p value of 0 indicates a p values of less that 1/number of permutations. [3] For example, an analysis with 100 permutations would return a p value of 0, but would indicate an actual p value of less than 0.01. This indicates that a larger number of permutations will result in a more accurate p-value.(1000 permuatations are usually recommended) 
+    The **Nominal P Value** estimates the statistical significance of the enrichment score for a single set where if p < 0.05, the gene set is considered significant. [3] 
+    
+    Within the GSEA report, a p value of 0 indicates a p values of less that 1/number of permutations. [3] For example, an analysis with 100 permutations would return a p value of 0, but would indicate an actual p value of less than 0.01. This indicates that a larger number of permutations will result in a more accurate p-value.(1000 permutations are usually recommended) 
 
 
 # Reference
