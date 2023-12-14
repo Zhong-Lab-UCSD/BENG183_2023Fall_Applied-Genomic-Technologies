@@ -56,20 +56,20 @@ Now about DESeq2 👀 You might be able to tell that the name itself include DE 
 ### ......previous parts......
 
 ## DESeq2 Method: Negative Binomial Distribution
-DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression leve. As seein the the graph below, the black line is the Poisson Distribution while the blue is the Negative Binomial Distribution. 
+DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the Negative Binomial Distribution. 
 
-The gist of this is that the negative binomial distribution fits the data more in these particular graphs than poisson distibutions due to overdispersion. Think of this like we are looking for the method of line of best fit. The blue line fits much better as the variance distance between the data and the line is minimal on the blue line versus the black line.
+The gist of this is that the negative binomial distribution fits the data more in these particular graphs than poisson distributions due to overdispersion. Think of this like we are looking for the method of line of best fit. The blue line fits much better as the variance distance between the data and the line is minimal on the blue line versus the black line.
 
-![nb_mean_var.png][nb_mean_var.png]
+![nb_mean_var.png](nb_mean_var.png)
 
-The importance of this is that Poisson Distibutions are usually for discrete events where the probability of having an event is low is similar to the case that the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with Negative Binomials allows to compensate the overdispersion seen in Poisson, which is the reason why negeative binomial distibutions are used in DESeq2 and other differential expression tools rather than poisson distibutions. 
+The importance of this is that poisson distributions are usually for discrete events where the probability of having an event is low is similar to the case that the number of reads are very high and there is a low probability that the counts of the mapped reads are high. A parameter with Negative Binomials allows to compensate the over-dispersion seen in Poisson, which is the reason why negative binomial distributions are used in DESeq2 and other differential expression tools rather than poisson distributions. 
 
-Negetive Binomial takes in two functions: mean and dispersion.
-The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i}$$
+Negative Binomial takes in two functions: mean and dispersion.
+The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i})$$
 
 - Mean is calculated by simply multiplying the library size by the gene length. $\mu_{ij} = s_{j}q_{ij}$
 
-- Dispersion calculates the variance of the counts. With the process called Bayesian shrinkage, the tool combines the gene-wise dispersion estimate and the estimate of exprected dispersion rate using data from all the genes.
+- Dispersion calculates the variance of the counts. With the process called Bayesian shrinkage, the tool combines the gene-wise dispersion estimate and the estimate of expected dispersion rate using data from all the genes.
 
 ## DEseq2 Output
 
@@ -177,7 +177,7 @@ There are two main ways this can work: Bonferroni Correction and False Discovery
 ### Bonferroni Correction
 The Bonferroni Correction affects the threshold by dividing the p value by the number of tests conducted. It is said to be strict which means that the threshold will be quite low.
 
-$$pAdj = \frac{pValue}{n \text{(number of tests)}}
+$$pAdj = \frac{pValue}{n \text{(number of tests)}}$$
 
 
 ### False Discovery Rate
@@ -187,13 +187,13 @@ $$FDR = \frac{mP}{\text{number of genes with p < P}}$$
 
 $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
 
-After we get the p-ajust, we can visualize the data.
+After we get the p-adjust, we can visualize the data.
 
 ## Data Visualization
 There are many types of data visualizations for DESeq2 and differential expression tools.
 
 ### Volcano Plots
-We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was upregulated or downregulated. The most significant genes are the data points that are to the top left and top right. 
+We can plot the log2 fold change and the log2 p value. The y axis determines the significance of a particular gene. The x axis determines if the gene was up-regulated or down-regulated. The most significant genes are the data points that are to the top left and top right. 
 
 ![volcanoplot.PNG](volcanoplot.PNG)
 
@@ -203,18 +203,26 @@ We can map the reads to the IGV tool to visualize the read alignments. This is f
 ![igvplot.PNG](igvplot.PNG)
 
 ### Heatmaps
-We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means downregulation, red is upregulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples does have a difference in gene expression.
+We can visualize the gene expression per gene per sample. For the columns, we have each sample. They are usually grouped with similar samples. For the rows, we have the genes expressions we are studying. Blue means down-regulation, red is up-regulation, and the intensity of the color determines how regulated the gene is. We can visually if the groups of samples does have a difference in gene expression.
 
 ![heatmapplot.PNG](heatmapplot.PNG)
 
 
-## Other Differential Expression Tools
+## Other Differential Expression Tools and Usage
 
+Tool | DESeq2 | edgeR | EBseq | cuffdiff | Kallisto
+--- | --- | --- | --- |--- |--- 
+Usage | R | R | R | Command Line | Command Line
 
+Below are the ROC curves of the programs. Essentially, the more the curve hugs the left and top side, the more accurate the model is. If a curve has such optimal shape, that maximizes the area under the curve which means the True Positive Rate is maximal for the largest area using False Positive Rate values. A line that goes diagonally describes a function that would give the answer half of the time.
 
 ![12859_2019_2599_Fig2_HTML.webp](12859_2019_2599_Fig2_HTML.webp)
+
+We can see that DESeq2 (olive colored line) has one of the highest accuracies among the tools and compared to edgeR (purple colored line) which is at the bottom of the list. 
+
 ### Now it's Your Turn!
 We can use DESeq2 or differential expression tools in Jupyter Notebooks with R or CLI.
+R uses cell magic `%%R` and CLI uses `%%bash`
 
 Below is the following to use DESeq2 which uses R:
 0. Install Anaconda to use Jupyter Notebooks
