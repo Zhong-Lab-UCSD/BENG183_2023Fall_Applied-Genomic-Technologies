@@ -223,7 +223,3 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
 [5] Comparing experimental conditions: differential expression analysis. https://biocorecrg.github.io/CRG_Bioinformatics_for_Biologists/differential_gene_expression.html.<br>
 
 [6] Differential gene expression (DGE) analysis. https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/lessons/sample_level_QC.html
-
-
-
-
