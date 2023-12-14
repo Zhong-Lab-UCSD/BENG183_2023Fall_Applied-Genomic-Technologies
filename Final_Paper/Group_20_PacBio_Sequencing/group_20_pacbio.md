@@ -14,7 +14,7 @@ As with most nucleotide incorporation detection technologies, SMRT sequencing is
 
 Whole Genome Sequencing: The Hi-Fi read accuracy is 99.9%, meaning that it can be used for a variety of applications in the field. Since PacBio sequencing uses long-read technology that can sequence the entirety of a genome, it allows for the assembly of whole complex genomes. It can resolve complex genomic regions, reduce error in highly repetitive regions, and allow for more contiguous assembly of genomes. It can also allow de novo sequencing due to these abilities. 
 
-![image1](image1.png)
+![image2](image2.png)
 
 On average, the PacBio HiFi reads have a much higher predicted accuracy than other CCS reads. 
 
@@ -24,7 +24,7 @@ Targeted Sequencing: Additionally, it can provide more complete and accurate rep
 
 Variant Detection: Since PacBio sequencing can cover entire genomic regions, it is very effective in detecting genetic variants like SNPs (single nucleotide polymorphisms), insertions, deletions, and structural variations. Additionally, the CCS technology increases the accuracy of base calling, which allows for more reliability in identifying SNPs. It can identify insertions and deletions even in complex or repetitive regions where short-read sequencing would struggle. It can identify even large structural variants due to its spanning of repetitive sequences, allowing for accurate identification. 
 
-![image2](image2.png)
+![image1](image1.png)
 
 HiFi reads can accurately map the entirety of the region to identify variants with its high accuracy and long reads. It can call single nucleotide variants and improve the mappability of the genome. 
 
