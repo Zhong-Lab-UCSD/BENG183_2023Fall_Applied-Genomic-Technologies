@@ -18,6 +18,7 @@ Anthony Vasquez, Omar Halawa, Yasmin Jaber
   - [RNA-Sequencing](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#rna-sequencing-rna-seq)
   - [Microarrays](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#microarrays)
   - [Single-cell RNA sequencing (scRNA-seq)](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#single-cell-rna-sequencing-scrna-seq)
+  - [Long Read Sequencing](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#long-read-sequencing)
 - [Alternative Splicing in RNA-Seq Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Alternative-Splicing-in-RNA-Seq-Alignment)
   - [Paired-End Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Paired-End-Alignment)
   - [Splice-Aware Alignment](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Group_19_Alternative_Splicing.md#Splice-Aware-Alignment)
