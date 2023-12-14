@@ -18,15 +18,9 @@ John Chen
 - **6:** [Differential Expression Visualization](#)
 - **7:** [Using Differential Expression Tools](#)
 
-![3](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/933529aa-d366-4892-8fdb-d95ace252c6f)
-![2](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/944ab986-989f-4c68-bbb2-0c990ea7f443)
+<br> <br> <br>
+
 ![1](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/af1ca07d-a027-4dfe-89a9-50556728ba84)
-![7](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/e0d02e25-6c7d-49af-9ca0-c4aceb061de2)
-![6](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/cb6ebe91-0a03-485d-bfa4-79c184db8e95)
-![5](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/a0a883b7-121b-402a-ad4b-69583e88b5d7)
-![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
-
-
 ### RNAseq Overview
 RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which genes are transcribed and by how much! If we want to examine both the quantity and sequences of RNA in a sample we can use next-generation sequencing (NGS). 
 
@@ -42,25 +36,29 @@ RNA Sequencing can help us anazlyze :
 <img align="left" width="300" height="275" src="this.png"> Here we have a visual of th pipeline aka tha overall procedure that helps us get from the raw data to eventually Differential Expression<br>
 
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-  
-## Differential Expression Overview
+
+ ![2](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/944ab986-989f-4c68-bbb2-0c990ea7f443)
+
 We will be referring to Differential Expression as DE. As the name mentions DE is when helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greate than within groups.By group we mean samples such as wildtype and mutant samples
 
 Note: Variance referece to variation in gene 
 
+![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
+## DESeq2 Description
 Now about DESeq2 👀 You might be able to tell that the name itself include DE and the "Seq" next to it.Yup, DESeq2 is a Differential Expression Sequencing tool. It is available for the public to use, all you need is to download the R/Bioconducto package. The spicy thing about why there is a "2" in the name is because.... lol it just means this is the new improved DESeq tool. This one in particular "advances with several novel features to facilitate a more quantitative analysis of comparative RNA-seq data using shrinkage estimators for dispersion and fold change." [Love et al. 2014] All those fancy words like "dispersion" and "fold change" we will get to explaining later in this paper. 
 ![pipeline](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/6644a8b2-14ce-4c59-968f-706de375488a)
 
-
-
-##DEseq2 Input
+<br> <br>
+![3](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/933529aa-d366-4892-8fdb-d95ace252c6f)
+## DEseq2 Input
 Here is where TPM and Replicates come in. They are simply expression untis which give helps us mesure the amount of transcripts and the proportion of genes. 
 **TPM** in particular stand for ~Transcript per million. It proposed as an alternative to RPKM due to inaccuracy in RPKM measurement" (Wagner et al., 2012)
 
 **Replicates**: multiple samples that are taken from different individual within experimental condition. The cool thing about replicates is that the more replicates menas the bigger the sampel size we work with. Thus improving precision of expression &  fold change estimates. 
 
 <img align="center" width="300" height="200" src="sharpay.gif">
-##DESeq2 Method: Negative Binomial Distribution
+
+## DESeq2 Method: Negative Binomial Distribution
 DESeq2 uses the negative binomial distribution for estimating the distribution of the gene-level variance vs the mean gene expression level. As seen the the graph below, the black line is the poisson distribution while the blue is the Negative Binomial Distribution. 
 
 The gist of this is that the negative binomial distribution fits the data more in these particular graphs than poisson distributions due to overdispersion. Think of this like we are looking for the method of line of best fit. The blue line fits much better as the variance distance between the data and the line is minimal on the blue line versus the black line.
@@ -75,7 +73,8 @@ The expression is $$K_{jk} ~ NB(mean = \mu_{ij}, dispersion = \alpha_{i})$$
 - Mean is calculated by simply multiplying the library size by the gene length. $\mu_{ij} = s_{j}q_{ij}$
 
 - Dispersion calculates the variance of the counts. With the process called Bayesian shrinkage, the tool combines the gene-wise dispersion estimate and the estimate of expected dispersion rate using data from all the genes.
-
+  
+![5](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/a0a883b7-121b-402a-ad4b-69583e88b5d7)
 ## DEseq2 Output
 
 ![img.png](img.png)
@@ -194,6 +193,7 @@ $$FDR = \frac{\text{number of false positives}}{\text{number of hits}}$$
 
 After we get the p-adjust, we can visualize the data.
 
+![6](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/cb6ebe91-0a03-485d-bfa4-79c184db8e95)
 ## Data Visualization
 There are many types of data visualizations for DESeq2 and differential expression tools.
 
