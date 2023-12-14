@@ -20,7 +20,7 @@ Have you wondered about how different kinds of cells in our body are developed d
 :-------------------------:|:-------------------------:
 <img src="different-cell.png" width="500" /> | <img src="different-phenotype.png" width="500" /> 
 
-A fundamental concept underlying those phenomenon is the **Differential Expression of genes**. Genes are expressed differentially under different conditions to allow for different combinations of proteins and activation of certain biological pathways [4]. Analyzing **differential expression of a set of genes** under different conditions can uncover the mystery behind development of stem cells and the cause of diseases [4]. 
+A fundamental concept underlying those phenomenona is the **Differential Expression of genes**. Genes are expressed differentially under different conditions to allow for different combinations of proteins and activation of certain biological pathways [4]. Analyzing **differential expression of a set of genes** under different conditions can uncover the mystery behind development of stem cells and the cause of diseases [4]. 
 
 Tools like **GSEA** can help us achieve this goal. However, before we dive deeper, let's start with some *basic concept review*. 
 
@@ -220,10 +220,6 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
 [5] Comparing experimental conditions: differential expression analysis. https://biocorecrg.github.io/CRG_Bioinformatics_for_Biologists/differential_gene_expression.html.<br>
 
 [6] Differential gene expression (DGE) analysis. https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/lessons/sample_level_QC.html
-
-[7] Fullwood, M.J. et al. (2009) An oestrogen-receptor-alpha-bound human chromatin interactome. Nature 462, 58–64.<br>
-
-[8] https://github.com/hms-dbmi/hic-data-analysis-bootcamp/blob/master/HiC-Protocol.pptx.
 
 
 
