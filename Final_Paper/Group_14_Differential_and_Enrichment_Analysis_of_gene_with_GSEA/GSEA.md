@@ -166,7 +166,7 @@ Running GSEA is an easy and simple process. Once the datasets have been loaded i
 
 <p align="center"><img src="GSEAParam.png" width="500" /></p>
 
-A majority of these required fields(1,2,4,6) are done by selecting the datasets from the preparing and loading step previously. For the remaining fields, the number of permutations and permutation type will have the biggest effect on the results which will be explained in further detail in the next section.  
+A majority of these required fields(1,2,4,6) are done by selecting the datasets from the previous preparing and loading step. For the remaining fields, the number of permutations and permutation type will have the biggest effect on the results which will be explained in further detail in the next section.  
 
 Once parameters are set, the program can be run where the user will then be presented with a GSEA report, which tracks the progress and result of the analysis. There are 2 potential outcomes once the analysis is finished: 
 1. Error
