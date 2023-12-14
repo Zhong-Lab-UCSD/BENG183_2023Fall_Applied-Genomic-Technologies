@@ -1,4 +1,5 @@
 # Team 31: Read Mapping to Genomes using STAR
+## Team 5: Siddharth Kaipa, Ieva Sereiva, Lily McCalmont
 1. [Background](#311)<br>
 2. [STAR Background Information](#316)<br>
 3. [History of RNA Sequencing](#312)<br>
