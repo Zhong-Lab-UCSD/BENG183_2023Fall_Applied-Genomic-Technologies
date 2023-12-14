@@ -55,7 +55,7 @@
   So how can we fix these mapping problems? We can improve mapping speed. STAR is about 50 fold faster than other current aligners. As shown in the table to the right, STAR does trade this efficiency with RAM usage, but it is significantly faster than other programs.  We can increase the lengths of reads being sequenced. With STAR having its own indexing command we are able to remove the limitations on read length. We can improve on, or more efficiently achieve the same accuracy as previous programs. 
 
 ![](table.png)
-(Dobin)
+<br> (Dobin)
 
 ## 7. Overview of STAR Steps<a name="317"></a>
 
@@ -76,12 +76,11 @@
 1. Make directory to store outputs
 <br>`cd1 ____`
 <br>`mkdir ____`
-<br>
 3. Generating Genome Indices
-<br>`--runThreadN NumberOfThreads --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta1 /path/to/genome/fasta2 --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang ReadLength-1`
+`--runThreadN NumberOfThreads --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta1 /path/to/genome/fasta2 --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang ReadLength-1`
 <br>
 5. Mapping to STAR indexed genome
-<br>`--runThreadN NumberOfThreads --genomeDir /path/to/genomeDir --readFilesIn /path/to/read1 [/path/to/read2 ]`
+`--runThreadN NumberOfThreads --genomeDir /path/to/genomeDir --readFilesIn /path/to/read1 [/path/to/read2 ]`
 <br>
 <br> * (source: STAR manual 2.7)
 
