@@ -197,7 +197,7 @@ Below is a very brief overview of how microarrays can be used for research like 
 There are many different types of microarrays that are used to study differential gene expression. When it comes to alternative splicing we can use splice specific microarrays that designed with probes in order to target exon-exon junctions, specific exons, or introns. The fact that we can customize the specific probe used in microarrays gives researchers alot of flexibility when it comes to the specific differences that we want to capture and study. Usually,these microarrays are designed with probes that target the splice junction and exon of interest.
 
 
-![altsplicetypes](https://www.researchgate.net/profile/Michael-Moore-19/publication/5764604/figure/fig2/AS:277812444450817@1443247056130/Microarray-analysis-of-alternative-splicing-Probe-topog-raphies-for-different-array.png)
+![altsplicetypes2](https://www.researchgate.net/profile/Michael-Moore-19/publication/5764604/figure/fig2/AS:277812444450817@1443247056130/Microarray-analysis-of-alternative-splicing-Probe-topog-raphies-for-different-array.png)
 
 <br>'
 
