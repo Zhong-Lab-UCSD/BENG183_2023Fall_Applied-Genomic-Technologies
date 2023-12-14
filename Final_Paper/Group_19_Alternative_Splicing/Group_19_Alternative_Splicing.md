@@ -168,7 +168,7 @@ Validation of the findings, often using techniques like qRT-PCR, is crucial to c
 According to a paper by Anna Conesa et al. about the best practicesfor RNA-seq data:
 ### A survey of best practices for RNA-seq data analysis - Conesa et al.
 
-"The most common application of RNA-seq is to estimate gene and transcript expression"[11] 
+"The most common application of RNA-seq is to estimate gene and transcript expression" [11].
 
 This paper discussed the major steps involved in RNA analysis, specifically the steps in RNA-seq as well as how it can be used to identify and study different isoforms. One of the points that the researchers focused on was transcript-level differential expression analysis, which is specifically suited to help aid the discovery different isoforms of different genes. Conesa and her collegues proposed RNA-seq as the specific method that should be employed for raw data analysis because of its accuracy and efficiency.
 
