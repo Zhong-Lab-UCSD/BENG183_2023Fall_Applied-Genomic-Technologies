@@ -81,7 +81,7 @@ Image credit [Wildonger BIMM 100 - UCSD]
 
 ### Evolutionary Perspective
 
-Alternative splicing allows for the possibility of producing a new protein with a new function while still maintaining the original protein function. The production of novel proteins can lead to "phenotypic innovation" [9].
+Alternative splicing allows for the possibility of producing a novel protein with a new function while still maintaining the original protein function. The production of novel proteins can lead to "phenotypic innovation" [9].
 
 > The speciation of human body lice from human head lice is believed to have been caused by alternative splicing [9]
 
