@@ -44,7 +44,7 @@ Image credit [2]
 
 There are two main elemental factors that facilitate alternative splicing: trans-acting elements facilitate the splicing of introns and exons, and cis-regulatory elements facilitate the binding of trans-acting factors to different introns and exons. 
 
-Trans-acting factors include: SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR proteins which contribute to the splicing of exons or introns. Exonic splice silencers promote the binding of hnRNPs which can prevent the splicing of an exon. [3]
+Trans-acting factors include SR proteins, which are rich in serine and arginine, heterogeneous nuclear ribonucleoproteins (hnRNPs), various ribonucleoproteins, and proteins. Cis-regulatory elements include: exonic splice enhancer (ESE), exonic splice silencer (ESS), intronic splice enhancer (ISE), and intronic splice silencer (ISS). Exonic splice enhancers promote the binding of SR protein's which contribute to the splicing of exons or introns. Exonic splice silencers promote the binding of hnRNPs which can prevent the splicing of an exon. [3]
 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/Altsplicingelements.png" width="600" height="300" />
@@ -55,7 +55,7 @@ Image credit [3]
 
 ### Role of the Spliceosome in Alternative Splicing
 
-The spliceosome is a ribonucleoprotein complex that contains the basal splicing machinery responsible for splicing an exon [4]. SR proteins recruit the spliceosome to the splice site while hnRNPs minimize the SR proteins ability to rectruit the spliceosome [5]. Various other proteins facilitate the removal of the exon and rejoining of the mRNA. 
+The spliceosome is a ribonucleoprotein complex that contains the basal splicing machinery responsible for splicing an exon [4]. SR proteins recruit the spliceosome to the splice site while hnRNPs minimize the SR protein's ability to recruit the spliceosome [5]. Various other proteins facilitate the removal of the exon and rejoining of the mRNA. 
 
 # Alternative Splicing and Genomic Diversity
 
@@ -65,11 +65,11 @@ Alternative splicing occurs in over 90 percent of human genes and in over 95 per
 
 
 #### Contribution to Gene Regulation
-> Alternative splicing also contrbutes to gene regulation by producing non-functional proteins that occupy translational machinery without contributing to genetic expression. 
+> Alternative splicing also contributes to gene regulation by producing non-functional proteins that occupy translational machinery without contributing to genetic expression. 
 
 ### Examples of Alternative Splicing in Different Genes
 
-In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces mRNA isoforms IR-A (exon 11 excluded) and IR-B (exon 11 included). Quantitative reverse transcription polymerase chain raction (qRT-PCR) sequencing showed that low levels of or IR-B compared to IR-A were associated with the presence of non-small cell lung cancer (NSCLC) [8].  
+In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces mRNA isoforms IR-A (exon 11 excluded) and IR-B (exon 11 included). Quantitative reverse transcription polymerase chain reaction (qRT-PCR) sequencing showed that low levels of or IR-B compared to IR-A were associated with the presence of non-small cell lung cancer (NSCLC) [8].  
 
 <div align="center">
 <img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/INSRAltSplice.png" width="850" height="500" />
