@@ -144,6 +144,7 @@ All currently known approaches to fabricating solid-state nanopores have challen
 [^ONT_products]: Oxford Nanopore Technologies. (n.d.). _Promethion_. https://nanoporetech.com/products/sequence/promethion
 [^ONT_workflow]: Oxford Nanopore Technologies. (n.d.). _The nanopore sequencing workflow_. https://nanoporetech.com/how-it-works/nanopore-sequencing-workflow
 [^ONT_advantages]: Oxford Nanopore Technologies. (n.d.). _Advantages of nanopore sequencing_. https://nanoporetech.com/how-it-works/advantages-nanopore-sequencing
+[^Lee2014]: Lee, H., Gurtowski, J., Yoo, S., Marcus, S., McCombie, W. R., & Schatz, M. (2014). Error correction and assembly complexity of single molecule sequencing reads. [Preprint]. _Bioinformatics_. https://doi.org/10.1101/006395
 [^Spealman2020]: Spealman, P., Burrell, J., & Gresham D. (2020). Inverted duplicate DNA sequences increase translocation rates through sequencing nanopores resulting in reduced base calling accuracy. _Nucleic Acids Research_, _48_(9), 4940–4945. https://doi.org/10.1093/nar/gkaa206
 [^Liu2016]: Liu, Z., Wang, Y., Deng, T., & Chen, Q. (2016). Solid-state nanopore-based dna sequencing technology. _Journal of Nanomaterials_, 2016(5284786), 1–13. https://doi.org/10.1155/2016/5284786
 [^Chen2019]: Chen, Q., & Liu, Z. (2019). Fabrication and applications of solid-state nanopores. _Sensors_, _19_(8), 1886. https://doi.org/10.3390/s19081886
