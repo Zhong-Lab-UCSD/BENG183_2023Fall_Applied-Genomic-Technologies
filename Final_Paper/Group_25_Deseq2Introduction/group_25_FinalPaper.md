@@ -27,6 +27,20 @@ John Chen
 ![4](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/65b197e2-33f1-48c2-9e69-d4d23578710c)
 
 
+### RNAseq Overview
+RNA Transcripts controls ⭐Gene Expression⭐ which can help us find which genes are transcribed and by how much! If we want to examine both the quantity and sequences of RNA in a sample we can use next-generation sequencing (NGS). 
+
+***What the point of Sequncing tho?***
+Great quesstion, Im glad you asked. :)
+RNA Sequencing can help us anazlyze :
+* Differential Gene Expression (which is the whole topic of this paper hehehe)
+* Alternative Splicing
+* RNA editing
+* and so much more
+
+### Differential Expression Overview
+The name kind of gives it away but... Differential Analysis is more than just "are the 
+### DEseq2 Input
 
 
 ### ......previous parts......
