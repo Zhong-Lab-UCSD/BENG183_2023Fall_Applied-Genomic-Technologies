@@ -88,7 +88,7 @@ Alternative splicing allows for the possibility of producing a novel protein wit
 References
 
 
-[1] Clancy, Suzanne. _RNA Splicing: Introns, Exons, and Spliceosome_. https://www.nature.com/scitable/topicpage/rna-splicing-introns-exons-and-spliceosome-12375/#:~:text=The%20first%20example%20of%20alternative,containing%20different%20combinations%20of%20exons.
+[1] Clancy, Suzanne. _RNA Splicing: Introns, Exons, and Spliceosome_. https://www.nature.com/scitable/topicpage/rna-splicing-introns-exons-and-spliceosome-12375/
 
 [2] Fahmi, Naima et al. _AS-Quant: Detection and Visualization of Alternative Splicing Events with RNA-seq Data_. https://www.mdpi.com/1422-0067/22/9/4468
 
