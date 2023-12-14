@@ -10,8 +10,8 @@ John Chen
 
 - **1:** [RNAseq Overview](#rnaseq-overview)
 - **2:** [Differential Expression Overview](#differential-expression-overview)
-- **3:** [DEseq2 Input](#deseq2-input)
-- **4:** [DEseq2 Description](#deseq2-description)
+- **3:** [DEseq2 Description](#deseq2-description)
+- **4:** [DEseq2 Input](#deseq2-input)
 - **5:** [DEseq2 Output](#deseq2-output)
 	- **5.1**: [log2foldchange](#deseq2-output-log2foldchange)
 	- **5.2**: [Statistical Significance](#deseq2-and-statistical-significance)
