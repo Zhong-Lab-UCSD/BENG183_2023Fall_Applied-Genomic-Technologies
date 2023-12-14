@@ -258,7 +258,7 @@ However, its important to note that scRNA-Seq also has some diadvantages because
 
 <br>
 
-![altsplicetypes](https://ngdc.cncb.ac.cn/regeneration/images/single-cell/landscape_Mouse_Lung_Bleomycin.jpg)
+![altsplicetypes](https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/landscape_Mouse_Lung_Bleomycin.jpg)
 
 
 
