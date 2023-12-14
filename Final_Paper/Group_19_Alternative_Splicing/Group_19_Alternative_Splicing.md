@@ -67,7 +67,7 @@ Alternative splicing occurs in over 90 percent of human genes and in over 95 per
 #### Contribution to Gene Regulation
 > Alternative splicing also contributes to gene regulation by producing non-functional proteins that occupy translational machinery without contributing to genetic expression. 
 
-### Examples of Alternative Splicing in Different Genes
+### Examples of Alternative Splicing in Genes
 
 In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces mRNA isoforms IR-A (exon 11 excluded) and IR-B (exon 11 included). Quantitative reverse transcription polymerase chain reaction (qRT-PCR) sequencing showed that low levels of IR-B compared to IR-A is associated with the presence of non-small cell lung cancer (NSCLC) [8].  
 
@@ -81,7 +81,7 @@ Image credit [Wildonger BIMM 100 - UCSD]
 
 ### Evolutionary Perspective
 
-Alternative splicing allows for the possibility of producing a new protein with a new function while still maintaining the original protein function. 
+Alternative splicing allows for the possibility of producing a new protein with a new function while still maintaining the original protein function. The production of novel proteins can lead to the phenotypic innovation [9].
 
 > The speciation of human body lice from human head lice is believed to have been caused by alternative splicing [9]
 
