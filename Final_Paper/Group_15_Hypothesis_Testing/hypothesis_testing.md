@@ -230,6 +230,8 @@ The decision to not the null hypothesis given that the null hypothesis is not tr
 
 $P($ Reject $H0|H0) = P(p\leqδ|H0)$, $P($ Do not reject $H0|H1) = P(p>δ|H1)$
 
+<img src="type_1_and_2_error.png"  width="50%" height="50%" />
+
 When the significance threshold increases, the chance of a type I error increases while the chance of a type II error decreases. 
 
 Conversely, when the significance threshold decreases, the chance of a type I error decreases while the chance of a type II error increases.
