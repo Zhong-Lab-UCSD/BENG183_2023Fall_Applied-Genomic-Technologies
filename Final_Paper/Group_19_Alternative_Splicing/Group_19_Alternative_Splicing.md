@@ -81,8 +81,9 @@ Image credit [Wildonger BIMM 100 - UCSD]
 
 ### Evolutionary Perspective
 
+Alternative splicing allows for the possibility of producing a new protein with a new function while still maintaining the original protein function. 
 
-
+> The speciation of human body lice from human head lice is believed to have been caused by alternative splicing [9]
 
 
 
@@ -105,3 +106,5 @@ References
 [7] Celotto, A M and Gravely, B R. _Alternative splicing of the Drosophila Dscam pre-mRNA is both temporally and spatially regulated_. https://pubmed.ncbi.nlm.nih.gov/11606537/
 
 [8] Jiang, Liyan et al. _Increased IR-A/IR-B ratio in non-small cell lung cancers associates with lower epithelial-mesenchymal transition signature and longer survival in squamous cell lung carcinoma_. https://bmccancer.biomedcentral.com/articles/10.1186/1471-2407-14-131
+
+[9] Bush, Stephen et al. _Alternative Splicing and the Evolution of Phenotypic Novelty_. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5182408/
