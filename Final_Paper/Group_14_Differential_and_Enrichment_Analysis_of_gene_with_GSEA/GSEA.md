@@ -199,7 +199,7 @@ Once parameters are set, the program can be run where the user will then be pres
 1. Error
 2. Success
 
-<p align="center"><img src="GSEAError.png" width="500" /></p>
+<p align="center"><img src="GSEAError.PNG" width="500" /></p>
 
 If given an error, the user can click on the Error message in order to be prompted to an error log which will provide further in-depth information regarding why the analysis failed.
 
