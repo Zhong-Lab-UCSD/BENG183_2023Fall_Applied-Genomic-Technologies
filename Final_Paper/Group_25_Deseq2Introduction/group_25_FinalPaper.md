@@ -294,7 +294,6 @@ Information from previous lectures
 - [9] https://pubmed.ncbi.nlm.nih.gov/35981026/
 - [10] https://bioramble.wordpress.com/2016/01/30/why-sequencing-data-is-modeled-as-negative-binomial/
 
-- https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6
 - https://rdrr.io/bioc/DESeq2/man/lfcShrink.html
 - https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#citeas
 - 
