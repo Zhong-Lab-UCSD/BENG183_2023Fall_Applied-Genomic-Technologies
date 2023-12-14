@@ -7,9 +7,9 @@
     2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
     2.3. [Methods and Methods comparison](#2322)
 
-3. [Gene Set Enrichment Analysis: How?](#233)
-    3.1. [Preparing and Loading Data](#2331)
-    3.2. [Set Analysis Parameters and Run Program](#2332)
+3. [Gene Set Enrichment Analysis: How?](#233)<br>
+    3.1. [Preparing and Loading Data](#2331)<br>
+    3.2. [Set Analysis Parameters and Run Program](#2332)<br>
     3.3. [View/Analyze Results](#2333)
 
 
@@ -99,7 +99,6 @@ Let's dive into details one by one.
 
 #### 2) RNA-Seq Workflow - Preparing for DGE<a name="2222"></a>
 
-<<<<<<< HEAD
 Before we can use GSEA, we first need to perform our differential gene expression analysis separately. Luckily, DGE is a well established protocol with a plethora of tools available to help us unlock the potential of differential analysis. While we’ll dive deeper into some of these tools later as well as how you can make the seemingly difficult decision on which one to pick, let’s first discuss some vital steps leading up to DGE analysis.
 
 <p align="center"><img src="de_workflow.png" width="300" /></p> 
@@ -122,32 +121,6 @@ Both DESeq2 and EdgeR will model read counts as a negative binomial distribution
 
 <p align="center"><img src="deseq2output.png" width="500" /></p> 
 
-=======
-#### 2) RNA-Seq Workflow - Preparing for DGE<a name="2222"></a>
-
-Before we can use GSEA, we first need to perform our differential gene expression analysis separately. Luckily, DGE is a well established protocol with a plethora of tools available to help us unlock the potential of differential analysis. While we’ll dive deeper into some of these tools later as well as how you can make the seemingly difficult decision on which one to pick, let’s first discuss some vital steps leading up to DGE analysis.
-
-<p align="center"><img src="de_workflow.png" width="300" /></p> 
-
-From previous chapters, we should already be familiar with the general RNA sequencing analysis pipeline outlined above, but just for the sake of review let’s discuss some of the key steps. We’ll begin with our RNA-seq data as sequence reads and run these through FASTQC for quality control. Next, we’ll map our reads to the reference genome, and often this step will be conducted using STAR. Lastly, before DGE we will do expression quantification, which can be performed in featureCounts. [BENG183 Lecture] If any of these steps are unclear, feel free to take a minute and revisit these earlier topics. At this stage, you’re ready to take the next step with differential gene expression analysis - so let’s dive into the methods that make it all work.
-
-#### 3) Methods and Methods Comparison<a name="2322"></a>
-
-As touched on earlier, there’s a wide range of tools that can be used for DGE analysis. Some of the more common and well-known tools include DESeq2, EdgeR, and limma-voom, but there’s others as well, each with its own functionality. 
-
- <p align="center"><img src="dge_tools.png" width="500" /></p> 
-
-While these methods do have some differences in their exact procedure, they all follow a general workflow and can be successfully applied for DGE. Additionally, most DGE tools can be compatible with GSEA, so there’s not really any major restrictions on which one you can select. For now, we’re going to narrow down our focus to just DESeq2 and EdgeR - both are well established tools that are a part of the R programming language.
-
-<p align="center"><img src="dge_comparison.png" width="500" /></p> 
-
-As for that general workflow, we’re going to begin with count data which tells us the number of sequence reads originating from each gene. Higher counts will mean more expression, and lower counts the opposite. Normalization is next. DESeq2 uses median of ratios for normalization, whereas EdgeR takes trimmed mean of M values (TMM) [6]. These aren’t extremely different, but this does demonstrate some of the minor differences that keep the two tools unique. 
-
-Both DESeq2 and EdgeR will model read counts as a negative binomial distribution, and with our filtered, normalized, and high quality counts will run statistical tests to calculate fold changes, p-values, and other measures to represent the level of significance of expression differences. An example table output from DESeq2 is shown below. As we can see, we have p-values for each gene which will allow us to judge significance. 
-
-<p align="center"><img src="deseq2output.png" width="500" /></p> 
-
->>>>>>> 66b835ee799e83cde86caaa061cf607e2da21c41
 Once we’ve arrived here, actually understanding the output of our DGE analysis can be a daunting task in itself. Don’t worry! GSEA is an easy to use software that can help you analyze, annotate, and interpret enrichment results.
 
 ## 3. Gene Set Enrichment Analysis: How?<a name="233"></a>
@@ -167,19 +140,19 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 
 1. Expression Dataset
 
-    Expression Datasets contain features(genes or probes), samples, and an expression value for each feature in each sample. This dataset is accepted in the following formats: res, gcl, pcl, or txt.
+    Expression Datasets contain features(genes or probes), samples, and an expression value for each feature in each sample. This dataset is accepted in the following formats: res, gcl, pcl, or txt.[3]
 
 2. Phenotype Labels
     
-    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls
+    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls[3]
 
 3. Gene Sets
 
-    Gene Sets contain one or more gene sets. Each gene set contains the given gene sets name and a list of features(genes or probes) This dataset is accepted in the following format: gmx, gmt, or grp.
+    Gene Sets contain one or more gene sets. Each gene set contains the given gene sets name and a list of features(genes or probes) This dataset is accepted in the following format: gmx, gmt, or grp.[3]
 
 4. Chip Annotations(Optional)
 
-    Chip Annotations are the only optional dataset not required by GSEA to run. Chip Annotations list each identifier on a platform along with its matching HGNC chip symbol. This dataset is accepted in the following format: chip
+    Chip Annotations are the only optional dataset not required by GSEA to run. Chip Annotations list each identifier on a platform along with its matching HGNC chip symbol. This dataset is accepted in the following format: chip [3]
 
 #### 2) Set Analysis Parameters and Run Program<a name="2332"></a>
 Running GSEA is an easy and simple process. Once the datasets have been loaded into the program, a few required parameters need to be set:
@@ -213,27 +186,29 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
 - 4. Nominal P Value
 
 1. Enrichment Score (ES)
-    The Enrichment Score is the primary result that reflects the degree to which a gene set is over-represented. This is calculated by walking down the ranked list of genes and increasing a running-sum statistic when a gene is in the gene set and decreasing when it isn't. The ES is the maximum deviation from 0 encountered from walking the list. A positive ES indicates that a certain gene set enrichment is at the top of the list while a negative ES is at the bottom of the list.
+    The **Enrichment Score** is the primary result that reflects the degree to which a gene set is over-represented. This is calculated by walking down the ranked list of genes and increasing a running-sum statistic when a gene is in the gene set and decreasing when it isn't. The ES is the maximum deviation from 0 encountered from walking the list. A positive ES indicates that a certain gene set enrichment is at the top of the list while a negative ES is at the bottom of the list. [3]
 
 2. Normalized Enrichment Score (NES)
-    The Normalized Enrichment Score is the primary statistic for examining gene set results. Normalizing the enrichment score accounts for differences in gene set size and correlations between gene sets and expression data. GSEA calculates NES using the following formula:
+    The **Normalized Enrichment Score** is the primary statistic for examining gene set results. Normalizing the enrichment score accounts for differences in gene set size and correlations between gene sets and expression data. GSEA calculates NES using the following formula:
 
-    <p align="center"><img src="NES.jpg" width="500" /></p>
+    <p align="center"><img src="NES.jpg" width="500" /></p> 
 
-    NES is based on gene set enrichment scores for all dataset permutations. This indicates that changing either the permutation method, the number of permutations, or the size of the expression dataset will affect the resulting NES. 
+    [3]
+
+    NES is based on gene set enrichment scores for all dataset permutations. This indicates that changing either the permutation method, the number of permutations, or the size of the expression dataset will affect the resulting NES. [3]
 
 3. False Discovery Rate (FDR)
-    The False Discovery Rate is the estimated probability that a gene set with a given NES is a false positive finding. For example, an FDR of 20% indicates that resulting NES has an 80% chance of being valid. Usually, the larger the absolute NES the smaller the FDR.
+    The **False Discovery Rate** is the estimated probability that a gene set with a given NES is a false positive finding. [3] For example, an FDR of 20% indicates that resulting NES has an 80% chance of being valid. Usually, the larger the absolute NES the smaller the FDR.
     
-    FDR uses 2 ratio distributions: (1)the actual ES vs the ES for all gene sets against all permutations of the data set and (2) the actual ES vs the ES of all gene sets against the actual dataset. For example, if 6 gene sets were analyzed with 1000 permutations, the 2 resulting distributions would contain one with 6000 data points with second distribution containing 6. 
+    FDR uses 2 ratio distributions: (1)the actual ES vs the ES for all gene sets against all permutations of the data set and (2) the actual ES vs the ES of all gene sets against the actual dataset. [3] For example, if 6 gene sets were analyzed with 1000 permutations, the 2 resulting distributions would contain one with 6000 data points with second distribution containing 6. 
 
 4. Nominal P Value
-    The Nominal P Value estimates the statistical significance of the enrichment score for a single set. 
+    The **Nominal P Value** estimates the statistical significance of the enrichment score for a single set. [3]
 
-    Within the GSEA report, a p value of 0 indicates a p values of less that 1/number of permutations. For example, an analysis with 100 permutations would return a p value of 0, but would indicate an actual p value of less than 0.01. This indicates that a larger number of permutations will result in a more accurate p-value.(1000 permuatations are usually recommended)
+    Within the GSEA report, a p value of 0 indicates a p values of less that 1/number of permutations. [3] For example, an analysis with 100 permutations would return a p value of 0, but would indicate an actual p value of less than 0.01. This indicates that a larger number of permutations will result in a more accurate p-value.(1000 permuatations are usually recommended) 
 
 
-# Referrence
+# Reference
 [1] Anjum A, Jaggi S, Varghese E, Lall S, Bhowmik A, Rai A. Identification of Differentially Expressed Genes in RNA-seq Data of Arabidopsis thaliana: A Compound Distribution Approach. J Comput Biol. 2016 Apr;23(4):239-47. doi: 10.1089/cmb.2015.0205. Epub 2016 Mar 7. PMID: 26949988; PMCID: PMC4827276. <br>
 
 [2] Abbas, M., EL-Manzalawy, Y. Machine learning based refined differential gene expression analysis of pediatric sepsis. BMC Med Genomics 13, 122 (2020). https://doi.org/10.1186/s12920-020-00771-4<br>
