@@ -2,8 +2,8 @@
 ###### BENG183 Final Paper date:12-13-2023 
 ###### Group 9 
 ###### Hanson Hoang A16872363
-###### Kathy Gu 
-###### Maria Wang
+###### Kathy Yu Xuan Gu A16362055
+###### Maria Pinyi Wang A16423014
 
 1. [Introduction](#1)
 2. [Purpose of CHIP-Sequencing](#2)
@@ -22,22 +22,19 @@
     4.4. [Annotation and Functional Analysis](#44)<br>
     4.5. [Motif Analysis for DNA Binding Sequences](#45)<br>
     4.6. [Visualization and Interpretation](#46)<br>
-
 5. [Advantages of ChIP-Seq](#5)<br>
-    5.1. [*put section header in*](#51)<br>
-    5.2. [*put section header in*](#52)<br>
-    5.3. [*put section header in*](#53)<br>
-    5.4. [*put section header in*](#54)<br>
-    5.5. [*put section header in*](#55)<br>
-    5.6. [*put section header in*](#56)<br>
-
+    5.1. [Unbiased Genome Exploration](#51)<br>
+    5.2. [Extensive Genome-Wide Profiling](#52)<br>
+    5.3. [Efficient DNA Target Capture](#53)<br>
+    5.4. [Adaptable Sample Compatibility](#54)<br>
+    5.5. [Enhanced Resolution and Sensitivity](#55)<br>
+    5.6. [Predictive Power for Tissue-Specific Enhancer Activities](#56)<br>
 6. [Applications of ChIP-Seq](#6)<br>
-    6.1. [*put section header in*](#61)<br>
-    6.2. [*put section header in*](#62)<br>
-    6.3. [*put section header in*](#63)<br>
-    6.4. [*put section header in*](#64)<br>
-    6.5. [*put section header in*](#65)<br>
-    6.6. [*put section header in*](#66)<br>
+    6.1. [Profiling DNA-Binding Proteins](#61)<br>
+    6.2. [Gene Regulation Insights](#62)<br>
+    6.3. [Identifying Transcription Factor Binding Sites](#63)<br>
+    6.4. [Wide-Ranging Applications Beyond Histone-DNA Interactions](#64)<br>
+    6.5. [Detecting Variations in Transcription Factor Binding](#65)<br>
 
 
 
@@ -53,37 +50,33 @@ The purpose of ChIP-seq is to map and study genome-wide interactions between DNA
 
 ## 3. ChIP-Seq Workflow<a name="3"></a>
 
-- **bullet points here if needed**
-- **text here**
-- **text here**
-
 #### 1) Crosslinking<a name="31"></a>
 
-text here 
+Cells are treated with a cross-linking agent, often formaldehyde to covalently link interacting proteins to DNA. As there is constant movement of proteins and DNA, ChIP captures a snapshot of the protein–DNA complexes that exist at a specific time. In vivo crosslinking covalently stabilizes protein–DNA complexes. 
 
 #### 2) Cell Lysis<a name="32"></a>
 
-text here 
+Cells are lysed to break open the cell membrane and release the chromatin. Because protein–DNA interactions occur primarily in the nuclear compartment, removing cytosolic proteins can help reduce background signal and increase sensitivity. Successful cell lysis can be visualized under a microscope. Take a 10 µL sample before and after lysis, and using a hemocytometer, examine the whole cells versus the nuclei.
 
 #### 3) Chromatin Shearing<a name="33"></a>
 
-text here 
+The chromatin is fragmented or “sheared” to mononucleosome sized fragments (150-300 bp) through processes like sonication and enzymatic digestion. By shearing the long strands, the resulted DNA fragments can be more easily and quickly processed, which is important for obtaining high resolution sequencing data.
 
 #### 4) Immunoprecipitation (IP)<a name="34"></a>
 
-text here 
+To isolate a specifically modified histone, transcription factor, or cofactor of interest, ChIP-validated antibodies are used to immunoprecipitate and isolate the target from other nuclear components. The antibody is coupled to magnetic beads coated with protein-A and/or G (depending on the antibody isotype) to facilitate immunoprecipitation, and the antibody-bound chromatin is isolated from bulk chromatin using a magnet. The advantages of magnetic beads are easy separation and easy visibility of the beads in the tube, leading to less loss of material and highly reproducible results. All components other than the target should be washed off using wash buffers with progressively higher salt and detergent concentrations, in order to reduce background signal in the data.
 
 #### 5) Reversal of Cross-linking<a name="35"></a>
 
-text here 
+The target-enriched chromatin is treated with Proteinase K to digest proteins, RNase A to degrade RNA, and high salt with heat environment to reverse cross-links. This separates the protein from the DNA, allowing for downstream processing.
 
 #### 6) DNA Purification<a name="36"></a>
 
-text here 
+DNA fragments are purified from the immunoprecipitated sample. This step removes proteins and other cellular components, leaving only the DNA associated with the protein of interest.
 
 #### 7) Library prep and indexing<a name="37"></a>
 
-text here 
+Just like with RNAseq, prepare a sequence library by adding sequencing adapters to both ends of the DNA fragments. When the library is prepared, perform PCR to the strands to amplify the library. For quality check, check the library concentration and confirm size distribution by capillary electrophresis. When it is considered a qualified library, the strands are sequenced, and the garbage reads are filtered out. Finally, align the high quality reads to the reference genome and the data is ready for analysis.   
 
 
 
@@ -143,47 +136,52 @@ Two of the tools that can perform this visualization are IGV and UCSC Genome Bro
 
 
 ## 5. Advantages of ChIP-Seq<a name="5"></a>
-text here
-#### 1) name<a name="51"></a>
 
-text here
-#### 2) name<a name="52"></a>
+#### 1) Unbiased Genome Exploration<a name="51"></a>
 
-text here 
-#### 3) name<a name="53"></a>
+ChIP-Seq's ability to explore the genome without prior sequence information revolutionizes genetic analysis, offering a new horizon in genomic discovery. This technique bypasses the limitations of array-based methods, providing a more comprehensive and inclusive genomic view. It's especially valuable in exploratory studies, allowing researchers to uncover previously unknown genomic elements and interactions. ChIP-Seq's role in such exploratory research has become indispensable, opening up new avenues for understanding genomic complexity.
 
-text here
-#### 4) name<a name="54"></a>
+#### 2) Extensive Genome-Wide Profiling<a name="52"></a>
 
-text here 
-#### 5) name<a name="55"></a>
+ChIP-Seq is celebrated for its capability to generate extensive data across the entire genome. Its massively parallel sequencing technology facilitates high-throughput data acquisition, making it a formidable tool for comprehensive epigenomic profiling. This technique allows simultaneous investigation of multiple genomic regions, shedding light on complex genomic landscapes. The cost-effectiveness combined with the high data yield positions ChIP-Seq as a practical and efficient choice for large-scale genomic studies.
 
-text here
-#### 6) name<a name="56"></a>
+#### 3) Efficient DNA Target Capture<a name="53"></a>
 
-text here 
+The technique’s efficacy in isolating DNA targets, especially those linked to transcription factors and histone modifications, is unparalleled. ChIP-Seq can survey the entire genome, capturing a wide array of DNA-protein interactions. This capability allows for a detailed understanding of chromatin dynamics and gene regulation. The comprehensive data obtained through ChIP-Seq are invaluable for mapping genomic interactions and understanding cellular processes.
+
+#### 4) Adaptable Sample Compatibility<a name="54"></a>
+
+ChIP-Seq's versatility with a range of DNA samples makes it exceptionally adaptable. It can be applied to diverse study designs, including those involving limited or challenging sample types. This adaptability extends the technique's applicability across various research contexts, including studies on rare cell types or precious clinical samples. Consequently, ChIP-Seq is a valuable tool in both basic and translational research.
+
+#### 5) Enhanced Resolution and Sensitivity<a name="55"></a>
+
+ChIP-Seq's increased sensitivity and specificity for mapping transcription factor binding sites across the genome mark a significant advancement over earlier techniques. This heightened resolution allows for the identification of subtle and complex patterns of DNA-protein interactions. The ability to detect low-abundance transcription factors and discern their binding affinities provides deeper insights into gene regulatory networks. ChIP-Seq's precision is crucial for understanding the nuances of chromatin architecture and function.
+
+#### 6) Predictive Power for Tissue-Specific Enhancer Activities<a name="56"></a>
+
+ChIP-Seq has demonstrated remarkable accuracy in predicting tissue-specific activities of enhancers. The technique's high-resolution profiling of chromatin marks facilitates the identification of typical and super-enhancers. This predictive capability is essential for understanding gene expression regulation and cellular differentiation processes. ChIP-Seq has thus become a key tool in deciphering the complex regulatory landscapes of eukaryotic genomes.
 
 ## 6. Applications of ChIP-Seq<a name="6"></a>
 
-#### 1) name<a name="61"></a>
+#### 1) Profiling DNA-Binding Proteins<a name="61"></a>
 
-text here
-#### 2) name<a name="62"></a>
+ChIP-Seq has substantially enhanced our understanding of DNA-binding proteins and their genomic localization. By enabling genome-wide profiling, this technique provides detailed maps of protein-DNA interactions. These maps are crucial for understanding transcriptional regulation and chromatin organization. ChIP-Seq's ability to identify binding sites of transcription factors and other DNA-associated proteins has been instrumental in revealing the complexity of gene regulation.
 
-text here 
+#### 2) Gene Regulation Insights<a name="62"></a>
+
+ChIP-Seq offers unparalleled insights into gene regulation, particularly in the context of transcriptionally inactive DNA sequences. By studying interactions between these sequences and histones, ChIP-Seq helps unravel the mechanisms of epigenetic regulation. This understanding is key to deciphering how genes are turned on and off in different cellular contexts. Such insights have profound implications for understanding diseases linked to gene regulatory dysfunction.
+
 #### 3) name<a name="63"></a>
 
-text here
-#### 4) name<a name="64"></a>
+ChIP-Seq is vital for identifying transcription factor binding sites, often used in conjunction with RNA sequencing and methylation analysis. This combination of techniques allows for a comprehensive understanding of gene regulatory networks. ChIP-Seq data can reveal how transcription factors interact with the genome, influencing gene expression patterns. Such insights are crucial for understanding cellular responses to environmental stimuli and developmental cues.
 
-text here 
-#### 5) name<a name="65"></a>
+#### 4) Wide-Ranging Applications Beyond Histone-DNA Interactions<a name="64"></a>
 
-text here
-#### 6) name<a name="66"></a>
+The scope of ChIP-Seq extends well beyond studying Histone-DNA interactions. Its applications in areas like DNA methylation, nucleosome positioning, and chromatin remodeling highlight its versatility. ChIP-Seq is instrumental in mapping various chromatin states and understanding their role in gene regulation. This versatility makes ChIP-Seq an indispensable tool in fields ranging from basic biology to medical research.
 
-text here 
+#### 5) Detecting Variations in Transcription Factor Binding<a name="65"></a>
 
+ChIP-Seq is adept at uncovering functional variations in transcription factor binding due to genetic differences. This ability to detect individual-specific and allele-specific chromatin signatures is crucial for personalized medicine. It reveals how genetic variations influence gene expression and disease susceptibility.
 
 ## Reference
 
@@ -191,6 +189,10 @@ text here
 
 [2]https://en.wikipedia.org/wiki/ChIP_sequencing
 
-[3]https://www.researchgate.net/publication/288346044_Hurtado_2011-NatGen
+[3]https://www.illumina.com/techniques/sequencing/dna-sequencing/chip-seq.html
 
-[4]https://www.researchgate.net/profile/Dominic_Schmidt
+[4]https://www.nature.com/articles/nrg2641
+
+[5]https://www.youtube.com/watch?v=nkWGmaYRues
+
+[6]https://www.epicypher.com/resources/blogchromatin-mapping-basics-chipseq/
