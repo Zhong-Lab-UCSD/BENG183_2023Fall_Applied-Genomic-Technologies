@@ -70,3 +70,34 @@ After the sequencing library has been generated, the data can be analyzed using 
 * RNA interaction site conservation level calculation
 * Read pair detection
 * RNA folding and secondary structure prediction
+
+## 1.4 FURTHER STUDY
+
+### Disease Research
+One main avenue for potential further study regarding this technology lies in understanding the regulatory networks behind diseases. The RNA-RNA interactome provides a unique opportunity to dissect the molecular underpinnings of various diseases. Recent studies have made use of such technology in order to unravel disease-specific RNA networks. One such example is those implicated in cancer progression(Lee, J.H. et al. 2020). Identifying key RNA interactions associated with disease can allow researchers to pinpoint potential therapeutic targets for drug developments. 
+
+### Personalized Medicine
+Another potential avenue that technologies like MARIO can open up for us is in personalized medicine, where treatments can be tailored based on an individual's unique RNA makeup. There has already been promising research and results within this domain while utilizing this technology. For instance, a study exploring the miRNA-mRNA interactome in cancer patients revealed personalized miRNA signatures associated with treatment response(Vlachos, I.S. et al 2015). This not only reveals the potential of RNA interactome mapping in personalizing treatments but it also shows the ability for this technology to be able to predict individual responses to treatment.
+
+### Developmental Biology
+One more avenue the RNA-RNA interactome can help explore is the intricate processes of developmental biology. Research has revealed that RNA interactions play a pivotal role in shaping the growth and functioning of cells during development(Mercer, T.R. et al 2011). Mapping these interactions can allow researchers to uncover the regulatory networks that orchestrate cellular differentiation, tissue formation, and organ development. Not only does this provide us with insights into fundamental biological processes but it also lays the groundwork for potential interventions in developmental disorders.
+
+### Summary
+In essence, this technology can extend far beyond its initial purpose. It serves as a key to unlock personalized treatments, offer deeper insights into diseases, and enhance our overall understanding of life at the molecular level. These potential applications underscore the transformative impact it can have on healthcare and biological research. As we continue to refine and expand these technologies, we move closer to a future where RNA-based insights shape the landscape of medicine and biology.
+
+## References/Citations
+
+Kudla, Grzegorz et al. “Cross-linking, ligation, and sequencing of hybrids reveals RNA-RNA interactions in yeast.” Proceedings of the National Academy of Sciences of the United States of America vol. 108,24 (2011): 10010-5. doi:10.1073/pnas.1017386108
+
+Lee, J.H. et al. "Global mapping of translation initiation sites in mammalian cells at single-nucleotide resolution." Proc Natl Acad Sci U S A, vol. 117, no. 26, 2020, pp. 1453-1463.
+doi:10.1073/pnas.1207846109
+
+Mercer, T.R. et al. "Long noncoding RNAs in neuronal-glial fate specification and oligodendrocyte lineage maturation." BMC Neurosci, vol. 12, 2011, p. 14.
+doi: 10.1186/1471-2202-11-14
+
+Nguyen, Tri C et al. “Mapping RNA-RNA interactome and RNA structure in vivo by MARIO.” Nature communications vol. 7 12023. 24 Jun. 2016, doi:10.1038/ncomms12023
+
+Nguyen, Tri C., et al. “RNA, action through interactions.” Trends in Genetics, vol. 34, no. 11, Nov. 2018, pp. 867–882, doi.org/10.1016/j.tig.2018.08.001.
+
+Vlachos, I.S. et al. "DIANA-TarBase v7.0: indexing more than half a million experimentally supported miRNA:mRNA interactions." Nucleic Acids Res, vol. 43, no. Database issue, 2015, pp. D153-159.
+doi:10.1093/nar/gku1215
