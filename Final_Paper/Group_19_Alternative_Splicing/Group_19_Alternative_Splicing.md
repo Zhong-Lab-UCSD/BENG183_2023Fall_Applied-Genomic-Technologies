@@ -71,6 +71,11 @@ Alternative splicing occurs in over 90 percent of human genes and in over 95 per
 
 In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces the IR-A isoform (exon 11 excluded) to IR-B (exon 11 included)
 
+<div align="center">
+<img src="https://github.com/pavasquez1/BENG183_2023Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_19_Alternative_Splicing/DNA_alternative_splicing.gif" width="850" height="500" />
+
+Image credit [omiics](https://omiics.com/Services/bioinformatic-analysis/alternative-splicing.html)
+<div align="left">
 
 > In the Drosophila genus (also known as fruit flies) a single gene, Down syndrome cell adhesion molecule (DSCAM), can be alternatively spliced to produce **38,016** different mature mRNA products.
 
