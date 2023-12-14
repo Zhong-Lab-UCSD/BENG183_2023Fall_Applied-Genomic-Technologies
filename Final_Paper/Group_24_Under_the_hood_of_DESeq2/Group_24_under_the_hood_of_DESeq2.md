@@ -6,8 +6,8 @@
 - [DESeq2 pipeline overview](#deseq2-pipeline-overview)
 - [Sample-specific size factor estimation](#sample-specific-size-factor-estimation)
 - [Gene-specific dispersion estimation](#gene-specific-dispersion-estimation)
-- Obtaining fold changes
-- Testing for differential expression
+- [Obtaining fold changes](#obtaining-fold-changes)
+- [Testing for differential expression](#testing-for-differential-expression)
 - [References](#references)
 ## Introduction
 The ability to obtain the entire transcriptome of a biological sample through high-throughput RNA-sequencing has created a need for tools that enable analysis of this data. One of the most powerful and widely used tools for this purpose is DESeq2 which applies a variety of statistical tools to identify genes that are differentially expressed between two or more experimental conditions, such as treatment versus control groups. 
@@ -64,6 +64,30 @@ DESeq2 first estimates each gene's dispersion using maximum-likelihood estimatio
 ![dispersion-shrinkage.png](./figures/dispersion-shrinkage.png)
 
 Because there is a tendency for this method to overestimate dispersion, DESeq2 applies a round of empirical bayes shrinkage. To do this, DESeq2 obtains the curve of best fit (shown in red) across every gene's estimate. This function is then used as the prior for the empirical bayes shrinkage, where each gene's dispersion is regressed towards the curve with the magnitude of regression depending on the initial estimate's distance from the curve and the sample size of the original estimation. This is done on the assumption that genes with similar mean expressions should have similar dispersions. Since there may be cases where a gene's dispersion is much higher than the prior due to underlying biological reasons, DESeq2 only uses the shrunken estimation of a gene's dispersion if its original estimate is within two residual two standard deviations from the curve. In either case, the resulting dispersion, also referred to as the maximum a-posteriori (MAP) estimate, is used as the dispersion parameter of a given gene's negative binomial distribution. 
+
 ## Obtaining fold changes
+Now we will look at how DESeq2 calculates its fold change. Fold change is a measure used in RNA-seq data analysis to compare the expression levels of a gene across different conditions. In bioinformatics, we often use the Log2 fold change, which is the log2 ratio of the expression level of a gene in one condition to the expression level of the same gene in another condition. 
+$$\text{Log2 fold change} = \log_2\left(\frac{\text{Counts(Treatment)}}{\text{Counts(Control)}}\right)$$
+
+After normalizing the count data and fitting the negative binomial generalized linear model to each gene, DESeq2 applies a shrinkage method to the log2 fold changes. This is done to reduce the noise in the fold change estimates for genes with low read counts. The shrinkage method is based on the assumption that genes with similar expression levels should have similar fold changes. 
+
+![shrinkage.png](./figures/LFC_shrinkage.jpg)
+
 ## Testing for differential expression
+
+Lastly, DESeq2 tests for differential expression by performing a Wald test on the log2 fold changes. The Wald test is a statistical test that tests the null hypothesis that the log2 fold change is equal to zero. The Wald test is a type of generalized linear model (GLM) that uses a normal distribution to model the log2 fold changes. The Wald test is used to test for differential expression because it is a simple and fast test that is appropriate for large sample sizes. 
+
+To maximize the number of genes and keep the false discovery rate (FDR) low, DESeq2 uses a Benjamini-Hochberg adjustment to correct for multiple hypothesis testing. The Benjamini-Hochberg adjustment is a method that controls the FDR by adjusting the p-values of the Wald test. DESeq2 finds a threshold for the adjusted p-values, and genes with adjusted p-values below the threshold are considered to be differentially expressed. 
+
+And that's it! After performing the Wald test, DESeq2 outputs a table of genes that are differentially expressed between the two conditions.	
+
 ## References
+
+[1] Love, M.I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology, 15*(12), 550. [DOI:10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8). 
+
+[2] Harvard Chan Bioinformatics Core. (n.d.). *DESeq2 Analysis*. Retrieved from [https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html](https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html).
+
+[3] Love, M.I., Anders, S., & Huber, W. (2023). *Analyzing RNA-seq data with DESeq2*. Retrieved from [https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html).
+
+[4] Harvard Chan Bioinformatics Core. (n.d.). *Count Normalization*. Retrieved from [https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html).
+
