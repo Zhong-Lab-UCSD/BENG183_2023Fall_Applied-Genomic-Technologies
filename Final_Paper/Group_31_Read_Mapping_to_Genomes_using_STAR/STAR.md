@@ -15,7 +15,7 @@
 
 ## 1. Introduction<a name="311"></a>
 
-  One of the most common tools for human genome analysis is RNA-sequencing. This tool is used for defining alternative splicing sites and for finding differentially expressed genes. This presentation is about the program used for genome mapping portion of RNA-sequencing and differential analysis; STAR. STAR was created in order to address the pitfalls of high rates of mapping errors, low speed, and limited read lengths found in previous aligner programs. 
+  One of the most common tools for human genome analysis is RNA-sequencing. This tool is used for defining alternative splicing sites and for finding differentially expressed genes. This presentation is about the program used for genome mapping portion of RNA-sequencing and differential analysis; STAR. STAR was created in order to address the pitfalls of high rates of mapping errors, low speed, and limited read lengths found in previous aligner programs (Cornell).
 
 ## 2. STAR Background Information<a name="316"></a>
 
@@ -24,6 +24,8 @@
 ## 3. History of RNA Sequencing<a name="312"></a>
 
   Before we dive into STAR, it is important to look back on the developmental past of RNA-sequencing like microarrays. Microarrays were first used with fluorescent markers in order to identify hybridization events. Although microarrays can identify hybridization events, it cannot help with alternative splicing events, SNP variations, or mutations.  We are briefly mentioning these other technologies since they all helped to contribute to the development of RNA sequencing. STAR is able to help address pitfalls in these previous technologies, the pitfalls involving runtime in comparison to accuracy. 
+
+![](runtime.png)
 
 ## 4. Setting Up<a name="313"></a>
 
@@ -51,6 +53,9 @@
 ## 6. Improving the Process<a name="315"></a>
 
   So how can we fix these mapping problems? We can improve mapping speed. STAR is about 50 fold faster than other current aligners. As shown in the table to the right, STAR does trade this efficiency with RAM usage, but it is significantly faster than other programs.  We can increase the lengths of reads being sequenced. With STAR having its own indexing command we are able to remove the limitations on read length. We can improve on, or more efficiently achieve the same accuracy as previous programs. 
+
+![](table.png)
+(Dobin)
 
 ## 7. Overview of STAR Steps<a name="317"></a>
 
