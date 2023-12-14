@@ -206,7 +206,7 @@ When viewing the analysis report for GSEA, 4 key statistics are found that best 
     The **False Discovery Rate** is the estimated probability that a gene set with a given NES is a false positive finding. [3] For example, an FDR of 20% indicates that resulting NES has an 80% chance of being valid. Usually, the larger the absolute NES the smaller the FDR.
 
     FDR uses 2 ratio distributions:
-   (1)the actual ES vs the ES for all gene sets against all permutations of the data set and <br>
+   (1)the actual ES vs the ES for all gene sets against all permutations of the data set and
    (2)the actual ES vs the ES of all gene sets against the actual dataset. [3]
    For example, if 6 gene sets were analyzed with 1000 permutations, the 2 resulting distributions would contain one with 6000 data points with second distribution containing 6. 
 
