@@ -140,15 +140,15 @@ In order to use GSEA, 4 data files must be prepared to be uploaded:
 
 1. Expression Dataset
 
-    Expression Datasets contain features(genes or probes), samples, and an expression value for each feature in each sample. This dataset is accepted in the following formats: res, gcl, pcl, or txt.[3]
+    Expression Datasets contain features(genes or probes), samples, and an expression value for each feature in each sample. This dataset is accepted in the following formats: res, gcl, pcl, or txt. [3]
 
 2. Phenotype Labels
     
-    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls[3]
+    Phenotype Label datasets contain phenotype labels and associates each sample with a phenotype. This dataset is accepted in the following format: cls [3]
 
 3. Gene Sets
 
-    Gene Sets contain one or more gene sets. Each gene set contains the given gene sets name and a list of features(genes or probes) This dataset is accepted in the following format: gmx, gmt, or grp.[3]
+    Gene Sets contain one or more gene sets. Each gene set contains the given gene sets name and a list of features(genes or probes) This dataset is accepted in the following format: gmx, gmt, or grp. [3]
 
 4. Chip Annotations(Optional)
 
