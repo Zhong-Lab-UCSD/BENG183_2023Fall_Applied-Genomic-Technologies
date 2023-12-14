@@ -57,16 +57,22 @@ In 2023, Revio was awarded as Best Overall Genomics Solution by the publication 
 ## Works Cited
 Browne, Dan. “PacBio Data Deep Dive: A Closer Look at HiFi Sequencing.” YouTube, uploaded 
 by PacBio, 24 May, 2021. https://youtu.be/1aqnLQ-nwYk?si=O8pcYehL8x-t3HOY.
+
 MedTech. “MedTech Breakthrough - 2023 Winners.” MedTech Breakthrough, 12 May, 2023. 
 https://medtechbreakthrough.com/2023-winners/. 
+
 PacBio. “PacBio Sequencing - How it Works.” YouTube, uploaded by PacBio, 4 Feb. 2020, 
 https://youtu.be/_lD8JyAbwEo?si=IFFOVkk3z6obZ7Ss.
+
 PacBio. “Revio System - Reveal more with accurate long-read sequencing at scale.” PacBio, 25 
 Oct. 2022, https://www.pacb.com/revio/. 
+
 PacBio. “The Hifi Sequencing Advantage for Metagenome Assembly.” PacBio, 21 Oct. 2020,
 	www.pacb.com/microbial-sequencing-methods/hifi-for-metagenome-assembly/.
+ 
 Rhoads, Anthon; Au, Kin Fai, PacBio Sequencing and Its Applications. Genomics, Proteomics & 
 Bioinformatics, Volume 13, Issue 5, 2015, Pages 278-289, ISSN 1672-0229, https://doi.org/10.1016/j.gpb.2015.08.002. 
+
 Wenger, Aaron M., et al. "Accurate circular consensus long-read sequencing improves variant
  	detection and assembly of a human genome." Nature Biotechnology, vol. 37, no. 10, Oct. 
 2019, pp. 1155+. Gale Business: Insights, 
