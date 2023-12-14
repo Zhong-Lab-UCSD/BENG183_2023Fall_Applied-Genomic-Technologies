@@ -82,17 +82,21 @@ Illumina NGS technology uses a sequencing by synthesis method to track labeled D
     1. The DNA is fragmented
     2. Two adapters are ligated to the ends of the DNA fragments
     3. PCR  is used to amplify these fragments
-    <div style="text-align:center">
+    <p align="center">
         <img src='beng_183_images/fragment.png' width='600'/>
-        <figcaption>Figure 3.1: DNA fragmentation and sample preparation</figcaption>
-    </div>
+    </p>
+    <p align="center">
+        Figure 3.1: DNA fragmentation and sample preparation
+    </p>
 
 2. Bridge Amplification and Cluster Generation
     1. The DNA fragments are amplified and sequenced on a flow cell (pictured below)
-        <div style="text-align:center">
+        <p align="center">
             <img src='beng_183_images/flowcell.png' width='300'/>
-            <figcaption>Figure 3.2: Illumina Flow Cell</figcaption>
-        </div>
+        </p>
+        <p align="center">
+            Figure 3.2: Illumina Flow Cel
+        </p>
     3. The flow cell has 2 types of oligonucleotides attached to its surface. These oligonucleotides are complementary to the 2 adapters ligated to the DNA fragments earlier
     4. The DNA fragments are loaded onto the flow cell via hybridization to the oligonucleotides
     5. A polymerase creates a compliment of the fragment
@@ -100,16 +104,20 @@ Illumina NGS technology uses a sequencing by synthesis method to track labeled D
     7. The fragment folds over and hybridizes to the other oligonucleotide
     8. A polymerase creates a complement, forming a double bridge
     9. The strands unbridge into a forward and reverse strand attached to the flow cell surface
-<div style="text-align:center">
-    <img src='beng_183_images/bridge.png' width='600'/>
-    <figcaption>Figure 3.3: Bridge amplification on flow cell</figcaption>
-</div>      
+        <p align="center">
+            <img src='beng_183_images/bridge.png' width='600'/>
+        </p>
+        <p align="center">
+            Figure 3.3: Bridge amplification on flow cell
+        </p>
     10. The bridging process is repeated until there is a cluster of strands
     11. Then, either the forward or reverse strand is denatured and washed away to avoid directionality conflicts during sequencing
-<div style="text-align:center">
-    <img src='beng_183_images/cluster.png' width='600'/>
-    <figcaption>Figure 3.4: Cluster generation on flow cell</figcaption>
-</div>
+        <p align="center">
+            <img src='beng_183_images/cluster.png' width='600'/>
+        </p>
+        <p align="center">
+            Figure 3.4: Cluster generation on flow cell
+        </p>
         
 3. Sequencing by synthesis
     1. The flow cell is loaded into the sequencer
@@ -117,10 +125,12 @@ Illumina NGS technology uses a sequencing by synthesis method to track labeled D
     3. Four reversibly-labeled nucleotides (A, C, G, T) are added
     4. The complementary nucleotide is incorporated,the color signal is read, the dye and other nucleotides are washed away
     5. This process is repeated until the whole sequence has been imaged [5]
-<div style="text-align:center">
-    <img src='beng_183_images/sequencingbysynth.png' width='600'/>
-    <figcaption>Figure 3.5: Sequencing by synthesis</figcaption>
-</div>
+        <p align="center">
+            <img src='beng_183_images/sequencingbysynth.png' width='600'/>
+        </p>
+        <p align="center">
+            Figure 3.5: Sequencing by synthesis
+        </p>
 
 ### Advantages and Limitations
 1. Advantages
@@ -131,7 +141,6 @@ Illumina NGS technology uses a sequencing by synthesis method to track labeled D
 2. Limitations
     1. Short read lengths
     2. Error rate of 0.1-1% per nucleotide
-
 
 ## Conclusion
 There are many advantages and disadvantages for different DNA sequencing technologies. Sanger sequencing is most beneficial when sequencing smaller fragments of DNA while NGS is suited for larger sequences. In addition, each technique has a different run time depending on the nucleotide count. NGS is perfect for cases where accuracy and cost is a priority when sequencing larger DNA fragments. When sequencing specific fragments, Sanger sequencing is more cost effective. Therefore, the use case must be taken into account when deciding on which technology must be applied. 
