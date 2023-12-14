@@ -77,7 +77,7 @@ In the human insulin receptor (INSR) gene, exon skipping of exon 11 produces mRN
 Image credit [Wildonger BIMM 100 - UCSD]
 <div align="left">
 
-> In the Drosophila genus (also known as fruit flies), a single gene, Down syndrome cell adhesion molecule (DSCAM), can be alternatively spliced to produce **38,016** different mature mRNA products.
+> In the Drosophila genus (also known as fruit flies), a single gene, Down syndrome cell adhesion molecule (DSCAM), can be alternatively spliced to produce **38,016** different mature mRNA products [7].
 
 ### Evolutionary Perspective
 
