@@ -1,11 +1,17 @@
 # Differential and Enrinchment Analysis with GSEA (Gene Set Enrichment Analysis)
 1. [Introduction: Why?](#231)<br>
     1.1. [Differential Expression and Differential Analysis of Genes](#2311)<br>
-    2.2. [Gene Set Enrichment Analysis](#2312)
+    1.2. [Gene Set Enrichment Analysis](#2312)
 2. [Differential Gene Expression Analysis: How?](#232)<br>
+<<<<<<< HEAD
     2.1. [General Workflow](#2122)<br>
     2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
     2.3. [Methods and Methods comparison](#2322)
+=======
+    2.1. [General Workflow](#2321)<br>
+    2.2. [RNA-Seq Workflow - Preparing for DGE](#2222)<br>
+    2.3. [Methods and Methods Comparison](#2322)
+>>>>>>> 66b835ee799e83cde86caaa061cf607e2da21c41
 3. [Gene Set Enrichment Analysis: How?](#233)
     3.1. [Preparing and Loading Data](#2331)
     3.2. [Set Analysis Parameters and Run Program](#2332)
@@ -98,6 +104,7 @@ Let's dive into details one by one.
 
 #### 2) RNA-Seq Workflow - Preparing for DGE<a name="2222"></a>
 
+<<<<<<< HEAD
 Before we can use GSEA, we first need to perform our differential gene expression analysis separately. Luckily, DGE is a well established protocol with a plethora of tools available to help us unlock the potential of differential analysis. While we’ll dive deeper into some of these tools later as well as how you can make the seemingly difficult decision on which one to pick, let’s first discuss some vital steps leading up to DGE analysis.
 
 <p align="center"><img src="./assets/de_workflow.png" width="300" /></p> 
@@ -120,6 +127,32 @@ Both DESeq2 and EdgeR will model read counts as a negative binomial distribution
 
 <p align="center"><img src="./assets/deseq2output.png" width="500" /></p> 
 
+=======
+#### 2) RNA-Seq Workflow - Preparing for DGE<a name="2222"></a>
+
+Before we can use GSEA, we first need to perform our differential gene expression analysis separately. Luckily, DGE is a well established protocol with a plethora of tools available to help us unlock the potential of differential analysis. While we’ll dive deeper into some of these tools later as well as how you can make the seemingly difficult decision on which one to pick, let’s first discuss some vital steps leading up to DGE analysis.
+
+<p align="center"><img src="./de_workflow.png" width="300" /></p> 
+
+From previous chapters, we should already be familiar with the general RNA sequencing analysis pipeline outlined above, but just for the sake of review let’s discuss some of the key steps. We’ll begin with our RNA-seq data as sequence reads and run these through FASTQC for quality control. Next, we’ll map our reads to the reference genome, and often this step will be conducted using STAR. Lastly, before DGE we will do expression quantification, which can be performed in featureCounts. [BENG183 Lecture] If any of these steps are unclear, feel free to take a minute and revisit these earlier topics. At this stage, you’re ready to take the next step with differential gene expression analysis - so let’s dive into the methods that make it all work.
+
+#### 3) Methods and Methods Comparison<a name="2322"></a>
+
+As touched on earlier, there’s a wide range of tools that can be used for DGE analysis. Some of the more common and well-known tools include DESeq2, EdgeR, and limma-voom, but there’s others as well, each with its own functionality. 
+
+ <p align="center"><img src="./dge_tools.png" width="500" /></p> 
+
+While these methods do have some differences in their exact procedure, they all follow a general workflow and can be successfully applied for DGE. Additionally, most DGE tools can be compatible with GSEA, so there’s not really any major restrictions on which one you can select. For now, we’re going to narrow down our focus to just DESeq2 and EdgeR - both are well established tools that are a part of the R programming language.
+
+<p align="center"><img src="./dge_comparison.png" width="500" /></p> 
+
+As for that general workflow, we’re going to begin with count data which tells us the number of sequence reads originating from each gene. Higher counts will mean more expression, and lower counts the opposite. Normalization is next. DESeq2 uses median of ratios for normalization, whereas EdgeR takes trimmed mean of M values (TMM) [6]. These aren’t extremely different, but this does demonstrate some of the minor differences that keep the two tools unique. 
+
+Both DESeq2 and EdgeR will model read counts as a negative binomial distribution, and with our filtered, normalized, and high quality counts will run statistical tests to calculate fold changes, p-values, and other measures to represent the level of significance of expression differences. An example table output from DESeq2 is shown below. As we can see, we have p-values for each gene which will allow us to judge significance. 
+
+<p align="center"><img src="./deseq2output.png" width="500" /></p> 
+
+>>>>>>> 66b835ee799e83cde86caaa061cf607e2da21c41
 Once we’ve arrived here, actually understanding the output of our DGE analysis can be a daunting task in itself. Don’t worry! GSEA is an easy to use software that can help you analyze, annotate, and interpret enrichment results.
 
 ## 3. Gene Set Enrichment Analysis: How?<a name="233"></a>
