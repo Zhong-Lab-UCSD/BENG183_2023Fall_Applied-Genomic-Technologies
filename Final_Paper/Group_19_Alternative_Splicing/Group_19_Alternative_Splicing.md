@@ -42,9 +42,11 @@ Before we get into the specifics of post-sequencing alignment with regards to al
 ![altsplicetypes](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/wp-content/uploads/sites/70/2020/05/Figure17.png)
 
 ## Splice-Aware Alignment
-https://www.biostars.org/p/175454/
+Many modern sequence aligners take into account the various possibilities that alternative splicing can give rise to; these are known as **splice-aware aligners**. Unlike their splice-unaware counterparts which also use a reference genome to aid their alignment, these tools account for alternative splicing in two main ways. First, they can take into consideration known gene annotations as well as canonical splice sites. This allows for careful evaluation of existent alternative splicing data we have to aid in the alignment of the transcriptomic fragments. Secondly, in somewhat of a _de novo_ fashion, splice-aware aligners can also consider the possibilities of new splice junctions based on just the provided reference genome. The combination of these two techniques, coupled with traditional alignment methods, allow these splice-aware aligners to, with high confidence, perform alignment of RNA-seq data in organisms that undergo alternative splicing. See [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6192213/) for more information about the techniques employed to make splice-aware alignment possible.
 
 ## Popular Tools
+### STAR:
+STAR stands for Spliced Transcripts Alignment to a Reference. It is one of the 
 
 # Alternative Splicing in Disease and Therapy
 
