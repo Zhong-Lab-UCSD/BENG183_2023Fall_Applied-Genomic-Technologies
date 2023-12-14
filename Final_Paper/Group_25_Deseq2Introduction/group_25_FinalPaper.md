@@ -38,7 +38,7 @@ RNA Sequencing can help us anazlyze :
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
 
  ![2](https://github.com/JohnChen034/BENG183_2023Fall_Applied-Genomic-Technologies/assets/76548988/944ab986-989f-4c68-bbb2-0c990ea7f443)
-
+## Differential Expression Overview
 We will be referring to Differential Expression as DE. As the name mentions DE is what helps us idnetify the differences in Gene Expression. We are able to identify locations where variations between groups are greater than within groups.By groups we mean samples such as wildtype and mutant samples
 
 >Note: Variance refers to variation in gene 
