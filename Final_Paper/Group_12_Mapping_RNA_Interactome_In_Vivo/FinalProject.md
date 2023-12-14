@@ -76,8 +76,7 @@ After the sequencing library has been generated, the data can be analyzed using 
 ### Significant Innovation
 Before the development of MARIO and its cohort, researchers could only study one RNA interaction at a time. MARIO restructures the problem of studying the complex nature of RNA interactions by converting the interactions into chimeric DNA, and utilizes DNA sequencing to generate a high-throughput readout of the underlying interactions. (Nguyen et al. 2018)
 
-![](Figure2a.png) ![](Figure2b.png)
-
+![](Figure2.png)
 Figure 2. Figure from Nguyen et al. review of RNA, Action through Interactions
 
 ### Advantages of using MARIO (Nguyen et al. 2016)
